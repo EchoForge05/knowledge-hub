@@ -1,0 +1,28 @@
+# Local inputs and private working material (not a security boundary)
+/inbox/local/
+/.private/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and generated files
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+**/.vitepress/cache/
+**/.vitepress/dist/
+/site/
+/dist/
+/coverage/
+
+# Editor and OS artifacts
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
