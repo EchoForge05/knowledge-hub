@@ -1,0 +1,85 @@
+[
+  {
+    "query": "组件扫描",
+    "results": [
+      "#Spring Boot 应用入口注解三项能力"
+    ]
+  },
+  {
+    "query": "JVM",
+    "results": [
+      "#阅读与搜索测试页搜索样本",
+      "#ConcurrentHashMap 的基本使用边界复合操作",
+      "#知识目录"
+    ]
+  },
+  {
+    "query": "ConcurrentHashMap",
+    "results": [
+      "#ConcurrentHashMap 的基本使用边界",
+      "#ConcurrentHashMap 的基本使用边界来源",
+      "#ConcurrentHashMap 的基本使用边界并发访问",
+      "#阅读与搜索测试页搜索样本",
+      "#知识目录",
+      "#ConcurrentHashMap 的基本使用边界复合操作"
+    ]
+  },
+  {
+    "query": "concurrenthashmap",
+    "results": [
+      "#ConcurrentHashMap 的基本使用边界",
+      "#ConcurrentHashMap 的基本使用边界来源",
+      "#ConcurrentHashMap 的基本使用边界并发访问",
+      "#阅读与搜索测试页搜索样本",
+      "#知识目录",
+      "#ConcurrentHashMap 的基本使用边界复合操作"
+    ]
+  },
+  {
+    "query": "SpringBootApplication",
+    "results": [
+      "#Spring Boot 应用入口注解来源",
+      "#Spring Boot 应用入口注解三项能力"
+    ]
+  },
+  {
+    "query": "SELECT",
+    "results": [
+      "#SQL 查询：选择、过滤与排序选择列和过滤行"
+    ]
+  },
+  {
+    "query": "knowledge_notes",
+    "results": [
+      "#SQL 查询：选择、过滤与排序选择列和过滤行",
+      "#SQL 查询：选择、过滤与排序排序与去重"
+    ]
+  },
+  {
+    "query": "暂存区",
+    "results": [
+      "#Git 差异检查：工作区与暂存区",
+      "#Git 差异检查：工作区与暂存区三种比较",
+      "#Git 差异检查：工作区与暂存区限定范围",
+      "#Git 差异检查：工作区与暂存区来源"
+    ]
+  },
+  {
+    "query": "head",
+    "results": [
+      "#Linux 文本查看：head",
+      "#Linux 文本查看：head查看文件开头",
+      "#Linux 文本查看：head来源",
+      "#Git 差异检查：工作区与暂存区三种比较",
+      "#知识目录",
+      "#Linux 文本查看：head行数与字节数"
+    ]
+  },
+  {
+    "query": "事务隔离级别",
+    "results": [
+      "#阅读与搜索测试页搜索样本",
+      "#SQL 查询：选择、过滤与排序排序与去重"
+    ]
+  }
+]

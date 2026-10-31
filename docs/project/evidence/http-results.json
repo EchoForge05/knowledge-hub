@@ -1,0 +1,30 @@
+[
+  {
+    "path": "",
+    "status": 200
+  },
+  {
+    "path": "java/concurrent-hash-map.html",
+    "status": 200
+  },
+  {
+    "path": "spring/spring-boot-application.html",
+    "status": 200
+  },
+  {
+    "path": "databases/select-basics.html",
+    "status": 200
+  },
+  {
+    "path": "git/diff-basics.html",
+    "status": 200
+  },
+  {
+    "path": "linux/head-basics.html",
+    "status": 200
+  },
+  {
+    "path": "examples/reading-check.html",
+    "status": 200
+  }
+]

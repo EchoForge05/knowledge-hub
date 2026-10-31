@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-labelledby="title">
+  <title id="title">从目录或搜索进入阅读</title>
+  <rect width="720" height="160" rx="16" fill="#eef2ff"/>
+  <g fill="#fff" stroke="#4f46e5" stroke-width="2">
+    <rect x="30" y="45" width="160" height="70" rx="10"/>
+    <rect x="280" y="45" width="160" height="70" rx="10"/>
+    <rect x="530" y="45" width="160" height="70" rx="10"/>
+    <path d="M190 80h90m160 0h90"/>
+  </g>
+  <g fill="#312e81" font-family="sans-serif" font-size="24" text-anchor="middle">
+    <text x="110" y="89">目录</text><text x="360" y="89">阅读</text><text x="610" y="89">搜索</text>
+  </g>
+</svg>

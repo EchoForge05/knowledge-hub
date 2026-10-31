@@ -4,17 +4,17 @@
 
 本项目主要负责搭建和维护知识站，优先完成阅读、导航、搜索、内容展示与发布；知识整理流程作为配套。
 
-**当前阶段：需求与方案规划，基础初始化已完成。尚未开发网站、安装框架或启用自动化。**
+**当前阶段：P2 本地知识站已完成验收。已有 VitePress 工程与 5 篇官方资料样本，构建、搜索、桌面和手机视口检查通过；下一阶段为 P3，未启用自动化或部署。**
 
 ## 从这里开始
 
 - [需求与范围](docs/project/requirements.md)：用户目标、已确认约束和本次工作边界。
 - [项目状态](docs/project/status.md)：实际完成情况、验证记录和下一步入口。
 - [决策记录](docs/project/decisions.md)：已确认决策、待讨论问题。
-- [架构方案](docs/project/architecture.md)：已确认的 VitePress 技术栈及选型依据，尚未实施。
-- [开发计划](docs/project/roadmap.md)：P1–P5 任务、交付里程碑、样本与验收矩阵；详细方案待确认，尚未开工。
+- [架构方案](docs/project/architecture.md)：已确认的 VitePress 技术栈及当前实施记录。
+- [开发计划](docs/project/roadmap.md)：P1–P5 任务、交付里程碑、样本与验收矩阵；本地开发已获授权，外部交付按阶段推进。
 - [完成计划归档](docs/project/completed-plans.md)：已完成计划、验收结果与证据。
-- [开发规范](docs/handbook/development.md)：规范落盘、计划维护与完成归档流程。
+- [开发规范](docs/handbook/development.md)：每次修改时自动更正与同步文档、规范落盘、计划维护和完成归档流程。
 - [讨论记录](docs/project/discussion-log.md)：后续讨论和变更的持久记录。
 - [Agent 规则](AGENTS.md)：新会话必须先读的工作约定。
 - [知识整理流程](docs/handbook/knowledge-workflow.md)与 [Markdown 规范](docs/handbook/markdown.md)。
@@ -28,7 +28,7 @@ knowledge-hub/
 ├── docs/
 │   ├── project/             # 需求、架构建议、决策、计划、状态、讨论
 │   └── handbook/            # 知识维护与写作规则
-├── knowledge/               # 未来网站的知识正文，当前只有占位目录
+├── knowledge/               # 网站内容根，包含官方资料入门摘要
 │   ├── java/
 │   ├── spring/
 │   ├── databases/           # 数据库与 SQL
@@ -41,7 +41,7 @@ knowledge-hub/
 └── inbox/                   # 输入说明；本地临时原文放入被忽略的 local/ 子目录
 ```
 
-当前可直接用编辑器或 Markdown 阅读器打开文档。网站启动、构建和部署命令将在对应阶段实现后补充，现在没有可运行的网站。
+本地运行需 Node 24 LTS / npm 11：`npm ci`、`npm run dev`；构建用 `npm run build`，预览用 `npm run preview`，文档检查用 `npm run check`。访问服务输出地址下的 `/knowledge-hub/`。本机默认 Node 14 不兼容，运行前参见[本地开发说明](docs/handbook/site-development.md)选择运行时。验收结果见[本地站点验收](docs/project/site-validation.md)。
 
 ## 新会话续接
 
@@ -49,9 +49,9 @@ knowledge-hub/
 
 ## Git 与远程仓库
 
-本地仓库采用 `main` 与短期功能分支。已确认目标为公开仓库 `EchoForge05/knowledge-hub`，使用 HTTPS，配置与连接的实际状态见 [Git 配置记录](docs/handbook/git-setup.md)。基础归档提交已完成；用户另行授权本次文档检查后提交一次，授权不延续到后续提交，也不包含推送。提交者为 `EchoForge05`，本仓库使用基于已核实 GitHub 账号 ID 的 noreply 邮箱。后续知识变更由 Agent 整理并检查、用户审核 PR 合并。
+本地仓库采用 `main` 与短期功能分支。已确认目标为公开仓库 `EchoForge05/knowledge-hub`，使用 HTTPS，配置与连接的实际状态见 [Git 配置记录](docs/handbook/git-setup.md)。基础提交 `1a6cb54` 与文档提交 `a102ca7` 已完成，两次单次授权已使用；后续自动更正与同步文档；按 D023，新增开发验证成功后可做一次本地提交，每次用中文说明更新内容，不自动推送。提交者为 `EchoForge05`，本仓库使用基于已核实 GitHub 账号 ID 的 noreply 邮箱。后续知识变更由 Agent 整理并检查、用户审核 PR 合并。
 
-优先交付 MVP，范围与验收草案见 [阶段计划](docs/project/roadmap.md)。技术栈已确认：Markdown/Git、VitePress 稳定版与默认主题、TypeScript 配置、Node.js LTS/npm、内置 MiniSearch；后续 GitHub Pages/Actions。具体兼容版本和搜索效果在获准开发后验证。
+优先交付 MVP，范围与验收草案见 [阶段计划](docs/project/roadmap.md)。技术栈已确认：Markdown/Git、VitePress 稳定版与默认主题、TypeScript 配置、Node.js LTS/npm、内置 MiniSearch；后续 GitHub Pages/Actions。当前锁定 VitePress 1.6.4，实际环境与搜索验证见本地验收记录。
 
 ## 隐私
 
