@@ -21,7 +21,10 @@ export default defineConfig({
       { text: 'Java', items: [{ text: 'ConcurrentHashMap', link: '/java/concurrent-hash-map' }] },
       { text: 'Spring', items: [{ text: '应用入口注解', link: '/spring/spring-boot-application' }] },
       { text: '数据库与 SQL', items: [{ text: 'SQL 查询基础', link: '/databases/select-basics' }] },
-      { text: 'Git', items: [{ text: '工作区与暂存区差异', link: '/git/diff-basics' }] },
+      { text: 'Git', items: [
+        { text: '工作区与暂存区差异', link: '/git/diff-basics' },
+        { text: '恢复工作区与暂存区', link: '/git/restore-basics' }
+      ] },
       { text: 'Linux', items: [{ text: 'head 文本查看', link: '/linux/head-basics' }] },
       { text: '站点验证', items: [
         { text: '阅读与搜索测试页', link: '/examples/reading-check' }

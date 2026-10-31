@@ -7,7 +7,7 @@
 | 项目 | 状态 |
 | --- | --- |
 | 本地目录 | `D:\Project\Codex Project\knowledge-hub` |
-| 本地分支 | 基础分支 `main`；D021 开发在 `feat/site-mvp`，从原文档分支创建；P2 及关联文档已提交为 `dbf620f`，未推送 |
+| 本地分支 | 基础分支 `main`；P2 在 `feat/site-mvp` 提交为 `dbf620f`，P3 前置计划为 `70c8365`；当前从该计划提交创建 `feat/knowledge-pilot`，本批成果按 D023 本地提交，未推送 |
 | 目标远程 | `https://github.com/EchoForge05/knowledge-hub.git`，目标已确认，尚未设置 origin |
 | 目标公开性 | 公开，免费方案 |
 | 协议 | HTTPS |

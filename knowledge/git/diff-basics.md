@@ -23,6 +23,10 @@ git diff --cached -- knowledge/
 
 检查差异不会创建提交。提交前需要同时确认暂存文件范围和实际差异。
 
+## 相关知识
+
+需要恢复文件或取消暂存时，参见[Git 恢复：工作区与暂存区](./restore-basics.md)。
+
 ## 来源
 
 [Git 官方：git-diff 2.55.0](https://git-scm.com/docs/git-diff/2.55.0)。

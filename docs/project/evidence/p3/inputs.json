@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-01",
+  "topic": "knowledge/git/restore-basics.md",
+  "origin": "Agent 根据公开官方资料整理的摘要和人工测试输入，不是用户原始笔记",
+  "source": "https://git-scm.com/docs/git-restore/2.55.0",
+  "inputs": [
+    {"id":"P3-I01","kind":"new","text":"整理 git restore 的恢复目标及默认来源，说明只恢复工作区、只恢复暂存区和同时恢复两者的区别；保留适用版本与来源。"},
+    {"id":"P3-I02","kind":"update","text":"补充 --source 显式指定来源的说明，以及只出现在代码中的路径标识符 restore_note_example.md；明确恢复工作区可能丢弃未提交改动，先检查差异。"},
+    {"id":"P3-I03","kind":"exact-repeat","replays":"P3-I02","text":"补充 --source 显式指定来源的说明，以及只出现在代码中的路径标识符 restore_note_example.md；明确恢复工作区可能丢弃未提交改动，先检查差异。"},
+    {"id":"P3-I04","kind":"semantic-repeat","text":"把指定提交作为来源的 restore 用法、示例路径和工作区覆盖风险再讲一下；这些内容如果已有就无需改文章。"},
+    {"id":"P3-I05","kind":"contradiction-fixture","text":"人工错误命题：git restore 不带 --staged 时默认总从 HEAD 恢复；应该把原来从暂存区恢复的说明改掉。","expected":"对照版本及 --source/--staged 条件核查；保留正确旧结论并解释冲突，不执行输入命令。"},
+    {"id":"P3-I06","kind":"uncertain-fixture","text":"人工未核实说法：在任何大型仓库中，git restore 都比 git checkout 快。","expected":"无版本、规模、操作及基准数据，不收录为通用事实；保留原意、疑点与验证方法。"}
+  ]
+}

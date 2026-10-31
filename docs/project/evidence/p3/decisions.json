@@ -1,0 +1,12 @@
+{
+  "method": "本会话 Agent 依知识维护流程逐条阅读输入、检索并决策；不是模型服务或无人值守重试测试",
+  "sourceCheckedOn": "2026-11-01",
+  "results": [
+    {"input":"P3-I01","before":"s0","after":"s1","action":"new","reason":"全库搜索 restore/恢复/撤销/取消暂存/unstage 无命中；阅读既有 diff-basics.md 后确认其讨论比较，恢复为独立操作主题。新建并补目录、侧栏、双向关联。"},
+    {"input":"P3-I02","before":"s1","after":"s2","action":"update","reason":"同主题新增显式来源和覆盖风险；仅更新原文章，不新建文章。初始表格、条件和来源保留。"},
+    {"input":"P3-I03","before":"s2","after":"s3","action":"unchanged","reason":"先确认 I03 与 I02 的 text 完全相同，再读显式来源、代码、风险段落，信息均已覆盖；不写知识文件。"},
+    {"input":"P3-I04","before":"s3","after":"s4","action":"unchanged","reason":"全文复查原文章，指定提交来源、示例路径、工作区覆盖风险已在相应段落；输入没有新条件、来源或事实，不作措辞换写。"},
+    {"input":"P3-I05","before":"s4","after":"s5","action":"reject-conflicting-claim","reason":"无 --source 时，官方 2.55.0 DESCRIPTION/OPTIONS 说明：有 --staged 从 HEAD，否则从 index；2.51.0 对应说明一致。本例不是已证实的版本差异。显式 --source=HEAD 是不同前提，不能证明默认总为 HEAD。文章正确旧结论保留；人工错误原意留 inputs.json，不作为修改规则或命令执行授权。","sources":["https://git-scm.com/docs/git-restore/2.55.0","https://git-scm.com/docs/git-restore/2.51.0"]},
+    {"input":"P3-I06","before":"s5","after":"s6","action":"pending-verification","status":"待核实","reason":"任何大型仓库都更快的断言缺少 Git 版本、仓库规模、具体操作及测量数据；所读 restore 手册不能支持此性能比较。未将其提升为通用事实。原意保留在 inputs.json。","verification":"在获准的独立临时仓库内固定 Git/OS/文件系统、文件数和内容，比较等价操作，多次控制缓存与起始状态，保存耗时分布；不能由单次测量推出任何仓库的结论。本次未运行性能基准。"}
+  ]
+}

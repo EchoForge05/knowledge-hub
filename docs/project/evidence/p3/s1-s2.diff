@@ -1,0 +1,22 @@
+diff --git a/docs/project/evidence/p3/s1-article.txt b/docs/project/evidence/p3/s2-article.txt
+index 84659a7..0719855 100644
+--- a/docs/project/evidence/p3/s1-article.txt
++++ b/docs/project/evidence/p3/s2-article.txt
+@@ -16,0 +17,17 @@
++## 显式指定来源
++
++`--source=HEAD` 可明确选择 HEAD；来源也可指定提交、分支或标签。它与 `--staged`、`--worktree` 配合决定从哪里取内容、写到哪里。
++
++下面的路径是虚构示例，仅展示参数组合，未执行：
++
++```sh
++git restore --source=HEAD --worktree -- restore_note_example.md
++git restore --source=HEAD --staged --worktree -- restore_note_example.md
++```
++
++第一条从 HEAD 恢复工作区，第二条同时恢复暂存区和工作区。示例路径不代表仓库中存在这个文件。
++
++## 覆盖风险与检查
++
++恢复工作区可能丢弃对应路径的未提交改动；先检查状态及工作区、暂存区差异，确认需要保留的内容已经妥善保存，再决定是否恢复。不要把恢复命令作为只读检查命令使用。
++
