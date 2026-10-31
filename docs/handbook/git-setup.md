@@ -7,21 +7,21 @@
 | 项目 | 状态 |
 | --- | --- |
 | 本地目录 | `D:\Project\Codex Project\knowledge-hub` |
-| 本地分支 | `main` |
+| 本地分支 | 基础分支 `main`；本次文档检查在 `docs/review-development-plan`，尚未推送 |
 | 目标远程 | `https://github.com/EchoForge05/knowledge-hub.git`，目标已确认，尚未设置 origin |
 | 目标公开性 | 公开，免费方案 |
 | 协议 | HTTPS |
 | 提交姓名 | `EchoForge05`，用户提供，只写入本仓库配置 |
 | 提交邮箱 | `44670012+EchoForge05@users.noreply.github.com`，Agent 采用 GitHub 标准格式，只写入本仓库配置 |
-| Git Credential Manager | 已安装，版本 2.8.0；尚无已保存的 GitHub 登录账号 |
+| Git Credential Manager | 历史检查已安装 2.8.0、当时未列出已登录账号；本轮未复查登录状态 |
 | GitHub 连接器 | 已验证登录账号 EchoForge05，ID 44670012；这不是本地 Git 凭据 |
-| 远程仓库 | 连接器可访问列表中未发现 knowledge-hub；未创建，也没有通过远程访问证明其存在 |
+| 远程仓库 | 历史连接器列表未发现 knowledge-hub，Agent 未创建；本轮未重新查询，远程是否存在仍未验证 |
 
 邮箱根据已核实账号 ID 与 GitHub 官方 `ID+USERNAME@users.noreply.github.com` 格式选择，并非猜测用户私人邮箱。依据：[GitHub 邮箱参考](https://docs.github.com/en/account-and-profile/reference/email-addresses-reference)。未进入账号设置修改邮箱、密码或其他安全选项。
 
 ## 已执行检查和限制
 
-- `git status --short --branch`：最初为无提交的 main；本轮按用户最新指令创建一次基础归档提交，最终提交凭证查看 `git log -1`。
+- 基础提交为 `1a6cb54 chore: initialize knowledge hub and preserve planning decisions`，本轮通过 `git log` 与 `git show --stat` 复核。后续文档归档使用独立分支；最新提交凭证查看 `git log -1`，不将基础提交与文档提交混同。
 - `git config --local --get user.name` 与 `git config --local --get user.email`：已读回上述身份。
 - `git remote -v`：无远程。没有 Push、Pull 或远程读写权限验证。
 - `git credential-manager github list`：沙箱内返回 Windows 拒绝访问；经正常审批在沙箱外只读复查后，命令成功且未列出已登录账号。没有读取或打印令牌。
@@ -35,4 +35,4 @@
 4. 推送需有用户授权；届时使用真实变更推送，不制造测试提交，不强推。未实际推送前不宣称写入已验证。
 5. 首次推送后才算 GitHub 备份可用；站点发布仍属于后续开发阶段。
 
-本次用户仅要求本地归档并提交一次，不等待远程配置，不推送。后续应从本文件的事实状态继续，不能把上一轮“先调通 Git”的目标当作已经完成。
+最新用户要求检查现有文档后做一次本地提交（D019），不等待远程配置，不推送。后续应从本文件的事实状态继续，不能把历史“先调通 Git”的目标当作已经完成。
