@@ -49,7 +49,7 @@ knowledge-hub/
 
 ## Git 与远程仓库
 
-本地仓库采用 `main` 与短期功能分支。已确认目标为公开仓库 `EchoForge05/knowledge-hub`，使用 HTTPS，配置与连接的实际状态见 [Git 配置记录](docs/handbook/git-setup.md)。基础提交 `1a6cb54` 与文档提交 `a102ca7` 已完成，两次单次授权已使用；后续自动更正与同步文档；按 D023，新增开发验证成功后可做一次本地提交，每次用中文说明更新内容，不自动推送。提交者为 `EchoForge05`，本仓库使用基于已核实 GitHub 账号 ID 的 noreply 邮箱。后续知识变更由 Agent 整理并检查、用户审核 PR 合并。
+本地仓库采用 `main` 与短期功能分支。已确认目标为公开仓库 `EchoForge05/knowledge-hub`，使用 HTTPS，配置与连接的实际状态见 [Git 配置记录](docs/handbook/git-setup.md)。基础提交 `1a6cb54` 与文档提交 `a102ca7` 已完成；P2 成果及中文提交规范已提交为 `dbf620f feat: 搭建本地知识站并落实验证后中文提交规范`。后续自动更正与同步文档；按 D023，新增开发验证成功后可做一次本地提交，每次用中文说明更新内容，不自动推送。提交者为 `EchoForge05`，本仓库使用基于已核实 GitHub 账号 ID 的 noreply 邮箱。后续知识变更由 Agent 整理并检查、用户审核 PR 合并。
 
 优先交付 MVP，范围与验收草案见 [阶段计划](docs/project/roadmap.md)。技术栈已确认：Markdown/Git、VitePress 稳定版与默认主题、TypeScript 配置、Node.js LTS/npm、内置 MiniSearch；后续 GitHub Pages/Actions。当前锁定 VitePress 1.6.4，实际环境与搜索验证见本地验收记录。
 

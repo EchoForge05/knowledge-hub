@@ -7,7 +7,7 @@
 | 项目 | 状态 |
 | --- | --- |
 | 本地目录 | `D:\Project\Codex Project\knowledge-hub` |
-| 本地分支 | 基础分支 `main`；D021 开发在 `feat/site-mvp`，从原文档分支创建；P2 及关联文档按 D023 纳入包含本文的中文说明 feat 提交，未推送 |
+| 本地分支 | 基础分支 `main`；D021 开发在 `feat/site-mvp`，从原文档分支创建；P2 及关联文档已提交为 `dbf620f`，未推送 |
 | 目标远程 | `https://github.com/EchoForge05/knowledge-hub.git`，目标已确认，尚未设置 origin |
 | 目标公开性 | 公开，免费方案 |
 | 协议 | HTTPS |
@@ -21,7 +21,7 @@
 
 ## 已执行检查和限制
 
-- 基础提交为 `1a6cb54 chore: initialize knowledge hub and preserve planning decisions`，本轮通过 `git log` 与 `git show --stat` 复核。后续文档归档使用独立分支；最新提交凭证查看 `git log -1`，不将基础提交与文档提交混同。
+- 基础提交为 `1a6cb54 chore: initialize knowledge hub and preserve planning decisions`，此前已复核。本轮通过 `git log -3` 与 `git show --format=fuller --no-patch dbf620f` 确认 P2 提交及其作者、中文说明；初始工作区干净。后续文档归档使用独立分支；最新提交凭证查看 `git log -1`，不将基础提交与文档提交混同。
 - `git config --local --get user.name` 与 `git config --local --get user.email`：已读回上述身份。
 - `git remote -v`：无远程。没有 Push、Pull 或远程读写权限验证。
 - `git credential-manager github list`：沙箱内返回 Windows 拒绝访问；经正常审批在沙箱外只读复查后，命令成功且未列出已登录账号。没有读取或打印令牌。
@@ -35,4 +35,4 @@
 4. 推送需有用户授权；届时使用真实变更推送，不制造测试提交，不强推。未实际推送前不宣称写入已验证。
 5. 首次推送后才算 GitHub 备份可用；站点发布仍属于后续开发阶段。
 
-D019 的一次文档提交已完成：`a102ca7 docs: review and preserve knowledge site development plan`，未推送；本次提交前通过 `git log -1` 复核。该次授权已使用；D020 本身不包含提交授权，D023 现允许新增开发验证成功后做一次本地提交，每次用中文说明更新内容，不包含推送。后续应从本文件的事实状态继续，不能把历史“先调通 Git”的目标当作已经完成。
+D019 的一次文档提交已完成：`a102ca7 docs: review and preserve knowledge site development plan`，未推送；本轮通过 `git log -3` 复核。该次授权已使用；D020 本身不包含提交授权，D023 现允许新增开发验证成功后做一次本地提交，每次用中文说明更新内容，不包含推送。P2 已按 D023 提交为 `dbf620f`；本轮用户另行授权更新文档后提交一次（D024），不包含推送。后续应从本文件的事实状态继续，不能把历史“先调通 Git”的目标当作已经完成。
