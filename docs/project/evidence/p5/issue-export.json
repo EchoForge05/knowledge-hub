@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "authorization": "D038 continuation within manual, no-key intake",
+  "branch": "feat/issue-export",
+  "baseCommit": "9a0b16084a3d9b8188de62e722f482d9e6a79d2b",
+  "priorDelivery": {
+    "pr": "https://github.com/EchoForge05/knowledge-hub/pull/5",
+    "expectedHead": "73292ea6d298658b2f87ddaf498585b744260cf2",
+    "mergeCommit": "9a0b16084a3d9b8188de62e722f482d9e6a79d2b",
+    "ci": "https://github.com/EchoForge05/knowledge-hub/actions/runs/41283712615",
+    "ciConclusion": "success",
+    "pages": "https://github.com/EchoForge05/knowledge-hub/actions/runs/41283825644",
+    "pagesConclusion": "success",
+    "remoteTemplateVerified": true
+  },
+  "tests": { "export": 5, "intake": 9, "passed": 14, "failed": 0, "realModelRequests": 0 },
+  "finalChecks": { "markdown": 60, "localFileLinks": 324, "buildPassed": true, "buildSeconds": 2.65, "html": 11, "localSiteReferences": 275, "diffCheckPassed": true },
+  "liveReadOnlyNegative": {
+    "issueNumber": 5,
+    "actualKind": "pull request",
+    "cliExit": 1,
+    "helperReasonConfirmed": "Only an open issue in the fixed repository is accepted; PRs are rejected.",
+    "savedSnapshot": false,
+    "note": "A second read verified the exact helper rejection, distinguishing PR rejection from a network error."
+  },
+  "notes": [
+    "Direct git push failed twice; the successful command temporarily used the existing system proxy. No persistent Git or system configuration was changed.",
+    "First new test found that an inbox junction to another directory inside the fixture root was accepted. Export now rejects linked inbox/local directories; all 14 offline tests passed after the fix.",
+    "Browser creation timed out but later inventory showed a GitHub login page; template UI and a real positive issue roundtrip remain unverified.",
+    "No existing issues were found. No test issue, comment, model request or background automation was created.",
+    "New exporter is local-only; later PR needs user review."
+  ],
+  "limits": ["30s request timeout", "128KiB streamed response bound", "no authentication", "no redirect", "no retry", "explicit --fetch only", "fixed repository and endpoint"],
+  "notVerified": ["positive real Issue roundtrip", "authenticated GitHub form rendering", "Linux execution of the five new exporter tests"]
+}
