@@ -13,7 +13,7 @@
 
 [网站](https://echoforge05.github.io/knowledge-hub/) · [完成索引](completed-plans.md) · [历史库](../history/README.md)
 
-阅读精简（D040，2026-11-01）：Spring文章精简及默认折叠已通过构建、搜索跳转和手机布局检查，见[本地回执](evidence/knowledge/spring-reading-browser.json)。用户已确认后续按[开发规范](../handbook/development.md#知识文章的阅读精简)执行；docs/spring-reading本批提交/PR交付进行中，尚未发布，线上仍为既有版本。
+阅读精简（D040，2026-11-01）：Spring文章及后续[开发规范](../handbook/development.md#知识文章的阅读精简)经[PR #8](https://github.com/EchoForge05/knowledge-hub/pull/8)合并为acf569a，[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41292949763)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41293014285)成功，本地main已同步。正文、搜索及手机检查见[本地回执](evidence/knowledge/spring-reading-browser.json)；线上已核对补充资料默认折叠、可展开版本与4个官方链接并再次折叠。收尾记录按同批授权交付，最终SHA以Git实查为准。
 
 上一批按D036完成提交、推送和检查后合并：[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)合并点9e87939，[PR #3](https://github.com/EchoForge05/knowledge-hub/pull/3)合并点86c1f50，包含模型功能c207677/aaa417e与文档整理7ddce23。当时已同步本地main，旧分支保留；交付证据见[完成记录](completed-plans.md)。
 

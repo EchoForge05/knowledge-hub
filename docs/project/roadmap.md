@@ -4,7 +4,7 @@
 
 ## 已完成索引
 
-P0–P4、P5-01-local/P5-02-manual手动模型辅助、P5-03-manual及其L03交付、P5-03-export-local、L04/V07交付与KH-20261101-01均见[完成记录](completed-plans.md)。P5自动化仍未完成，真实Issue线上正向验收尚未通过，不能归档整个P5。
+P0–P4、P5-01-local/P5-02-manual手动模型辅助、P5-03-manual及其L03交付、P5-03-export-local、L04/V07交付、KH-20261101-01与D040阅读精简规范均见[完成记录](completed-plans.md)。P5自动化仍未完成，真实Issue线上正向验收尚未通过，不能归档整个P5。
 
 ## 后续顺序
 

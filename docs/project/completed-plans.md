@@ -19,12 +19,21 @@
 | P5-03-export-local | 2026-11-01 | 公开Issue无密钥只读导出57f88bc；14项本地测试及真实PR #5拒绝负例通过，见[限定证据](evidence/p5/issue-export.json)。本地子项保留，后续交付及Linux验收见L04/V07；正向往返V06仍未完成 |
 | L04 / V07 | 2026-11-01 | D039授权正常推送57f88bc/83e91b1，经[PR #6](https://github.com/EchoForge05/knowledge-hub/pull/6)合并为92a8ded；[Linux CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41290113085)包含7项模型/14项Issue测试全部成功，[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41290170419)成功；本地main已同步，旧分支保留，V06不计完成 |
 | KH-20261101-01 | 2026-11-01 | Spring单例线程安全知识及导航经PR #6合并发布，共7篇；本地及[线上浏览器验收](evidence/knowledge/spring-singleton-online.json)通过，未运行Spring应用或并发测试 |
+| D040 | 2026-11-01 | 阅读精简规范及Spring正文经[PR #8](https://github.com/EchoForge05/knowledge-hub/pull/8)合并发布，见下方归档；后续新增/修改文章按确认规范执行 |
 
 P4-01/P4-02、P4-L01/L02、P4-03-deploy 和 P4-04-local-build 的既有目标、结果与限制仍见[原归档](../history/2026-11-01/project/completed-plans.md)。P4-03/P4-04 收尾见新增 P4 归档。生产回退及并发/失败动态演练未执行；依赖风险等未完成明细见[待办登记](backlog.md)。
 
 ## KH-20261101-01：Spring 单例 Bean 知识维护与验收
 
 目标：整理用户问答入库并复验展示/搜索。结果：新建Spring单例Bean与线程安全主题，补官方来源与作用域/并发边界，同步目录与侧栏。62份Markdown/354文件链接、构建、12 HTML/315引用、5词首条搜索及实际锚点跳转、目录/内链、桌面/390×844布局通过；见[本地交互证据](evidence/knowledge/spring-singleton-browser.json)。D039后续经PR #6合并发布，同一交互检查在线上再次通过，见[线上证据](evidence/knowledge/spring-singleton-online.json)。不冒充Spring并发测试，V06不受影响。
+
+## D040：阅读精简规范与交付
+
+目标：将用户确认的Spring阅读精简方案固化为后续规范，并合并交付。结果：AGENTS记录通用要求，development定义详细流程，Markdown/知识流程统一引用；Spring正文聚焦结论、原因和操作，补充边界/版本/来源默认折叠，维护记录保留在项目文档。关键适用条件与风险就近明示，不自动批量重写全站。
+
+验收与交付：62份Markdown/362本地文件链接、差异/提交范围检查通过；复用正文构建及[本地交互回执](evidence/knowledge/spring-reading-browser.json)。提交5160c0a经PR #8锁定head、[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41292949763)成功后合并为acf569a，本地main同步；[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41293014285)成功，线上默认折叠、展开版本与4个官方链接、再次折叠通过。收尾文档同批交付，最终SHA以Git为准。
+
+限制与遗留：不新增功能或模型请求，未运行Spring应用/并发测试；历史证据保留，V06等未验证事项继续在backlog维护。后续按规范持续维护，不视为未来PR自动合并授权。
 
 ## D038 交付与续开发
 
