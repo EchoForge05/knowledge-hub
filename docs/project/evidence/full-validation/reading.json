@@ -1,0 +1,50 @@
+{
+  "desktop": {
+    "codeBlocks": 2,
+    "images": [
+      {
+        "alt": "目录、阅读和搜索之间的示意关系",
+        "loaded": true
+      }
+    ],
+    "rootWidth": 1265,
+    "scrollWidth": 1265,
+    "tables": 1
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mobile": {
+    "images": [
+      {
+        "loaded": true,
+        "width": 327
+      }
+    ],
+    "pre": [
+      {
+        "scrollWidth": 615,
+        "width": 375
+      },
+      {
+        "scrollWidth": 1687,
+        "width": 375
+      }
+    ],
+    "rootWidth": 375,
+    "scrollWidth": 375,
+    "tables": [
+      {
+        "scrollWidth": 1238,
+        "width": 327
+      }
+    ]
+  },
+  "mobileNavigationUrl": "http://127.0.0.1:4173/knowledge-hub/git/restore-basics.html",
+  "limitations": [
+    "Viewport only, not physical phone",
+    "No-result text locator corrected after first assertion used wrong wording",
+    "Heading locator corrected to h1 because role level option is unsupported"
+  ]
+}

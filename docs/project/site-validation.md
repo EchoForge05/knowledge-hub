@@ -1,5 +1,7 @@
 # 本地站点验收记录
 
+当前增量说明：本文 P2 历史基线使用 Intl.Segmenter；P4-L01 已改为确定性正则 tokenizer 并通过 14 组浏览器回归，见[本地遗留验证](local-followup-validation.md)。下方历史环境和原始证据保留，不当作当前分词实现说明。
+
 日期：2026-10-31 开始，2026-11-01 完成验收（Asia/Shanghai）。本轮仅本地开发，A06/A08、PR、Actions、Pages 与真实手机验证未执行。代码片段未作为 Java、Spring、SQL 或 Linux 程序执行。
 
 ## 环境与内容基线

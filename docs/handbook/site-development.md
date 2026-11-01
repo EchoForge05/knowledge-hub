@@ -36,11 +36,11 @@ npm run preview
 
 ## 搜索与检查范围
 
-VitePress 1.6.4 内置 MiniSearch；配置使用 `Intl.Segmenter('zh-CN')`，构建端与浏览器端采用同一分词函数。当前面向中文和英文混合词；不承诺任意子串或大规模语料检索质量。
+VitePress 1.6.4 内置 MiniSearch；当前 tokenizer 以确定性正则保留 ASCII 字母/数字/下划线标识符整词，其他 Unicode 字母/数字逐字，标点作为边界。构建端和浏览器端使用同一函数，避免旧 Intl.Segmenter 在不同运行时对完整文件名切词不同。中文逐字查询不保证短语连续性，不承诺任意子串或大规模相关性。
 
 `npm run check` 检查仓库 Markdown 的 UTF-8、一级标题与本地文件链接，不访问外网，不核查技术事实；不验证标题锚点和链接内容。构建后执行 `npm run check:site` 检查 HTML 中的本地页面、资源、锚点与 base 路径；浏览器检查负责验证实际跳转、展示和搜索。各类检查不能相互代替。
 
-P3 的输入编号、来源保存和去重判断见[知识维护流程](knowledge-workflow.md)，实际快照、哈希及搜索回归见[维护验收](../project/knowledge-pilot-validation.md)。当前代码标识符检索通过，完整带点文件名存在未命中样例；没有结果时可尝试不含扩展名的独立标识符，不能将其描述为任意文件名精确检索。
+P3 的输入编号、来源保存和去重判断见[知识维护流程](knowledge-workflow.md)，历史维护证据见[维护验收](../project/knowledge-pilot-validation.md)。完整文件名 restore_note_example.md 的失败样例现已修复，14 组浏览器回归和实际结果跳转通过，见[本地遗留验证](../project/local-followup-validation.md)；不将一个样例的修复外推为任意符号字符串精确检索。
 
 Windows 下重装依赖前应停止本项目的 dev/preview，避免占用 esbuild.exe。npm 如提示安装脚本未授权，应先核对具体需要；本次未运行 esbuild postinstall，离线重装及构建仍通过，其他平台尚未验证。
 

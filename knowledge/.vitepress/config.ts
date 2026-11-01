@@ -50,12 +50,10 @@ export default defineConfig({
         },
         miniSearch: {
           options: {
-            // 同一函数用于构建索引和浏览器查询，无外部分词服务。
+            // ASCII 标识符整词保留，其他 Unicode 字母/数字逐字；标点作为边界。
+            // 避免 Node 与浏览器 Intl.Segmenter 词典差异导致同一查询无法命中。
             tokenize(text) {
-              return Array.from(
-                new Intl.Segmenter('zh-CN', { granularity: 'word' }).segment(text),
-                part => part.isWordLike ? part.segment : ''
-              ).filter(Boolean)
+              return text.match(/[A-Za-z0-9_]+|[\p{L}\p{N}]/gu) ?? []
             }
           },
           searchOptions: { prefix: true, fuzzy: false, combineWith: 'AND' }

@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-01",
+  "vitepress": {
+    "dist-tags": {
+      "latest": "1.6.4",
+      "next": "2.0.0-alpha.21"
+    },
+    "dependencies": {
+      "vue": "^3.5.13",
+      "vite": "^5.4.14",
+      "shiki": "^2.1.0",
+      "mark.js": "8.11.1",
+      "focus-trap": "^7.6.4",
+      "minisearch": "^7.1.1",
+      "@vue/shared": "^3.5.13",
+      "@vueuse/core": "^12.4.0",
+      "@docsearch/js": "3.8.2",
+      "@shikijs/core": "^2.1.0",
+      "@docsearch/css": "3.8.2",
+      "@shikijs/types": "^2.1.0",
+      "@vue/devtools-api": "^7.7.0",
+      "@types/markdown-it": "^14.1.2",
+      "@vitejs/plugin-vue": "^5.2.1",
+      "@vueuse/integrations": "^12.4.0",
+      "@shikijs/transformers": "^2.1.0",
+      "@iconify-json/simple-icons": "^1.2.21"
+    }
+  },
+  "allowedViteReleases": [
+    "5.4.14",
+    "5.4.15",
+    "5.4.16",
+    "5.4.17",
+    "5.4.18",
+    "5.4.19",
+    "5.4.20",
+    "5.4.21"
+  ],
+  "allowedEsbuildReleases": [
+    "0.21.3",
+    "0.21.4",
+    "0.21.5"
+  ]
+}

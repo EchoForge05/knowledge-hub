@@ -1,0 +1,71 @@
+{
+  "node": "v24.22.1",
+  "tokens": [
+    {
+      "text": "restore_note_example.md",
+      "before": [
+        "restore_note_example.md"
+      ],
+      "after": [
+        "restore_note_example",
+        "md"
+      ]
+    },
+    {
+      "text": "knowledge_notes",
+      "before": [
+        "knowledge_notes"
+      ],
+      "after": [
+        "knowledge_notes"
+      ]
+    },
+    {
+      "text": "组件扫描",
+      "before": [
+        "组",
+        "件",
+        "扫描"
+      ],
+      "after": [
+        "组",
+        "件",
+        "扫",
+        "描"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "query": "restore_note_example.md",
+      "firstExpectedRank": 1,
+      "ids": [
+        "/knowledge-hub/git/restore-basics.html#显式指定来源"
+      ]
+    },
+    {
+      "query": "组件扫描",
+      "firstExpectedRank": 1,
+      "ids": [
+        "/knowledge-hub/spring/spring-boot-application.html#三项能力"
+      ]
+    },
+    {
+      "query": "JVM",
+      "firstExpectedRank": 2,
+      "ids": [
+        "/knowledge-hub/examples/reading-check.html#搜索样本",
+        "/knowledge-hub/java/concurrent-hash-map.html#复合操作",
+        "/knowledge-hub/topics.html#知识目录"
+      ]
+    },
+    {
+      "query": "knowledge_notes",
+      "firstExpectedRank": 1,
+      "ids": [
+        "/knowledge-hub/databases/select-basics.html#选择列和过滤行",
+        "/knowledge-hub/databases/select-basics.html#排序与去重"
+      ]
+    }
+  ]
+}

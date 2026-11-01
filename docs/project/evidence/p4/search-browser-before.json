@@ -1,0 +1,45 @@
+[
+  {
+    "text": "restore_note_example.md",
+    "tokens": [
+      {
+        "segment": "restore_note_example",
+        "isWordLike": true
+      },
+      {
+        "segment": ".",
+        "isWordLike": false
+      },
+      {
+        "segment": "md",
+        "isWordLike": true
+      }
+    ]
+  },
+  {
+    "text": "knowledge_notes",
+    "tokens": [
+      {
+        "segment": "knowledge_notes",
+        "isWordLike": true
+      }
+    ]
+  },
+  {
+    "text": "组件扫描",
+    "tokens": [
+      {
+        "segment": "组",
+        "isWordLike": true
+      },
+      {
+        "segment": "件",
+        "isWordLike": true
+      },
+      {
+        "segment": "扫描",
+        "isWordLike": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+name: Publish knowledge site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# All deployments share a group; a newer main run cancels older work.
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.22.1'
+          package-manager-cache: false
+      - name: Select npm
+        run: npm install --global npm@11.19.1 --ignore-scripts
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts
+      - run: npm run check
+      - run: npm run build
+      - run: npm run check:site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: knowledge/.vitepress/dist
+          retention-days: 1
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Refuse deployment of an outdated commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          actual_sha=$(gh api "repos/$REPOSITORY/git/ref/heads/main" --jq .object.sha)
+          test "$actual_sha" = "$EXPECTED_SHA"
+      - uses: actions/configure-pages@v5
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,32 @@
+{
+  "workflows": {
+    "yaml": "two parsed without duplicate keys",
+    "policy": "events, commands, least permissions, main gates, dependency and stale SHA guard passed",
+    "limitations": "Not actionlint, full GitHub schema, Linux or real runner validation"
+  },
+  "negativeFixture": {
+    "badExit": 1,
+    "repairedExit": 0,
+    "result": "Actual check-docs.mjs rejects missing target and passes repaired isolated fixture"
+  },
+  "maintenance": {
+    "snapshotEquality": "s2 through s6 hashes equal; duplicate, contradiction and uncertainty operations left source unchanged",
+    "currentDifference": [
+      "knowledge/.vitepress/config.ts",
+      "knowledge/guide.md"
+    ],
+    "explanation": "guide.md was updated during P3 final documentation sync and matches committed 14cc80b; config.ts is the reviewed search fix",
+    "note": "Initial overly narrow current-difference assertion corrected after comparing committed guide; rechecked stored evidence, original semantic maintenance operations not rerun"
+  },
+  "structure": {
+    "markdownFiles": 31,
+    "result": "Strict UTF-8, LF, heading levels, fenced blocks passed"
+  },
+  "prepublication": {
+    "candidateFiles": 93,
+    "historyBlobs": 174,
+    "patternHits": 0,
+    "ignoredPrivateDependenciesBuild": true,
+    "limitation": "Pattern check and reviewed scope, not a complete security audit"
+  }
+}
