@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "pr": 1,
+  "merged": true,
+  "merge_sha": "ec1d977afda87250cd33f0fdcad9dda793b04d5e",
+  "run_id": 41265555312,
+  "run_url": "https://github.com/EchoForge05/knowledge-hub/actions/runs/41265555312",
+  "initial_attempt": {
+    "conclusion": "failure",
+    "build": "success",
+    "deploy": "failure",
+    "failed_step": "actions/configure-pages@v5",
+    "message": "Get Pages site failed; Not Found",
+    "deploy_site": "skipped"
+  },
+  "recovery": {
+    "pages_build_type": "workflow",
+    "url": "https://echoforge05.github.io/knowledge-hub/",
+    "https_enforced": true,
+    "environment": "github-pages",
+    "deployment_branch_policy": {
+      "protected_branches": false,
+      "custom_branch_policies": true
+    },
+    "allowed_branch": {
+      "id": 65076857,
+      "name": "main",
+      "type": "branch"
+    },
+    "rerun": "failed jobs requested; latest attempt reports build and deploy success",
+    "jobs": [
+      {
+        "id": 124727758400,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 41265555312,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Refuse deployment of an outdated commit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/configure-pages@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Deploy site",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "id": 124727759611,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 41265555312,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Select npm",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Install locked dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm run build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run npm run check:site",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/upload-pages-artifact@v3",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-node@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      }
+    ]
+  },
+  "browser": {
+    "in_app": "create/get tab both timed out",
+    "windows": "Computer Use stopped because current browser URL could not be reliably determined; no further UI actions",
+    "public_search": "not verified",
+    "public_mobile_viewport": "not verified"
+  },
+  "rollback": "Not executed on public site"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "site": "https://echoforge05.github.io/knowledge-hub/",
+  "deployed_sha": "ec1d977afda87250cd33f0fdcad9dda793b04d5e",
+  "search": [
+    {"query":"组件扫描","firstExpectedRank":1,"result":"Spring Boot 应用入口注解 > 三项能力"},
+    {"query":"ConcurrentHashMap","firstExpectedRank":1,"result":"ConcurrentHashMap 的基本使用边界"},
+    {"query":"restore_note_example.md","firstExpectedRank":1,"result":"Git 恢复：工作区与暂存区 > 显式指定来源"}
+  ],
+  "no_result": {"query":"zz_no_such_knowledge_20261101","message":"没有找到相关知识"},
+  "clicked_result_url":"https://echoforge05.github.io/knowledge-hub/git/restore-basics.html#%E6%98%BE%E5%BC%8F%E6%8C%87%E5%AE%9A%E6%9D%A5%E6%BA%90",
+  "mobile_navigation":"390x844: expanded 目录, clicked 阅读与搜索测试页, correct page loaded and menu closed",
+  "desktop":{"viewport":{"width":1280,"height":720},"rootWidth":1265,"scrollWidth":1265,"imageLoaded":true,"imageWidth":608.9765625},
+  "warnings_and_errors":[],
+  "screenshots":["mobile.png","desktop.png"],
+  "limitations":["Three representative online queries, not all 14 local queries.","Real mobile hardware, other browsers, concurrent deployments and failed production main build not tested.","Intermittent browser timeouts recovered by reading actual state before next action.","Full-page screenshot failed; viewport screenshots succeeded. No product changes."]
+}

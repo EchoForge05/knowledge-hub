@@ -1,0 +1,35 @@
+{
+  "code": [
+    {
+      "overflow": "auto",
+      "scroll": 615,
+      "width": 375
+    },
+    {
+      "overflow": "auto",
+      "scroll": 1687,
+      "width": 375
+    }
+  ],
+  "content": 375,
+  "images": [
+    {
+      "loaded": true,
+      "naturalWidth": 720,
+      "width": 326.984375
+    }
+  ],
+  "root": 375,
+  "tables": [
+    {
+      "overflow": "auto",
+      "scroll": 1238,
+      "width": 327
+    }
+  ],
+  "url": "https://echoforge05.github.io/knowledge-hub/examples/reading-check.html",
+  "viewport": {
+    "height": 844,
+    "width": 390
+  }
+}

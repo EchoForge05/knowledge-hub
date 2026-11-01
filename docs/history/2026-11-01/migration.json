@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-01",
+  "reason": "D032 current docs concise, full history preserved",
+  "changes_to_snapshots": "relative links rebased and history notice added; original prose retained",
+  "files": [
+    {
+      "source": "README.md",
+      "archive": "docs/history/2026-11-01/root/README.md",
+      "original_sha256": "749c2b2713109de4ab6b73e6738724157ce0fdc7395bdb9d7c78ced51a47a01c",
+      "archive_sha256": "e830727c683dff7dc4a560b4508aed280610ea954c0f7f5be4880f1f912f8a5d",
+      "original_lines": 67,
+      "current_lines": 16
+    },
+    {
+      "source": "docs/project/status.md",
+      "archive": "docs/history/2026-11-01/project/status.md",
+      "original_sha256": "2a554bab18c9ebfeaee0b15b24cb7f2ddf1183aecf077de1e2823a33b8c82337",
+      "archive_sha256": "2c6cdba0f5ed371db8491272360eaadb0f23c32e5c280147b75022321dad6bb0",
+      "original_lines": 29,
+      "current_lines": 20
+    },
+    {
+      "source": "docs/project/roadmap.md",
+      "archive": "docs/history/2026-11-01/project/roadmap.md",
+      "original_sha256": "a89f8d8332161e30097d52c755f9d127d7a444dd9339199631f37adea8c304bb",
+      "archive_sha256": "a3466d40f8917acdaa13f143fe9a1df674fa88d78df590e9d8c60c4f87573520",
+      "original_lines": 135,
+      "current_lines": 29
+    },
+    {
+      "source": "docs/project/decisions.md",
+      "archive": "docs/history/2026-11-01/project/decisions.md",
+      "original_sha256": "cbbf17cc0dac110aac9dcfb41480c2be97c6d27f1e2a4ca4569c466c31a6df2a",
+      "archive_sha256": "dd975d3c2d250702fa15ae6eee27770b31e8655afdc97f4d561fc1b5cd216926",
+      "original_lines": 103,
+      "current_lines": 17
+    },
+    {
+      "source": "docs/project/discussion-log.md",
+      "archive": "docs/history/2026-11-01/project/discussion-log.md",
+      "original_sha256": "48954ab1cf16c385295fb9b5da013a7ccabfdd13190b688122e3184c0d49c2a7",
+      "archive_sha256": "69402b9bd030d144f1262f303eff1e1d9ba64f48afee68fe321eed02187d032d",
+      "original_lines": 309,
+      "current_lines": 13
+    },
+    {
+      "source": "docs/project/completed-plans.md",
+      "archive": "docs/history/2026-11-01/project/completed-plans.md",
+      "original_sha256": "7a95a1348a1da151504ef5ea9fb8fdce6081887b4c0043860f11bcc2b8d0093c",
+      "archive_sha256": "41948f9fe9f7f461809fdfc18a5ea71410064431f1a2dd51f118e2b34daa77e3",
+      "original_lines": 132,
+      "current_lines": 13
+    },
+    {
+      "source": "docs/project/architecture.md",
+      "archive": "docs/history/2026-11-01/project/architecture.md",
+      "original_sha256": "982d3054927dfd03b960bf230b8cb1916ec57b07f3f33bb839f238b8ec439fef",
+      "archive_sha256": "9bc3cf72cf9175034940894f5d998f11d1d420de11b76799296bf2de1f1533de",
+      "original_lines": 79,
+      "current_lines": 18
+    },
+    {
+      "source": "docs/project/requirements.md",
+      "archive": "docs/history/2026-11-01/project/requirements.md",
+      "original_sha256": "9d0b0a38ae23d0f960731736a2bd9a09fa41ab1a7faa0a0129503c4f5bd7c9d0",
+      "archive_sha256": "55d425ce3d738544dfca03d0d83d6a6e7bd0594313ac95506e13a810f8cf8a46",
+      "original_lines": 72,
+      "current_lines": 19
+    },
+    {
+      "source": "docs/handbook/github-delivery.md",
+      "archive": "docs/history/2026-11-01/handbook/github-delivery.md",
+      "original_sha256": "742af7f3467785b804400e8390941ed5f1a5e3e5a9d354b0f7b8034e7c726bac",
+      "archive_sha256": "9b6e9d4364c57e8b42ac144e66ea9c822547f859925af82c4dda1ff2972e55b3",
+      "original_lines": 63,
+      "current_lines": 31
+    },
+    {
+      "source": "docs/handbook/development.md",
+      "archive": "docs/history/2026-11-01/handbook/development.md",
+      "original_sha256": "2c58cbc9c4bd9ca6431610e0e48df2ce494cc327a29239788055c2b2116b3391",
+      "archive_sha256": "9ccb71f486ed0d10e8aef18cd74e5f4325f5d5616cd8d98aba8f4bfde5d61c13",
+      "original_lines": 75,
+      "current_lines": 30
+    },
+    {
+      "source": "docs/handbook/git-setup.md",
+      "archive": "docs/history/2026-11-01/handbook/git-setup.md",
+      "original_sha256": "1be732345ef80e9dcf0f684245c198a3d4f6e89ccba93b0d4266eae2081c42b1",
+      "archive_sha256": "0239970cf5024bc23b4080788c3bcc5bb02f444568006551e6eba010ffb7532d",
+      "original_lines": 50,
+      "current_lines": 10
+    },
+    {
+      "source": "docs/project/pages-validation.md",
+      "archive": "docs/history/2026-11-01/project/pages-validation.md",
+      "original_sha256": "8127ad10ee7bbaff6bfc8172068c1f15e528d1d1b1ce953199b459d43ed69f03",
+      "archive_sha256": "c0ebb78458b11a3c82364800a654c54ab693a6f2ed27a53d4255539d7f862e15",
+      "original_lines": 43,
+      "current_lines": 19
+    },
+    {
+      "source": "docs/project/full-validation.md",
+      "archive": "docs/history/2026-11-01/project/full-validation.md",
+      "original_sha256": "0f33ac0f9a802765900aff82c534d81bfeb072cb7259b3e042e3db2bc78de12e",
+      "archive_sha256": "d5e1a3b387189334050127bc4c4bac172ee65ba0fd0ec438eca73d23c8df4329",
+      "original_lines": 41,
+      "current_lines": 13
+    },
+    {
+      "source": "docs/project/site-validation.md",
+      "archive": "docs/history/2026-11-01/project/site-validation.md",
+      "original_sha256": "6529aedef67789847b28ae7e6f1996f8f7ffc8aaf9ef84021b12fc5184e6284b",
+      "archive_sha256": "446468ae933251c67fe3f169da90c37c63246113699ebbc1b4b87896f9393cc0",
+      "original_lines": 77,
+      "current_lines": 5
+    },
+    {
+      "source": "docs/project/knowledge-pilot-validation.md",
+      "archive": "docs/history/2026-11-01/project/knowledge-pilot-validation.md",
+      "original_sha256": "53fe0bf574c52c124a44fec58215f3b899f8c506e9a370be4fbf92d955d8681b",
+      "archive_sha256": "122cd4fa53c958772e456894ff02775d4792f17bedae1cbc31e1827bd1fcef1f",
+      "original_lines": 57,
+      "current_lines": 5
+    },
+    {
+      "source": "docs/project/local-followup-validation.md",
+      "archive": "docs/history/2026-11-01/project/local-followup-validation.md",
+      "original_sha256": "1775995326c808ef3a97f6e7795c6596bac8e56228b38eb1c331dfef23f5579b",
+      "archive_sha256": "04add402fc630e9498d003e9caf80913b8e2122d4e29b03d44c47e9bef451dbe",
+      "original_lines": 56,
+      "current_lines": 9
+    }
+  ]
+}
