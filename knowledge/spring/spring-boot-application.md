@@ -1,7 +1,5 @@
 # Spring Boot 应用入口注解
 
-适用环境：Spring Boot 4.1.2 参考文档；核查日期：2026-10-31。示例仅展示入口结构，未安装或运行 Spring 应用。
-
 ## 三项能力
 
 `@SpringBootApplication` 组合自动配置、组件扫描和应用配置声明。它对应 `@EnableAutoConfiguration`、`@ComponentScan` 和 `@SpringBootConfiguration`。
@@ -19,8 +17,13 @@ public class Application {
 }
 ```
 
-该片段需要已有兼容的 Spring Boot 项目与依赖，不能独立作为完整项目编译。
+该片段按 Spring Boot 4.1.2 资料整理，需要已有兼容项目与依赖，不能独立作为完整项目编译；未运行验证。
 
-## 来源
+<details>
+<summary>适用范围与官方来源</summary>
+
+适用环境：Spring Boot 4.1.2 参考文档；核查日期：2026-10-31。示例仅展示入口结构，未安装或运行 Spring 应用。
 
 [Spring Boot：Using the @SpringBootApplication Annotation](https://docs.spring.io/spring-boot/reference/using/using-the-springbootapplication-annotation.html)。该地址会随官方当前版本更新；本文记录的是上述核查时版本。
+
+</details>

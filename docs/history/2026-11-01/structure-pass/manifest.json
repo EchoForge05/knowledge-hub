@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-01",
+  "note": "归档前工作区快照；sha256对应链接调整前原文，历史授权不续期。",
+  "snapshots": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-AGENTS.md",
+      "sha256": "d6414e901d3196144e5d7cacf9e8292ad66d134ce8e8da0b947972a8cf94fe90"
+    },
+    {
+      "source": "README.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-README.md",
+      "sha256": "4a522e35d7eda491636887cd2409d1dd45d6826086a4c3295f3301af183c949c"
+    },
+    {
+      "source": "docs/project/status.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-status.md",
+      "sha256": "37b186c7aa4bb51d4a18c798871d5a640bbd824a5145629438f28106dd03797d"
+    },
+    {
+      "source": "docs/project/decisions.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-decisions.md",
+      "sha256": "aee0996088e8e2029bc94da7ed9be4e986b2b54677057541cb8dd5b0e4fb9d4d"
+    },
+    {
+      "source": "docs/project/roadmap.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-roadmap.md",
+      "sha256": "c836a004b6235c9f3d5b0e4a78e0087685617f2e71e6368e3d0decf384d570ed"
+    },
+    {
+      "source": "docs/project/discussion-log.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-discussion-log.md",
+      "sha256": "1e2b07c3fc187121011e149662602099d5b98304668e8ee0094f9e87ee47e11e"
+    },
+    {
+      "source": "docs/handbook/development.md",
+      "snapshot": "docs/history/2026-11-01/structure-pass/before-development.md",
+      "sha256": "768f158ee68a3645811d53bcf8a0819e924005792c6007a00e28e5a87b92c8bc"
+    }
+  ],
+  "moves": [
+    [
+      "docs/project/completed-plans.md",
+      "docs/history/2026-11-01/structure-pass/completed-plans.md"
+    ],
+    [
+      "docs/project/site-validation.md",
+      "docs/history/2026-11-01/structure-pass/site-validation.md"
+    ],
+    [
+      "docs/project/pages-validation.md",
+      "docs/history/2026-11-01/structure-pass/pages-validation.md"
+    ],
+    [
+      "docs/project/local-followup-validation.md",
+      "docs/history/2026-11-01/structure-pass/local-followup-validation.md"
+    ],
+    [
+      "docs/project/knowledge-pilot-validation.md",
+      "docs/history/2026-11-01/structure-pass/knowledge-pilot-validation.md"
+    ],
+    [
+      "docs/project/full-validation.md",
+      "docs/history/2026-11-01/structure-pass/full-validation.md"
+    ]
+  ]
+}

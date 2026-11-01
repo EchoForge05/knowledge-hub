@@ -1,6 +1,6 @@
 # 发布与回退
 
-[公开知识站](https://echoforge05.github.io/knowledge-hub/) · [仓库](https://github.com/EchoForge05/knowledge-hub) · [验收摘要](../project/pages-validation.md)
+[公开知识站](https://echoforge05.github.io/knowledge-hub/) · [仓库](https://github.com/EchoForge05/knowledge-hub) · [验收摘要](../history/2026-11-01/structure-pass/pages-validation.md)
 
 ## 日常交付
 

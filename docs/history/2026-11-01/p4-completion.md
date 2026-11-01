@@ -6,7 +6,7 @@
 | --- | --- |
 | P4-01 | 正确身份、公开仓库、HTTPS 真实读写，见[既有归档](project/completed-plans.md#p4-01认证和远程读写) |
 | P4-02 | 真实 PR CI 成功，隔离分支坏链接失败、修复成功，见[CI 证据](../../project/evidence/p4/remote-ci.json) |
-| P4-03 | PR #1 合并 ec1d977，Pages 成功；HTTP/资源/锚点及本轮公开搜索/导航/桌面手机视口通过，见[当前验收](../../project/pages-validation.md) |
+| P4-03 | PR #1 合并 ec1d977，Pages 成功；HTTP/资源/锚点及本轮公开搜索/导航/桌面手机视口通过，见[当前验收](structure-pass/pages-validation.md) |
 | P4-04 | 维护/故障/回退指南、P2/P3 历史构建及本轮实际隔离 revert 通过，见[回退证据](../../project/evidence/p4/revert-validation.json) |
 
 线上代表验收：中文“组件扫描”、英文 ConcurrentHashMap、代码文件名 restore_note_example.md 均第1；无结果提示、结果点击到正确小节、手机目录导航通过。手机390×844根宽/内容宽375，桌面1265；代码/表格局部滚动、图片加载正常，warn/error为空。[交互证据](../../project/evidence/p4/public-browser/results.json)与手机/桌面截图保留。此前工具超时/安全中止为历史限制，当前已通过内置浏览器文档化 API 补齐，不绕过 Windows 安全限制。

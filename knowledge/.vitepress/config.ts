@@ -29,7 +29,7 @@ export default defineConfig({
         { text: '恢复工作区与暂存区', link: '/git/restore-basics' }
       ] },
       { text: 'Linux', items: [{ text: 'head 文本查看', link: '/linux/head-basics' }] },
-      { text: '站点验证', items: [
+      { text: '站点验证', collapsed: true, items: [
         { text: '阅读与搜索测试页', link: '/examples/reading-check' }
       ] }
     ],

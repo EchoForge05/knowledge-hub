@@ -1,24 +1,18 @@
 # 当前进度
 
-更新：2026-11-01。主维护使用Codex，GreatRouter/gpt-6-sol仅作可选辅助。
+更新：2026-11-01。Agent 恢复用；用户从根 README 进入。
 
-| 交付 | 状态 |
+| 内容 | 当前状态 |
 | --- | --- |
-| 知识站MVP（P2–P4） | 已上线并验收，6篇官方摘要、导航/搜索/富文本、CI与Pages可用 |
-| 知识维护 | Codex新建/增补/去重/矛盾处理流程已验证 |
-| 日常知识新增 | [Spring 单例 Bean 与线程安全](../../knowledge/spring/singleton-bean-thread-safety.md)经PR #6合并发布，共7篇；官方核查、构建及本地/线上页面、搜索、手机布局通过 |
-| 手动模型辅助 | 已合并main，7项离线测试和3份公开资料国内接入验收通过；[用法](../handbook/optional-ai.md) |
-| Issues接收 | D037表单及本地接收已通过PR #5合并，Linux CI通过；模型自动录入仍后置 |
-| 公开Issue导出 | 57f88bc经PR #6合并main；无需gh或密钥，显式GET导出；14项Issue测试及Linux CI通过，L04/V07完成 |
+| 静态知识站 P2–P4 | 已上线验收，7篇文章，导航、全文搜索、富文本、CI/Pages可用 |
+| Codex知识维护 | 新建、增补、去重、矛盾处理流程已验证 |
+| 可选手动草稿 | 已合并；7项离线测试与3次公开资料调用验收，额度已用尽 |
+| Issue表单、导出与离线接收 | 已交付；14项离线测试及CI通过，真实正向往返 V06 尚未验收 |
+| 本地阅读修订 L05 | D042纠正后的完整知识解释及29项浏览器回归已通过；按D047纳入本地main同步批次，远程未交付/发布 |
+| 完整本地离线阅读 L06 | 尚未实现，方案待确认；不能以dev/preview代替 |
+| 项目分离与复制 | Hub/Agent已置于knowledge-workspace，各自独立Git；旧目录用户自行删除 |
+| D046 文档整理 | README用户路由、开发导航及架构文件说明已整理；历史回执归档，功能和待办保留 |
 
-[网站](https://echoforge05.github.io/knowledge-hub/) · [完成索引](completed-plans.md) · [历史库](../history/README.md)
+[待办](backlog.md)记录全部未完成明细，[计划](roadmap.md)记录顺序。Agent当前规划不在Hub维护。
 
-阅读精简（D040，2026-11-01）：Spring文章及后续[开发规范](../handbook/development.md#知识文章的阅读精简)经[PR #8](https://github.com/EchoForge05/knowledge-hub/pull/8)合并为acf569a，[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41292949763)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41293014285)成功，本地main已同步。正文、搜索及手机检查见[本地回执](evidence/knowledge/spring-reading-browser.json)；线上已核对补充资料默认折叠、可展开版本与4个官方链接并再次折叠。收尾记录按同批授权交付，最终SHA以Git实查为准。
-
-上一批按D036完成提交、推送和检查后合并：[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)合并点9e87939，[PR #3](https://github.com/EchoForge05/knowledge-hub/pull/3)合并点86c1f50，包含模型功能c207677/aaa417e与文档整理7ddce23。当时已同步本地main，旧分支保留；交付证据见[完成记录](completed-plans.md)。
-
-D038按授权推送并合并[PR #5](https://github.com/EchoForge05/knowledge-hub/pull/5)，head=73292ea、合并点9a0b160；[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41283712615)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41283825644)成功，本地main已同步。表单文件已核对进入远程main，浏览器需登录，真实表单展示/Issue往返仍未验收。
-
-D039已交付[PR #6](https://github.com/EchoForge05/knowledge-hub/pull/6)，head=83e91b1、合并点92a8ded；[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41290113085)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41290170419)成功，本地main已快进同步。收尾说明通过docs/d039-delivery短期分支交付，最终SHA以Git实查为准，旧分支保留；接收仍离线，无Issue事件或后台工作流。工程分析文档为快照，建议仍待审核。
-
-未实现、未验证、依赖风险及未排期能力统一维护在[待办登记](backlog.md)。D034的3次验收额度已用尽；后续PR不自动合并，不发布模型草稿或启用Issues自动处理。
+历史交付SHA、PR/CI/Pages链接与逐页证据见[归档](../history/2026-11-01/structure-pass/README.md)。当前本地成果不代表已上线。
