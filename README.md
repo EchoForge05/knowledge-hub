@@ -5,6 +5,8 @@
 **知识站已上线，P2–P4 的 MVP 验收完成；GreatRouter/gpt-6-sol 可选草稿辅助已通过3份公开资料验收，主维护仍用Codex。**
 
 - [打开知识站](https://echoforge05.github.io/knowledge-hub/)
+- [完整使用说明](docs/handbook/usage.md)：阅读、搜索、提交笔记、Issue接收、本地运行与发布。
+- [Issue人工接收](docs/handbook/issue-intake.md)：无密钥离线校验与显式接收；表单待合并上线。
 - [当前进度](docs/project/status.md) · [待办登记](docs/project/backlog.md) · [后续顺序](docs/project/roadmap.md)
 - [阅读与内容维护](docs/handbook/site-development.md) · [发布与回退](docs/handbook/github-delivery.md)
 - [可选模型草稿](docs/handbook/optional-ai.md)：GreatRouter 辅助入口，默认预览，主流程仍为 Codex。
