@@ -4,10 +4,11 @@
 
 本项目主要负责搭建和维护知识站，优先完成阅读、导航、搜索、内容展示与发布；知识整理流程作为配套。
 
-**当前阶段：P2/P3 已验收，已有 6 篇官方资料摘要；P4 已获授权，本地 CI/Pages 配置已准备并检查，公开仓库和草稿 PR 已建立；完整复验及真实 PR 成功、隔离分支 CI 失败/修复验证通过，P4-02 已归档；公开站点部署待验收。P5 等用户确认 AI 服务后开工。**
+**当前阶段：P2/P3 已验收，已有 6 篇官方资料摘要；P4 已获授权，PR #1 已合并，CI 与 Pages 真实发布成功；公开页面及资源 HTTP 检查通过，线上搜索交互和手机视口仍待验收，P4 整体未完成。P5 等用户确认 AI 服务后开工。**
 
 ## 从这里开始
 
+- [公开站点发布与验收](docs/project/pages-validation.md)：实际部署、HTTP 验证、浏览器限制和下一步。
 - [已完成功能与完整复验](docs/project/full-validation.md)：功能清单、验证方案、实际结果和证据边界。
 - [需求与范围](docs/project/requirements.md)：用户目标、已确认约束和本次工作边界。
 - [项目状态](docs/project/status.md)：实际完成情况、验证记录和下一步入口。
@@ -55,7 +56,7 @@ knowledge-hub/
 
 本地仓库采用 `main` 与短期功能分支。已确认目标为公开仓库 `EchoForge05/knowledge-hub`，使用 HTTPS，配置与连接的实际状态见 [Git 配置记录](docs/handbook/git-setup.md)。基础提交 `1a6cb54` 与文档提交 `a102ca7` 已完成；P2 成果及中文提交规范已提交为 `dbf620f feat: 搭建本地知识站并落实验证后中文提交规范`。后续自动更正与同步文档；按 D023，新增开发验证成功后可做一次本地提交，每次用中文说明更新内容，不自动推送。提交者为 `EchoForge05`，本仓库使用基于已核实 GitHub 账号 ID 的 noreply 邮箱。后续知识变更由 Agent 整理并检查、用户审核 PR 合并。
 
-**D029 的完整提交与 push 已落实；D030 继续 P4，已完成 CI 验收。** [公开仓库](https://github.com/EchoForge05/knowledge-hub)已创建，既有历史已推送，[PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1)已交付 42bdcd6 完整成果，CI 验收已补齐，等待用户审核合并；不自动合并。站点尚未部署。
+**D031 已授权并完成 PR #1 合并，继续 P4 发布验收。** [公开仓库](https://github.com/EchoForge05/knowledge-hub)与[知识站](https://echoforge05.github.io/knowledge-hub/)已可访问；合并提交 ec1d977 的 Pages 发布成功。当前仅本次 PR #1 获合并授权，后续 PR 仍需用户审核；线上交互验收限制见[发布记录](docs/project/pages-validation.md)。
 
 优先交付 MVP，范围与验收草案见 [阶段计划](docs/project/roadmap.md)。技术栈已确认：Markdown/Git、VitePress 稳定版与默认主题、TypeScript 配置、Node.js LTS/npm、内置 MiniSearch；后续 GitHub Pages/Actions。当前锁定 VitePress 1.6.4，实际环境与搜索验证见本地验收记录。
 

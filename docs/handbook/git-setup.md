@@ -44,3 +44,7 @@ main 基线 1a6cb54 与功能分支既有历史 14cc80b 已正常 push，远程 
 5. 首次推送后才算 GitHub 备份可用；站点发布仍属于后续开发阶段。
 
 D019 的一次文档提交已完成：`a102ca7 docs: review and preserve knowledge site development plan`，未推送；本轮通过 `git log -3` 复核。该次授权已使用；D020 本身不包含提交授权，D023 现允许新增开发验证成功后做一次本地提交，每次用中文说明更新内容，不包含推送。P2 已按 D023 提交为 `dbf620f`；本轮用户另行授权更新文档后提交一次（D024），不包含推送。后续应从本文件的事实状态继续，不能把历史“先调通 Git”的目标当作已经完成。
+
+## D031 合并与发布回执
+
+2026-11-01，PR #1 的 head=3bb3e2e、成功 CI 核对后，按用户明确授权以 merge 合并为 ec1d977afda87250cd33f0fdcad9dda793b04d5e。origin/main 已 fetch，当前 docs/pages-delivery 基于该提交保存发布证据与同步文档；前次失败邮件核查的未提交记录已保留。Pages 已实际发布，详见[验收](../project/pages-validation.md)。后续 PR 仍待用户审核，不由本次合并授权推定可自动合并。

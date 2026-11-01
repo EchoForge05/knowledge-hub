@@ -1,0 +1,232 @@
+{
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "base": "https://echoforge05.github.io/knowledge-hub/",
+  "deployed_sha": "ec1d977afda87250cd33f0fdcad9dda793b04d5e",
+  "pages": 11,
+  "resource_requests": 16,
+  "checked_page_anchors": 50,
+  "missing_anchors": [],
+  "requests": [
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/guide.html",
+      "status": 200,
+      "bytes": 18505,
+      "sha256": "1a7d99d13cb1ebd635b4a7bdd78680a8f42ccaf63122fe940617589b0b020d6f",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/",
+      "status": 200,
+      "bytes": 10927,
+      "sha256": "ff51fc0c16bbe3ae6d917a9e843853740950419cd9a5deb5001a92afd6ac6beb",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/topics.html",
+      "status": 200,
+      "bytes": 18320,
+      "sha256": "aef5a2ab1ae786a6458dcf9976b73ffc9e02e5ee36e102606832a61c5c41c66a",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/databases/select-basics.html",
+      "status": 200,
+      "bytes": 20373,
+      "sha256": "84028021b7b79924e4df03b2743438c9d52b5ffd725418360f07f33279210609",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/examples/reading-check.html",
+      "status": 200,
+      "bytes": 21407,
+      "sha256": "094fbcc11a232e34954effa50cbfbe4ec704e3c8d7d5598858308dde75ee6e04",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/git/diff-basics.html",
+      "status": 200,
+      "bytes": 19923,
+      "sha256": "d8378550e3b4cd05678dfbd7cc61c0899a17810f867c12161bdbbe4feb2090a7",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/git/restore-basics.html",
+      "status": 200,
+      "bytes": 21389,
+      "sha256": "a8375fa28a442af1db955314de902703c4e2d5da531a2bf666566ad8c39c46a0",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/java/concurrent-hash-map.html",
+      "status": 200,
+      "bytes": 20108,
+      "sha256": "6c514e2591f6d125b32a9590f7e0a3a9ae4d5534bb76fba8dd7e1b698255658f",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/linux/head-basics.html",
+      "status": 200,
+      "bytes": 19132,
+      "sha256": "35371797766c1e20157c5158fa8814755f4591147d4493691cba8f67208a7af9",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/spring/spring-boot-application.html",
+      "status": 200,
+      "bytes": 20552,
+      "sha256": "72242397313bfed7e676d7801e841b1f9045c006a976829f2f1f7c6fba06ce28",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/404.html",
+      "status": 200,
+      "bytes": 4132,
+      "sha256": "7f6a346222f361c568f33a7b8b867af84933435b6babf6247869c1562506ffcd",
+      "content_type": "text/html; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/app.GvQr_PGh.js",
+      "status": 200,
+      "bytes": 1352,
+      "sha256": "927a207ed0e1a523685016d89f28c0540d94a84fed28b0470cce739c422699de",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/chunks/framework.VcGem6ks.js",
+      "status": 200,
+      "bytes": 115007,
+      "sha256": "e8794dde587bd3ef759437cc0ad3ba5e7fdf4c237d7cf240852360871913223a",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/chunks/theme.B9Dub33k.js",
+      "status": 200,
+      "bytes": 53733,
+      "sha256": "01d89bf50fdb846c22ca837be02f473b1c2378a193253ac7c2d9ccd37618aa24",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/databases_select-basics.md.CBiFUcIL.lean.js",
+      "status": 200,
+      "bytes": 458,
+      "sha256": "36670cbfd463f29829248ae7c74023f11aa166bd46ef125ef2a9c07ea84f5ab1",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/examples_reading-check.md.C_KPSBoL.lean.js",
+      "status": 200,
+      "bytes": 1425,
+      "sha256": "aede31e6a821b3a532e1a69a86104acee93566a6bf756dbc2107e28534a56a26",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/git_diff-basics.md.C3R7F8j7.lean.js",
+      "status": 200,
+      "bytes": 437,
+      "sha256": "12aaaa769c24c742aafbb54c236a80d94417ccd081e277cf1bbabcb928bfff9c",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/git_restore-basics.md.DNUf73EK.lean.js",
+      "status": 200,
+      "bytes": 440,
+      "sha256": "98f28b167c736ff98fb1870e191d188f6ccfa23e6ad2b680626751db4dff4fa3",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/guide.md.DRclvVLN.lean.js",
+      "status": 200,
+      "bytes": 379,
+      "sha256": "3acf87aeb2cf8722488408e815dc2a5c644b48cf79a6311aebfd154db595b54c",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/index.md.B-DHVgQ_.lean.js",
+      "status": 200,
+      "bytes": 945,
+      "sha256": "725d23687b401b22613d085999f1bb0cb30c80feb081a7e9b5c3f88f3bdf8bad",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/inter-roman-latin.Di8DUHzh.woff2",
+      "status": 200,
+      "bytes": 67792,
+      "sha256": "f7ab715caa2c78facb4334b211c81ee66f037cf9c99ca3f24acd543e84a93278",
+      "content_type": "font/woff2",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/java_concurrent-hash-map.md.BekyHXvh.lean.js",
+      "status": 200,
+      "bytes": 463,
+      "sha256": "bd7a3917a20fed6bab2a4f3584f22fc56c3e1ee424b5d9f01c22d09db9de35d8",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/linux_head-basics.md.CkD9atYM.lean.js",
+      "status": 200,
+      "bytes": 428,
+      "sha256": "a27f7ac9afd9367121d2cac9b6faf3c851ce482a4296b6d200e3e8e9bd1b9ab0",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/spring_spring-boot-application.md.s-sEEaK_.lean.js",
+      "status": 200,
+      "bytes": 472,
+      "sha256": "c804e0121890319e28e70f6e3322f41913f2ff07b449bf77dbd6779f3b47b6b0",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/style.U2stb3je.css",
+      "status": 200,
+      "bytes": 113007,
+      "sha256": "65f12bf9957c2ae5ccb4fc14447fbcfc22a44967f364135f6b85be68993e03e6",
+      "content_type": "text/css; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/assets/topics.md.C23RyQVd.lean.js",
+      "status": 200,
+      "bytes": 381,
+      "sha256": "08847d5513961646e0ab334f96fcebaf9a3d4f20ec736bc35ef71b94e4970402",
+      "content_type": "application/javascript; charset=utf-8",
+      "attempts": 1
+    },
+    {
+      "url": "https://echoforge05.github.io/knowledge-hub/vp-icons.css",
+      "status": 200,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content_type": "text/css; charset=utf-8",
+      "attempts": 1
+    }
+  ],
+  "limitations": [
+    "HTTP and HTML only; no JavaScript execution or browser layout validation.",
+    "Search interaction and mobile viewport on the public URL remain unverified."
+  ]
+}

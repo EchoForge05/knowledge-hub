@@ -122,3 +122,11 @@
 步骤原始摘要见 [remote-ci.json](evidence/p4/remote-ci.json)。连接器仅查 PR 事件，分支 push 运行通过官方 API 只读查询后，再用连接器读取 jobs/logs；凭据不保存或输出。本地 Git 锁和受限网络首次失败后使用审批执行正常 Git 操作，没有强推或改写历史。验证分支保留用于追溯，不新建重复 PR、不合并。
 
 限制：故障/修复为 push 事件，非 PR 故障事件；未验证 main 构建失败不发布、Pages 并发、公开访问或线上回退，继续由 P4-03/P4-04 承接。P4 整阶段未完成，依赖风险与 P5 边界不变。
+
+## P4-03-deploy：合并发布与公开 HTTP 核验
+
+完成/归档日期：2026-11-01。沿用父任务 P4-03，仅归档限定子项：按 D031 合并 PR #1、配置 Pages Actions 来源与 main 部署限制、实际成功发布，并核验公开页面与静态引用。
+
+PR #1 正常合并为 ec1d977；发布运行 41265555312 首次因 Pages 尚未启用失败，build 通过、Deploy site 跳过，设置 workflow 来源和仅 main/branch 环境策略后重跑成功。实际公开地址 https://echoforge05.github.io/knowledge-hub/ ，HTTPS enforced=true；11 HTML、16 直接引用资源/其他 URL 全部 HTTP 200，50 个页面锚点存在。证据、首次失败、检查脚本修正与网络重试详见[Pages 验收](pages-validation.md)及其 JSON 摘要。
+
+限制/去向：未执行线上 JS/搜索点击/手机视口验收，浏览器工具因超时及无法可靠确认 Windows URL 中止。父任务 P4-03、P4-04 与 P4 整阶段继续留路线图；线上回退、main 构建失败不发布和并发效果未动态验证。不把本子项归档等同 MVP 完成。

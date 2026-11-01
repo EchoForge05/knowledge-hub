@@ -1,29 +1,27 @@
 # 项目状态与续接入口
 
-更新日期：2026-11-01（Asia/Shanghai）。当前 feat/pages-ci。P2/P3、本地遗留队列及 P4-01/P4-02 已验收；D029 恢复本轮提交/推送并授权缺失时先创建仓库，现已落实。完整结果见[功能与复验汇总](full-validation.md)。P4 整体未完成，P5 等 AI 服务确认。
+更新日期：2026-11-01（Asia/Shanghai）。当前 docs/pages-delivery，基于 origin/main=ec1d977。D031 已授权并完成 PR #1 合并及 P4 Pages 发布；P4-01/P4-02 和 P4-03-deploy 限定子项完成，P4 整体未完成。P5 等 AI 服务确认。
 
-## 已完成与复验
+## 已完成与验证
 
-- VitePress 知识站：首页、分类/侧栏/本页目录、指南、全文搜索、代码/表格/图片、手机视口阅读；现有 6 篇有版本和来源的官方资料摘要。
-- P3 同主题新建、增补、完全/近义重复去重、矛盾与待核实输入处理，原过程见[维护验收](knowledge-pilot-validation.md)。本轮复核 s2–s6 哈希一致，未重放原语义操作。
-- P4-L01 完整带点文件名修复；P4-L02 兼容路径评估完成但开发工具链 3 项风险未修复；P4-04-local-build 两份历史构建通过。限定范围见[本地遗留验证](local-followup-validation.md)，不代表线上回退。
-- 本轮构建 2.70 秒、11 HTML/275 引用通过；初始文档 30 份/132 链接，新增汇总后再做收尾检查，结果记讨论日志。
-- 14 组浏览器查询均前 5 条命中，文件名第 1；无结果、小节跳转、上一篇、手机目录通过。桌面根宽/内容宽均 1265，390×844 视口均 375，代码和宽表格局部横向滚动、图片正常；真实手机未验证。
-- 工作流 YAML、最小权限/分支/命令/依赖及旧 SHA 保护检查通过；真实脚本在隔离坏链接夹具 exit 1，修复后 exit 0。YAML 不等于 Linux runner 或实际 CI。
-- 文档严格编码、LF、标题层级/围栏通过；候选文件及可达历史 174 blob 的常见密钥模式无命中，非完整审计。私有工具、依赖和构建产物均忽略。
+- P2/P3：默认主题 VitePress 知识站、6 篇官方资料摘要、阅读导航与中文/英文/代码搜索、知识增补/去重/矛盾处理试点已验收，见[完整复验](full-validation.md)。本地 14 组搜索与 390×844 视口证据保留，本轮未冒充线上结果。
+- P4-L01 文件名搜索修复、P4-L02 兼容路径评估及 P4-04-local-build 两份历史构建通过；开发工具链 3 项 audit 风险仍未修复，详见[本地遗留验证](local-followup-validation.md)。
+- P4-02 真实 PR 检查成功，隔离分支坏链接运行 41265093401 预期失败、恢复运行 41265169454 成功，证据见 [remote-ci.json](evidence/p4/remote-ci.json)。用户收到的那次失败邮件对应故障测试；正式 PR 最新提交 3bb3e2e 的检查 41265362462 成功后，现已按 D031 合并。
+- main 合并提交 ec1d977afda87250cd33f0fdcad9dda793b04d5e 的 [Pages 发布 41265555312](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265555312) 成功；首次因 Pages 未启用而失败，启用 workflow 来源并设置 github-pages 仅 main/branch 可部署后，重跑恢复成功。
+- [公开站点](https://echoforge05.github.io/knowledge-hub/)的 11 个 HTML、16 个直接引用资源/其他 URL 均 HTTP 200，50 个页面锚点存在。仅静态 HTTP/HTML 核验，不替代 JS 交互或布局检查；完整结果见[发布验收](pages-validation.md)。
 
 ## 环境与 Git
 
-- 默认 Node 14/npm 6 不兼容；按[开发说明](../handbook/site-development.md)复用缓存 Node 24.22.1/npm 11.19.1，框架精确锁定 VitePress 1.6.4。不更改全局环境或身份。
-- 作者 EchoForge05，仓库局部 noreply 邮箱；origin=https://github.com/EchoForge05/knowledge-hub.git，公开、HTTPS。正常 GCM 登录与官方 API 核对用户 ID44670012 后创建空仓库，连接器也确认 public/admin/push。
-- P4-01 已验收：main=1a6cb54、功能分支既有历史=14cc80b 正常推送，远程 SHA 读回一致；[草稿 PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1)已创建、未合并。此前 404/无登录/直连超时已解决，使用既有本机代理按命令生效，未改变系统/全局代理。
-- 搜索修复、工作流、证据和关联文档已提交为 42bdcd6，并正常 push，远程 SHA 一致；真实 PR 检查成功。D028 曾暂缓，现由 D029 本轮明确恢复；不强推、不自动合并。
+- 本机默认 Node 14 不兼容，按[开发说明](../handbook/site-development.md)复用缓存 Node 24.22.1/npm 11.19.1，VitePress 1.6.4；不改全局环境或身份。
+- origin=https://github.com/EchoForge05/knowledge-hub.git，公开、HTTPS；作者 EchoForge05，仓库局部 noreply 邮箱。网络按命令复用既有本机代理，凭据仅驻内存，不落盘或输出。
+- [PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1) 已合并，3bb3e2e 与此前完整成果均进入 main；验证分支 codex/ci-validation 不合并。本次发布证据和配套文档在 docs/pages-delivery，检查后正常提交/push 并交付新的审核 PR；最终凭证见 git log/PR，不预写未知 SHA。
+- 本轮开始发现前次失败邮件核查留下的 3 份未提交文档记录，已阅读并保留历史/说明，同批同步，没有覆盖用户未提交内容。
 
 ## 未完成与下一步
 
-1. P4-02 已完成：PR 运行 41264722214 成功；隔离 codex/ci-validation 分支坏链接运行 41265093401 按预期失败（check exit 1，build/check:site 跳过），恢复运行 41265169454 成功。两次验证提交后文件树与 42bdcd6 完全相同，无故障内容进入正式 PR；证据见 [remote-ci.json](evidence/p4/remote-ci.json)。
-2. 用户审核合并后推进 P4-03：Pages 来源、环境限制、部署及公开首页/深链/图片/搜索/手机视口验收。仓库公开可读，知识站尚未部署。
-3. P4-04 的实际公开回退未执行。依赖风险待上游兼容补丁或迁移范围确认；P5 仍待用户 AI 服务、费用和数据外发确认，不调用付费模型。
-4. 先前 knowledge-hub-p4 在限定本地队列完成后已删除，无自动唤醒，本轮未重建。额度不是当前阻塞原因，后续仍按 D027 保存和续接规则执行。
+1. P4-03：浏览器可用后在公开 URL 验证中文/英文/代码/完整文件名搜索、无结果与点击跳转，以及 390×844 视口目录/图片/局部滚动。内置浏览器两次连接超时，Windows Computer Use 因无法可靠确认当前 URL 中止本轮，已停止 UI 操作；不是额度或自动审批拒绝。
+2. P4-04：操作/故障/回退指南已有，历史隔离构建已通过；实际公开 revert/回退未执行，main 构建失败不发布及并发部署未动态验证，不提前归档整个 P4。
+3. 开发依赖风险等待兼容补丁或迁移范围确认；P5 等用户确认服务、费用及数据外发，不调用付费模型。
+4. 当前无续执行自动化，本轮未重建；额度普通使用允许，阶段开始短窗口 29%、周窗口 56%。下次先核对 Git、最新消息与工具状态，沿 [pages-validation.md](pages-validation.md) 的具体交互清单继续。
 
-新会话先读 AGENTS、README、本文、决策、路线图及最近讨论，再读[完整复验](full-validation.md)、[交付说明](../handbook/github-delivery.md)与实际 Git/PR 状态。
+收尾先运行文档编码/结构/链接与差异检查；生产代码、知识和依赖未改，不重复本地构建或将 HTTP 检查冒充浏览器验收。最终检查、提交与 PR 回执见讨论及本轮回复。

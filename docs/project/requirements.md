@@ -54,7 +54,7 @@
 
 ## 验收场景与证据
 
-A01–A03 已完成 P3 本地维护试点，见[维护验收](knowledge-pilot-validation.md)；A04/A05/A07 已完成 P2 本地验收并补 P3 增量检查。A06/A08 的仓库读写及草稿 PR 已实际完成；真实 PR 成功及分支失败/修复 CI 已验收，用户合并后的站点发布仍待验收。试点不等于任意未来输入的自动整理保证。
+A01–A03 已完成 P3 本地维护试点，见[维护验收](knowledge-pilot-validation.md)；A04/A05/A07 已完成 P2 本地验收并补 P3 增量检查。A06/A08 的仓库读写及草稿 PR 已实际完成；真实 CI 已验收，D031 合并 PR #1 后站点发布及 HTTP 检查通过，线上搜索交互与手机视口仍待验收。试点不等于任意未来输入的自动整理保证。
 
 | 编号 | 场景 | 成功条件 |
 | --- | --- | --- |
@@ -69,4 +69,4 @@ A01–A03 已完成 P3 本地维护试点，见[维护验收](knowledge-pilot-va
 
 ## 尚需明确
 
-GitHub 本地认证、远程连接、外部交付验收、AI 外发范围与预算仍需落实。来源保存格式已通过 P3 写入知识整理流程；首批 5 篇基线见 site-validation.md，新增第 6 篇及维护证据见 knowledge-pilot-validation.md。用户已提供姓名/昵称 EchoForge05；Agent 采用已核实账号 ID 对应的标准 noreply 邮箱完成本仓库身份配置，该邮箱不是用户提供的私人邮箱。公开范围、仓库名、所属账号、HTTPS、技术栈方向及 PR 审核方向已确认。详见 [决策记录](decisions.md)。
+GitHub 本地认证、远程连接、PR/CI 和 Pages 发布已落实；外部交付仍缺线上浏览器交互验收，AI 外发范围与预算仍待确认。来源保存格式已通过 P3 写入知识整理流程；首批 5 篇基线见 site-validation.md，新增第 6 篇及维护证据见 knowledge-pilot-validation.md。用户已提供姓名/昵称 EchoForge05；Agent 采用已核实账号 ID 对应的标准 noreply 邮箱完成本仓库身份配置，该邮箱不是用户提供的私人邮箱。公开范围、仓库名、所属账号、HTTPS、技术栈方向及 PR 审核方向已确认。详见 [决策记录](decisions.md)。

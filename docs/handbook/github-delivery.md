@@ -1,10 +1,10 @@
 # GitHub 检查与 Pages 交付
 
-更新日期：2026-11-01（Asia/Shanghai）。D027 已授权推进 P4，当前仓库读写和草稿 PR 已完成，本地配置与复验通过；真实 PR 成功及隔离分支 CI 失败/修复已验收，Pages 尚未验收。D012 的用户审核 PR 并合并约定仍有效。P5 等用户确认 AI 服务后再开工。
+更新日期：2026-11-01（Asia/Shanghai）。D027 已授权推进 P4，当前仓库读写和草稿 PR 已完成，本地配置与复验通过；真实 CI 已验收，D031 已授权并完成 PR #1 合并，Pages 实际发布和 HTTP 核验通过，线上交互仍待验收。后续 PR 仍遵守用户审核合并约定。P5 等用户确认 AI 服务后再开工。
 
-D029 已解除 D028 暂缓，授权本轮完整复验、同步文档后一次中文提交及 push；用户补充缺失时先创建仓库。现已创建公开仓库并完成首次正常推送，草稿 PR #1 已建立。本轮验证与边界见[汇总](../project/full-validation.md)，不自动合并或提前部署。
+D029 已解除 D028 暂缓，授权本轮完整复验、同步文档后一次中文提交及 push；用户补充缺失时先创建仓库。现已创建公开仓库并完成首次正常推送，草稿 PR #1 已建立。历史复验见[汇总](../project/full-validation.md)；D031 当前合并发布授权及实际结果见[Pages 验收](../project/pages-validation.md)。
 
-本地续接结果：文件名搜索已修复并通过 14 组浏览器回归，依赖修复兼容路径已核查（当前稳定依赖范围内没有已发布修复候选，风险未消除），P2/P3 历史快照隔离构建通过，见[本地遗留验证](../project/local-followup-validation.md)。实际 revert/线上回退和 Pages 仍未完成；CI 证据见下文。
+本地续接结果：文件名搜索已修复并通过 14 组浏览器回归，依赖修复兼容路径已核查（当前稳定依赖范围内没有已发布修复候选，风险未消除），P2/P3 历史快照隔离构建通过，见[本地遗留验证](../project/local-followup-validation.md)。实际 revert/线上回退、公开搜索和手机视口仍未验收；Pages 已成功部署，CI 证据见下文。
 
 ## 已准备的配置
 
@@ -29,7 +29,7 @@ D029 已解除 D028 暂缓，授权本轮完整复验、同步文档后一次中
 2. 目标 origin 已在本地配置为 https://github.com/EchoForge05/knowledge-hub.git 。网络和登录就绪后只读验证 refs，再确认远程 main 历史；若远程已有提交，先比较，不覆盖、不强推。若需创建仓库，使用既定公开空仓库方向，不初始化额外 README/许可证提交。
 3. main=1a6cb54 与功能分支既有历史=14cc80b 已正常推送且 refs 一致，[草稿 PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1)已建立。42bdcd6 已推送且真实 PR CI 成功；本次按续开发要求在独立 codex/ci-validation 分支保留两次必要验证提交，坏链接失败、移除后成功，文件树完全恢复且不合并该分支。
 4. 在仓库 Pages 设置选择 GitHub Actions，确保 github-pages 环境只允许 main。设置操作需正常账号权限；不得新建令牌或扩大权限来绕过登录缺失。
-5. 用户审核并合并 PR 后，检查发布工作流运行与实际 URL；逐项验证首页、深层链接、图片、中文/英文/代码搜索、结果跳转及手机视口。预期地址为 https://EchoForge05.github.io/knowledge-hub/ ，当前尚不存在已验证的站点，不能当作可访问结果提供。
+5. PR #1 已按 D031 合并为 ec1d977；[公开站点](https://echoforge05.github.io/knowledge-hub/)及[发布运行](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265555312)已验证成功。11 HTML/16 直接引用资源或 URL/50 锚点通过 HTTP/HTML 核验；线上搜索交互和手机视口仍待浏览器实测，不能用本地结果代替。
 
 ## 故障与回退
 
@@ -50,4 +50,14 @@ D029 已解除 D028 暂缓，授权本轮完整复验、同步文档后一次中
 
 2026-11-01：42bdcd6 的 [PR 运行成功](https://github.com/EchoForge05/knowledge-hub/actions/runs/41264722214)；隔离分支 c353df9 的 [坏链接运行失败](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265093401)，确认 check exit 1 且 build/check:site 跳过；6e06b24 移除夹具后 [恢复运行成功](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265169454)。验证分支文件树与 42bdcd6 一致，未合并夹具。故障/恢复事件是 push，成功 PR 事件独立保留；原始摘要见 [CI 证据](../project/evidence/p4/remote-ci.json)。
 
-P4-02 已归档。下一步由用户审核合并 PR #1，再配置/核验 Pages 来源和环境限制、观察 main 发布，并验证公开站点。当前未提前部署或验证线上回退。
+P4-02 已归档，PR #1 随后按 D031 合并。Pages workflow 来源、github-pages 仅 main/branch、HTTPS enforced 均已设置并读回，成功发布；首次未启用 Pages 的失败、修复与受工具限制的剩余验收见[发布记录](../project/pages-validation.md)。未执行线上回退。
+
+失败通知说明：运行 41265093401 是上述隔离分支的故障测试，会产生 GitHub 失败邮件。移除测试夹具后的成功结果在运行 41265169454；历史失败记录仍保留原结论，排查时应同时核对分支、提交及后续运行。2026-11-01 再次读取 GitHub 日志及运行结果，正式 PR 最新提交 3bb3e2e 的 [检查 41265362462](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265362462) 已成功。
+
+## 当前发布与维护操作
+
+公开入口为 https://echoforge05.github.io/knowledge-hub/ 。日常修改在短期分支完成文档与受影响功能检查，推送后查看 PR 的 Knowledge checks，交由用户审核合并。main 自动执行 Publish knowledge site；成功时核对部署提交与当前 main 一致，再访问首页和变动页面。独立部署权限仅在 deploy 任务，PR 检查不持有 Pages 写权限。
+
+本次首次部署因 Pages 未启用在 configure-pages 失败，修复设置后重跑恢复，不应反复重跑尚未修复原因的旧故障。排查时先区分文档/安装/构建、Pages 设置、环境分支规则与网络问题；保留旧运行/attempt 记录，不删除失败历史来代替修复。浏览器工具若因当前 URL 检查中止，停止 UI，不绕过；静态 HTTP 检查仅作有限证据。
+
+回退仍走新分支与 revert PR：记录错误运行和提交，选定已验证历史点，在隔离目录验证恢复后的源码/依赖/链接/构建，再交由用户审核合并；由新 main 发布恢复内容，不强推。合并提交的 revert 需明确父线（通常 main 父线），执行前审阅差异。实际线上回退本轮未执行，不能因历史快照可构建就称为已验收。
