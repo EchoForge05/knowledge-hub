@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-01",
+  "base": "http://localhost:4180/knowledge-hub/",
+  "method": "Isolated headless installed Chrome via existing Playwright; no user profile",
+  "results": [
+    {
+      "check": "目录到新文章及正文",
+      "url": "http://localhost:4180/knowledge-hub/spring/singleton-bean-thread-safety.html",
+      "passed": true
+    },
+    {
+      "check": "搜索及结果跳转",
+      "query": "单例",
+      "rank": 1,
+      "url": "http://localhost:4180/knowledge-hub/spring/singleton-bean-thread-safety.html#%E5%8D%95%E4%BE%8B-bean-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97",
+      "passed": true
+    },
+    {
+      "check": "搜索及结果跳转",
+      "query": "singleton",
+      "rank": 1,
+      "url": "http://localhost:4180/knowledge-hub/spring/singleton-bean-thread-safety.html#%E5%8D%95%E4%BE%8B-bean-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97",
+      "passed": true
+    },
+    {
+      "check": "搜索及结果跳转",
+      "query": "AtomicInteger",
+      "rank": 1,
+      "url": "http://localhost:4180/knowledge-hub/spring/singleton-bean-thread-safety.html#%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%A4%84%E7%90%86",
+      "passed": true
+    },
+    {
+      "check": "搜索及结果跳转",
+      "query": "SpringBootApplication",
+      "rank": 1,
+      "url": "http://localhost:4180/knowledge-hub/spring/spring-boot-application.html#%E6%9D%A5%E6%BA%90",
+      "passed": true
+    },
+    {
+      "check": "搜索及结果跳转",
+      "query": "ConcurrentHashMap",
+      "rank": 1,
+      "url": "http://localhost:4180/knowledge-hub/java/concurrent-hash-map.html#concurrenthashmap-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%BE%B9%E7%95%8C",
+      "passed": true
+    },
+    {
+      "check": "正文相关知识内链",
+      "passed": true
+    },
+    {
+      "check": "390x844无页面横向溢出",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "limitation": "No Spring application or concurrency tests; GitHub Issue UI/roundtrip excluded"
+}

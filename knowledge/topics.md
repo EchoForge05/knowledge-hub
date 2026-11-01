@@ -5,7 +5,7 @@
 | 分类 | 收录方向 | 状态 |
 | --- | --- | --- |
 | Java | 语言、JVM、并发 | [ConcurrentHashMap](./java/concurrent-hash-map.md) |
-| Spring | Spring 及其生态 | [应用入口注解](./spring/spring-boot-application.md) |
+| Spring | Spring 及其生态 | [应用入口注解](./spring/spring-boot-application.md)、[单例 Bean 与线程安全](./spring/singleton-bean-thread-safety.md) |
 | 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](./databases/select-basics.md) |
 | Linux | 系统使用与运维 | [head 文本查看](./linux/head-basics.md) |
 | Git | 版本管理与协作 | [差异检查](./git/diff-basics.md)、[恢复文件与取消暂存](./git/restore-basics.md) |
