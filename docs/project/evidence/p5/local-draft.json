@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-01",
+  "task": "P5-01-local",
+  "scope": "Optional manual local draft command; Codex remains primary",
+  "provider": "GreatRouter",
+  "model": null,
+  "remote_model_calls": 0,
+  "tests": {"command":"node --test scripts/ai-draft.test.mjs","passed":6,"failed":0},
+  "preview": {"mode":"preview","input":"knowledge/git/restore-basics.md","bytes":1971,"model_configured":false,"endpoint_configured":false},
+  "build": {"success":true,"seconds":2.81,"html":11,"references":275},
+  "workflow": "YAML parsed; offline test step present; contents remains read-only. No new remote CI run claimed.",
+  "limitations": ["No provider API call, billing or real generation quality validation.","No numeric budget or default model assumed.","No Issues automation, model tools or auto-publishing.","Input credential pattern scan is not a complete privacy audit."]
+}

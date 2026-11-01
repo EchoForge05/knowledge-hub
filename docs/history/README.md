@@ -4,6 +4,8 @@
 
 ## 2026-11-01
 
+- [P5 模型与接入方案讨论（待确认）](2026-11-01/p5-model-discussion.md)
+
 - [完整决策 D001–D032](2026-11-01/project/decisions.md)
 - [讨论与过程](2026-11-01/project/discussion-log.md)
 - [原计划](2026-11-01/project/roadmap.md) · [既有完成归档](2026-11-01/project/completed-plans.md)

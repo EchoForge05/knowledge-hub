@@ -9,5 +9,6 @@
 | P2 | 2026-11-01 | 本地知识站，见[原归档](../history/2026-11-01/project/completed-plans.md#p2本地知识站) |
 | P3 | 2026-11-01 | 维护试点，见[原归档](../history/2026-11-01/project/completed-plans.md#p3知识维护试点) |
 | P4 | 2026-11-01 | CI/发布、线上交互和隔离回退，见[P4 归档](../history/2026-11-01/p4-completion.md) |
+| P5-01-local | 2026-11-01 | 可选本地草稿命令及6项离线验证，见[限定证据](evidence/p5/local-draft.json)与[实施记录](../history/2026-11-01/p5-model-discussion.md#用户补充与本地实施)；不代表真实调用或P5完成 |
 
 P4-01/P4-02、P4-L01/L02、P4-03-deploy 和 P4-04-local-build 的既有目标、结果与限制仍见[原归档](../history/2026-11-01/project/completed-plans.md)。P4-03/P4-04 收尾见新增 P4 归档。生产回退及并发/失败动态演练未执行；依赖风险待办见[计划](roadmap.md)。

@@ -10,7 +10,9 @@
     "build": "vitepress build knowledge",
     "preview": "vitepress preview knowledge --host 127.0.0.1",
     "check": "node scripts/check-docs.mjs",
-    "check:site": "node scripts/check-site.mjs"
+    "check:site": "node scripts/check-site.mjs",
+    "ai:draft": "node --env-file-if-exists=.env.local scripts/ai-draft.mjs",
+    "test:ai": "node --test scripts/ai-draft.test.mjs"
   },
   "devDependencies": { "vitepress": "1.6.4" }
 }

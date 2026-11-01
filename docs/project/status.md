@@ -13,8 +13,8 @@
 
 [知识站](https://echoforge05.github.io/knowledge-hub/) · [验收摘要](pages-validation.md) · [完成归档](completed-plans.md)
 
-交付在 docs/pages-delivery，基于已发布 main=ec1d977；线上验证提交 fd7957d 已完成，本次精简/回退记录随后提交。成果更新到 [PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)，待用户审核合并，工作区/最终 SHA 以 Git 和 PR 为准。
+已交付线上验证 fd7957d、精简/回退归档 9ce560f，[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2) 当前 CI 成功、尚未合并。当前 feat/optional-ai-draft 基于 9ce560f，本地可选草稿功能、离线测试和讨论文档验证后按 D023 提交，不自动推送或合并；此分支包含尚待审核的 PR #2 历史。
 
 仍保留 3 项开发工具链依赖风险；真实手机、多浏览器、大规模检索、生产故障与并发部署未验证。线上回退未执行，不把隔离演练写成线上回退。
 
-下一步：审核 PR #2；内容按维护指南持续增补。P5 等用户明确 AI 服务、费用上限及数据外发范围后再启动。没有自动续执行任务。
+下一步：审核 PR #2；内容按维护指南持续增补。D033 已选 GreatRouter 为辅助提供商，主流程仍为 Codex；用户限定编程技术、低频质量优先，未给数值预算。可选本地草稿命令已实现并离线测试，默认预览、显式发送、输出仅私有草稿；尚未发起真实模型调用，模型/价格/密钥/兼容性与生成质量仍待验收。没有自动续执行任务。
