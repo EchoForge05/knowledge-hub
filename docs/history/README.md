@@ -4,7 +4,8 @@
 
 ## 2026-11-01
 
-- [P5 模型与接入方案讨论（待确认）](2026-11-01/p5-model-discussion.md)
+- [P5 选型与D033/D034真实验收过程](2026-11-01/p5-model-discussion.md)
+- [D035整理前讨论](2026-11-01/documentation-pass/discussion-log.md) · [决策](2026-11-01/documentation-pass/decisions.md) · [迁移清单](2026-11-01/documentation-pass/manifest.json)
 
 - [完整决策 D001–D032](2026-11-01/project/decisions.md)
 - [讨论与过程](2026-11-01/project/discussion-log.md)

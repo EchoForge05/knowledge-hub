@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-01",
+  "decision": "D035",
+  "snapshot_notice": "Historical text; current status and authorization are in docs/project. Only relative links rebased.",
+  "files": [
+    {
+      "source": "docs/project/status.md",
+      "archive": "docs/history/2026-11-01/documentation-pass/status.md",
+      "source_commit": "aaa417e5828b4e032e085d4942d03bb3a579edb2",
+      "source_sha256": "446e8e1e25bfea984d419278b1e0d067b0ba923c974439f445b49bb258c78dcc",
+      "archive_sha256": "db865f4f94caa193cb0c95dcd8ff5075b3c0b25a6c213f2a5a65698b4c676981",
+      "before_lines": 19,
+      "after_lines": 16
+    },
+    {
+      "source": "docs/project/roadmap.md",
+      "archive": "docs/history/2026-11-01/documentation-pass/roadmap.md",
+      "source_commit": "aaa417e5828b4e032e085d4942d03bb3a579edb2",
+      "source_sha256": "43774a31dcd16e4616463965bb94bed8d8349e6a8ebcb52a1f2321fcdc9acac8",
+      "archive_sha256": "99cbe14b9f9d6eb48072993056221bbfb909349c4b8b5fc50f83da41dc270485",
+      "before_lines": 31,
+      "after_lines": 16
+    },
+    {
+      "source": "docs/project/decisions.md",
+      "archive": "docs/history/2026-11-01/documentation-pass/decisions.md",
+      "source_commit": "aaa417e5828b4e032e085d4942d03bb3a579edb2",
+      "source_sha256": "5a680495e9b80353db73c1158316fa3f60dfe3b1dea494a19cab05a9c39daf0b",
+      "archive_sha256": "362939b300e9ccea428e47665b8c8e1e32801e0adcdf4ab7d4d97ad596b34c74",
+      "before_lines": 29,
+      "after_lines": 19
+    },
+    {
+      "source": "docs/project/discussion-log.md",
+      "archive": "docs/history/2026-11-01/documentation-pass/discussion-log.md",
+      "source_commit": "aaa417e5828b4e032e085d4942d03bb3a579edb2",
+      "source_sha256": "259c5bf78473c68427e3feea57f05b9ffc27638160f69f96d1067a587f9bae7d",
+      "archive_sha256": "56009e1dce07ebf65e921130d038e71b86da5e5074bb3d51300eb6fc4f276d64",
+      "before_lines": 43,
+      "after_lines": 13
+    },
+    {
+      "source": "docs/handbook/optional-ai.md",
+      "archive": "docs/history/2026-11-01/documentation-pass/optional-ai.md",
+      "source_commit": "aaa417e5828b4e032e085d4942d03bb3a579edb2",
+      "source_sha256": "b0613561cd828a6bb2c36376d7eb4771ade2a9d613972b95da7d6f901b791c29",
+      "archive_sha256": "d5b7cf2f6e82f8d47192fb2e8acd063467dfda61f8dd6315024c5f53f991383d",
+      "before_lines": 41,
+      "after_lines": 31
+    }
+  ]
+}

@@ -1,19 +1,16 @@
 # 当前进度
 
-更新：2026-11-01。**P2–P4的知识站MVP已验收；可选Sol草稿辅助也已完成限定端到端验收，主维护仍为Codex。**
+更新：2026-11-01。主维护使用Codex，GreatRouter/gpt-6-sol仅作可选辅助。
 
-| 内容 | 状态 |
+| 交付 | 状态 |
 | --- | --- |
-| 知识站 | 6篇官方摘要，导航、搜索、富文本、桌面/手机视口通过 |
-| 维护/交付 | 新建/增补/去重/矛盾试点、PR CI、Pages及隔离回退通过 |
-| 可选模型 | GreatRouter国内接入+gpt-6-sol，默认预览、显式发送、本地草稿 |
-| 验收 | 7项离线测试；Git/SQL/Spring 3次真实请求成功，代码/来源/版本条件保留 |
-| 费用 | 1450输入+1519输出token，按用户价表估算$0.016281；非已核实账单 |
+| 知识站MVP（P2–P4） | 已上线并验收，6篇官方摘要、导航/搜索/富文本、CI与Pages可用 |
+| 知识维护 | Codex新建/增补/去重/矛盾处理流程已验证 |
+| 手动模型辅助 | 本地已实现，7项离线测试和3份公开资料国内接入验收通过；[用法](../handbook/optional-ai.md) |
+| Issues自动录入 | 未实现、后置；完整登记见[待办](backlog.md) |
 
-[网站](https://echoforge05.github.io/knowledge-hub/) · [辅助用法](../handbook/optional-ai.md) · [真实验收](evidence/p5/live-sol.json) · [历史库](../history/README.md)
+[网站](https://echoforge05.github.io/knowledge-hub/) · [完成索引](completed-plans.md) · [历史库](../history/README.md)
 
-当前feat/optional-ai-draft：前批功能c207677为本地提交；本轮配置、usage摘要、验收及文档完成检查后本地提交，不自动推送/合并。分支包含PR #2尚待审核的历史，PR #2已交付9ce560f；当前新功能不在该远程PR中。
+本批在feat/optional-ai-draft交付模型功能c207677/aaa417e和D035文档整理；D036已授权提交、推送和检查后合并。[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)已合并，提交9e87939；当前分支交付待完成。
 
-本机.env.local已由用户配置，密钥不入库；国内地址由用户提供，实际调用https://endpoint.wendalog.com/v1/chat/completions。D034授权本轮3次、每次4096输出token、不重试，额度已用尽；追加Agent请求需另定范围。没有启用Issues、自动发布或续执行任务。
-
-下一步：核对平台实扣账单，审核/按授权交付本地分支。直连模式模型API、大资料、恶意输入及多模型未端到端测试；3份短资料成功不代表普遍质量保证。生产回退/并发、真实设备和3项开发工具链依赖风险等遗留继续保留在[计划](roadmap.md)。
+待交付、未验证、依赖风险及未排期能力统一维护在[待办登记](backlog.md)，不重复列于此处。D034的3次验收额度已用尽，追加Agent模型请求需另定范围；不自动合并、发布模型草稿或启用Issues。
