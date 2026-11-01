@@ -31,7 +31,7 @@ npm run preview
 1. 按[知识维护流程](knowledge-workflow.md)先搜索现有主题，确认来源、版本和公开边界。
 2. 在 `knowledge/` 对应分类维护 Markdown，使用相对内链。图片放 `assets/images/`；不要把过程文档链接进站点正文。
 3. 更新 `knowledge/topics.md` 以及 `knowledge/.vitepress/config.ts` 中的小规模手工侧栏；空分类只显示说明，不添加无效页面链接。
-4. 执行文档检查与构建。修改搜索内容时按[本地验收记录](../project/site-validation.md)复测相关查询和结果跳转。
+4. 执行文档检查与构建。修改搜索内容时按[本地验收记录](../history/2026-11-01/structure-pass/site-validation.md)复测相关查询和结果跳转。
 5. 同步项目状态和相关说明；已验收任务归档。新增开发通过必要验证后，可按 D023 将成果及配套文档提交一次，提交说明用中文；推送与部署仍遵守原授权边界。
 
 ## 搜索与检查范围
@@ -40,7 +40,7 @@ VitePress 1.6.4 内置 MiniSearch；当前 tokenizer 以确定性正则保留 AS
 
 `npm run check` 检查仓库 Markdown 的 UTF-8、一级标题与本地文件链接，不访问外网，不核查技术事实；不验证标题锚点和链接内容。构建后执行 `npm run check:site` 检查 HTML 中的本地页面、资源、锚点与 base 路径；浏览器检查负责验证实际跳转、展示和搜索。各类检查不能相互代替。
 
-P3 的输入编号、来源保存和去重判断见[知识维护流程](knowledge-workflow.md)，历史维护证据见[维护验收](../project/knowledge-pilot-validation.md)。完整文件名 restore_note_example.md 的失败样例现已修复，14 组浏览器回归和实际结果跳转通过，见[本地遗留验证](../project/local-followup-validation.md)；不将一个样例的修复外推为任意符号字符串精确检索。
+P3 的输入编号、来源保存和去重判断见[知识维护流程](knowledge-workflow.md)，历史维护证据见[维护验收](../history/2026-11-01/structure-pass/knowledge-pilot-validation.md)。完整文件名 restore_note_example.md 的失败样例现已修复，14 组浏览器回归和实际结果跳转通过，见[本地遗留验证](../history/2026-11-01/structure-pass/local-followup-validation.md)；不将一个样例的修复外推为任意符号字符串精确检索。
 
 Windows 下重装依赖前应停止本项目的 dev/preview，避免占用 esbuild.exe。npm 如提示安装脚本未授权，应先核对具体需要；本次未运行 esbuild postinstall，离线重装及构建仍通过，其他平台尚未验证。
 

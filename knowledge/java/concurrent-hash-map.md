@@ -1,6 +1,6 @@
 # ConcurrentHashMap 的基本使用边界
 
-适用环境：Java SE 21 API。本文依据官方文档整理，未运行代码；核查日期：2026-10-31。
+适用于 Java SE 21。示例未运行。
 
 ## 并发访问
 
@@ -19,6 +19,11 @@ cache.putIfAbsent("language", "Java");
 
 JVM 内运行的并发程序仍需明确业务层的一致性要求。
 
-## 来源
+<details>
+<summary>适用范围与官方来源</summary>
+
+适用环境：Java SE 21 API。本文依据官方文档整理，未运行代码；核查日期：2026-10-31。
 
 [Oracle：Java SE 21 ConcurrentHashMap API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html)。本页是入门摘要，具体方法以前述 API 为准。
+
+</details>

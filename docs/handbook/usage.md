@@ -2,14 +2,14 @@
 
 ## 选择使用方式
 
-更新：2026-11-01，按PR #6合并点92a8ded及CI/Pages交付结果核对。
+[返回项目入口](../../README.md)。以下说明现有功能的使用方法；开发计划与未完成项从README进入。
 
 | 需求 | 入口 | 当前可用范围 |
 | --- | --- | --- |
 | 阅读和搜索 | [公开知识站](https://echoforge05.github.io/knowledge-hub/) | 已上线 |
 | 新增或修订笔记 | 向本仓库Codex对话发送资料 | 已验证，日常维护推荐入口 |
 | 提交公开资料、人工接收 | GitHub知识表单、`issue:intake` | 已合并main；表单实际展示和真实Issue正向往返仍待验收 |
-| 无密钥导出公开Issue | `issue:export` | 已通过PR #6合并main，14项Issue离线测试及Linux CI通过；真实Issue往返仍待验 |
+| 无密钥导出公开Issue | `issue:export` | 已交付；真实Issue往返仍待验 |
 | 模型辅助生成草稿 | `ai:draft` | 已合并main，可选；发送需本机配置与调用授权 |
 
 网站用于阅读，新增资料需要维护者整理审核；Issue提交、导出、接收都不会自动生成知识文章或发布。完整未完成清单见[待办登记](../project/backlog.md)。

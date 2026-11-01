@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-01",
+  "base": "http://127.0.0.1:4173/knowledge-hub/",
+  "results": [
+    {
+      "route": "git/diff-basics",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "git/restore-basics",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "java/concurrent-hash-map",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "linux/head-basics",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "databases/select-basics",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "spring/spring-boot-application",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "spring/singleton-bean-thread-safety",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "topics",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "guide",
+      "width": 1440,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "examples/reading-check",
+      "width": 1440,
+      "details": 0,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 1440,
+      "details": 0,
+      "overflow": false
+    },
+    {
+      "route": "git/diff-basics",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "git/restore-basics",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "java/concurrent-hash-map",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "linux/head-basics",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "databases/select-basics",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "spring/spring-boot-application",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "spring/singleton-bean-thread-safety",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "topics",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "guide",
+      "width": 390,
+      "details": 1,
+      "overflow": false
+    },
+    {
+      "route": "examples/reading-check",
+      "width": 390,
+      "details": 0,
+      "overflow": false
+    },
+    {
+      "route": "home",
+      "width": 390,
+      "details": 0,
+      "overflow": false
+    },
+    {
+      "query": "git diff",
+      "route": "git/diff-basics",
+      "jumped": true
+    },
+    {
+      "query": "restore_note_example.md",
+      "route": "git/restore-basics",
+      "jumped": true
+    },
+    {
+      "query": "putIfAbsent",
+      "route": "java/concurrent-hash-map",
+      "jumped": true
+    },
+    {
+      "query": "head",
+      "route": "linux/head-basics",
+      "jumped": true
+    },
+    {
+      "query": "SELECT",
+      "route": "databases/select-basics",
+      "jumped": true
+    },
+    {
+      "query": "SpringBootApplication",
+      "route": "spring/spring-boot-application",
+      "jumped": true
+    },
+    {
+      "query": "AtomicInteger",
+      "route": "spring/singleton-bean-thread-safety",
+      "jumped": true
+    }
+  ],
+  "errors": []
+}

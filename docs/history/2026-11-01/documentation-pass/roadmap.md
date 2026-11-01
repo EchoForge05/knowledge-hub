@@ -6,9 +6,9 @@
 
 | ID | 交付 | 记录 |
 | --- | --- | --- |
-| P0/P1 | 基础结构与验收基线 | [完成索引](../../../project/completed-plans.md) |
-| P2 | 本地阅读、导航、搜索与富文本 | [完成索引](../../../project/completed-plans.md) |
-| P3 | 知识维护试点 | [完成索引](../../../project/completed-plans.md) |
+| P0/P1 | 基础结构与验收基线 | [完成索引](../structure-pass/completed-plans.md) |
+| P2 | 本地阅读、导航、搜索与富文本 | [完成索引](../structure-pass/completed-plans.md) |
+| P3 | 知识维护试点 | [完成索引](../structure-pass/completed-plans.md) |
 | P4 | GitHub CI、Pages、公开交互及隔离回退演练 | [P4 归档](../p4-completion.md) |
 
 P4-01、P4-02、P4-03、P4-04 及 P4-L01/L02、P4-03-deploy、P4-04-local-build 的原 ID/证据均保留在[历史库](../../README.md)。未执行的生产演练见下表，不冒称通过。

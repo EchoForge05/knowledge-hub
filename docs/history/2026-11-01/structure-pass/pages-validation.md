@@ -12,8 +12,8 @@
 | 浏览器日志 | 验收标签页 warn/error 为空 |
 | 回退 | 隔离真实 revert 后文档/构建/产物通过，未线上回退 |
 
-证据：[部署](evidence/p4/pages-deployment.json)、[HTTP](evidence/p4/public-http.json)、[交互](evidence/p4/public-browser/results.json)、[手机指标](evidence/p4/public-browser/mobile.json)、[回退演练](evidence/p4/revert-validation.json)。手机与桌面截图在 public-browser 证据目录。
+证据：[部署](../../../project/evidence/p4/pages-deployment.json)、[HTTP](../../../project/evidence/p4/public-http.json)、[交互](../../../project/evidence/p4/public-browser/results.json)、[手机指标](../../../project/evidence/p4/public-browser/mobile.json)、[回退演练](../../../project/evidence/p4/revert-validation.json)。手机与桌面截图在 public-browser 证据目录。
 
 限制：线上只验 3 组代表查询，本地 14 组结果另存；真实手机、其他浏览器、大规模语料、生产故障/并发发布及线上回退未动态验证。工具曾间歇超时，重新读取实际状态后续验；整页截图失败，视口截图成功。
 
-首次 Pages 未启用的失败与恢复、完整旧过程见[历史发布验收](../history/2026-11-01/project/pages-validation.md)。当前 P4 归档见[完成记录](../history/2026-11-01/p4-completion.md)。
+首次 Pages 未启用的失败与恢复、完整旧过程见[历史发布验收](../project/pages-validation.md)。当前 P4 归档见[完成记录](../p4-completion.md)。
