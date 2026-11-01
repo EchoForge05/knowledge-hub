@@ -2,7 +2,7 @@
 
 按主题阅读、搜索和维护个人知识。
 
-知识站已上线，P2–P4 的 MVP 验收完成，线上基线为 6 篇官方资料摘要。本地新增[Spring 单例 Bean 与线程安全](knowledge/spring/singleton-bean-thread-safety.md)，当前共 7 篇，新增内容尚未发布。主维护使用 Codex，GreatRouter/gpt-6-sol 可选辅助生成草稿。
+知识站已上线，P2–P4 的 MVP 验收完成，现有 7 篇知识文章，含[Spring 单例 Bean 与线程安全](knowledge/spring/singleton-bean-thread-safety.md)。主维护使用 Codex，GreatRouter/gpt-6-sol 可选辅助生成草稿。
 
 ## 使用
 
@@ -25,7 +25,7 @@
 3. **通过 Issue 提交资料**：在[新建 Issue 页面](https://github.com/EchoForge05/knowledge-hub/issues/new/choose)选择“公开知识资料”并填写表单；维护者按[人工接收教程](docs/handbook/issue-intake.md)导出、离线校验、接收后交给 Codex 整理。提交或接收不会自动生成文章或发布。
 4. **辅助生成草稿（可选）**：按[模型草稿教程](docs/handbook/optional-ai.md)准备本机配置，先预览，显式发送才调用 API；草稿需核查后再入库，日常维护可直接使用 Codex。
 
-版本提示：Issue 表单和离线接收已通过 PR #5 合并 main；无密钥公开 Issue 导出仅在本地 `feat/issue-export` 分支（57f88bc），尚未推送。表单展示及真实 Issue 正向往返仍待验收，详见[当前进度](docs/project/status.md)。
+版本提示：Issue 表单和离线接收已通过 PR #5 合并 main；无密钥公开 Issue 导出及 Spring 新文已通过 [PR #6](https://github.com/EchoForge05/knowledge-hub/pull/6)合并并发布。表单展示及真实 Issue 正向往返仍待验收，详见[当前进度](docs/project/status.md)。
 
 仓库和网站公开，只提交可公开或充分脱敏的内容；密钥与敏感原文不得入库。`inbox/local/` 是被 Git 忽略的本地暂存区，不提供备份或加密。模型请求可能计费，既有 3 次 Agent 验收额度已用尽，追加调用需另行授权。
 

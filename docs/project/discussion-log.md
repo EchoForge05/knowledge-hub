@@ -6,6 +6,8 @@
 
 本地检查：62份Markdown/352本地链接，构建2.86秒，12 HTML/315页面资源锚点引用；7项模型离线测试通过。Issue测试首次因沙箱目录链接EPERM为12通过/2未执行，获准在沙箱外原样复验后14项通过，不改测试规避失败。旧4174预览超时，独立4180生产预览连通；隔离headless Chrome使用临时profile及既有Playwright，不读取用户Chrome资料、不改安全设置。脚本初次标题精确匹配未计入标题锚点，及路由渲染未等待造成检查失败，修正验收脚本后全部通过，不当站点缺陷。
 
+实际交付：本批提交83e91b1（中文说明、既有EchoForge05身份），与导出57f88bc一并正常推送；PR #6文件清单22份均在审阅范围，无私有目录/密钥/产物。PR CI 41290113085成功（包含全部14项Issue测试），核对mergeable及head=83e91b1后按D039合并为92a8ded。本地main快进同步，Pages 41290170419的build/deploy成功。公开站点同样通过5词首条搜索、实际锚点跳转、目录/内链及390×844布局，无页面脚本错误，见[线上回执](evidence/knowledge/spring-singleton-online.json)。L04/V07移入完成记录，README/用法/状态/计划/决策/Git说明同步main可用状态；工程分析保留原快照并加当前入口。收尾回执通过docs/d039-delivery短期PR交付并按同次授权在CI通过后合并，最终SHA由Git核对；后续不继续新功能，下一步为获准样本的V06，工程建议仍待审核。
+
 目录进入新文、单例/singleton/AtomicInteger三词及两篇旧文搜索均首条命中，实际点击并核对目标锚点；相关知识内链、1440桌面及390×844布局通过，pageerror为空，截图已人工检查。机器证据见[浏览器回执](evidence/knowledge/spring-singleton-browser.json)。未运行Spring应用/并发测试，不据此关闭Issue线上往返V06。接下来正常推送当前分支、建PR，锁定head且CI成功后按D039合并，同步main并核对Pages；最终结果继续补记。
 
 ## 2026-11-01：工程分析草稿保存到本地
