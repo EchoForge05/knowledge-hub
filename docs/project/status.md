@@ -1,20 +1,16 @@
 # 当前进度
 
-更新：2026-11-01。**P2–P4 已按既定范围验收，MVP 可公开使用。**
+更新：2026-11-01。主维护使用Codex，GreatRouter/gpt-6-sol仅作可选辅助。
 
-| 内容 | 状态 |
+| 交付 | 状态 |
 | --- | --- |
-| 知识站 | 6 篇官方资料摘要，导航、搜索、富文本展示通过 |
-| 知识维护 | 新建、增补、去重、矛盾处理试点通过 |
-| CI 与发布 | PR 成功/失败恢复、main Pages 发布通过 |
-| 线上验收 | 3 组代表搜索第 1；无结果、结果小节跳转、手机目录与布局通过 |
-| 回退流程 | 历史隔离构建与真实 revert 演练通过；未对公开站点回退 |
-| 文档 | 当前说明已精简，详细记录保存在[历史库](../history/README.md) |
+| 知识站MVP（P2–P4） | 已上线并验收，6篇官方摘要、导航/搜索/富文本、CI与Pages可用 |
+| 知识维护 | Codex新建/增补/去重/矛盾处理流程已验证 |
+| 手动模型辅助 | 本地已实现，7项离线测试和3份公开资料国内接入验收通过；[用法](../handbook/optional-ai.md) |
+| Issues自动录入 | 未实现、后置；完整登记见[待办](backlog.md) |
 
-[知识站](https://echoforge05.github.io/knowledge-hub/) · [验收摘要](pages-validation.md) · [完成归档](completed-plans.md)
+[网站](https://echoforge05.github.io/knowledge-hub/) · [完成索引](completed-plans.md) · [历史库](../history/README.md)
 
-交付在 docs/pages-delivery，基于已发布 main=ec1d977；线上验证提交 fd7957d 已完成，本次精简/回退记录随后提交。成果更新到 [PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)，待用户审核合并，工作区/最终 SHA 以 Git 和 PR 为准。
+本批在feat/optional-ai-draft交付模型功能c207677/aaa417e和D035文档整理；D036已授权提交、推送和检查后合并。[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)已合并，提交9e87939；当前分支交付待完成。
 
-仍保留 3 项开发工具链依赖风险；真实手机、多浏览器、大规模检索、生产故障与并发部署未验证。线上回退未执行，不把隔离演练写成线上回退。
-
-下一步：审核 PR #2；内容按维护指南持续增补。P5 等用户明确 AI 服务、费用上限及数据外发范围后再启动。没有自动续执行任务。
+待交付、未验证、依赖风险及未排期能力统一维护在[待办登记](backlog.md)，不重复列于此处。D034的3次验收额度已用尽，追加Agent模型请求需另定范围；不自动合并、发布模型草稿或启用Issues。
