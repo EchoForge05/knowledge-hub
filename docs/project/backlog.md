@@ -10,7 +10,7 @@
 
 L01–L04及D040阅读精简已合并，见[完成记录](../history/2026-11-01/structure-pass/completed-plans.md)。D040收尾文档已入main=59d10c4。
 
-- L05：D041/D042阅读修订已完成本地验证，按D047纳入本地main同步批次；尚未推送/发布，远程交付按当次授权。当前修订证据见[D042回执](evidence/knowledge/site-reading-d042-browser.json)，[早期逐页回执](evidence/knowledge/site-reading-browser.json)仅为此前快照。
+L05已按D048通过PR #10合并并发布，移至[完成索引](../history/2026-11-01/structure-pass/completed-plans.md)；不再作为待交付项。
 
 ## 待验证：不计作功能缺失
 

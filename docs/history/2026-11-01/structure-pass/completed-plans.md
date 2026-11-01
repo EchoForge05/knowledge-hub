@@ -69,3 +69,10 @@ D042-local本地纠正已完成：恢复完整知识解释，撤回首页/目录
 - 实际：新增开发导航，README路由至使用、架构/目录/文件及计划待办；AGENTS与现状/决策/计划去除历史堆叠，6份完成/验收文件归档，7份现场快照及哈希保留，Markdown入链同步。
 - 验证：73份Markdown/434处本地链接，构建与12 HTML/305引用、差异检查通过。
 - 限制：仅本地文档整理，无提交/发布或功能开发；L05、L06、V06、M01等继续在当前backlog维护，未把它们归档完成。
+
+## D048 / L05：阅读修订与文档整理交付
+
+- 目标：交付D041–D047既有成果，保持完整知识解释、用户入口和全部待办。
+- 实际：da6ef41及授权记录2b68796经[PR #10](https://github.com/EchoForge05/knowledge-hub/pull/10)合并为7c6c51fac683e21d02a4104784dca3acf0e89268，本地main已快进同步。
+- 验收：[PR CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41312449838)、[分支CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41312426091)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41312563894)均成功；合并锁定完整head。复用D042浏览器检查，未新增浏览器/模型测试。
+- 限制与遗留：L06、V06、M01等仍在当前backlog，本轮未开发/验证它们。收尾文档通过docs/d048-delivery同批交付，最终提交及同步结果以Git实查为准；历史分支保留。
