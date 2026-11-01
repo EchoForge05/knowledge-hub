@@ -5,6 +5,7 @@
 - main已合并PR #1/#2/#3、[PR #5](https://github.com/EchoForge05/knowledge-hub/pull/5)及PR #6；PR #5合并点9a0b160包含无密钥Issue表单和离线接收，main跟踪关系保留，后续交付见下一项。
 - D039已正常推送feat/issue-export，PR #6锁定head=83e91b1，CI成功后合并为92a8ded，Pages成功；导出57f88bc及Spring知识均已进入main，本地main已同步。收尾回执通过docs/d039-delivery交付后切回main，最终SHA以Git实查为准，旧分支保留。
 - codex/ci-validation保留坏链接拦截及恢复的两次实验提交，未合并；相对分叉点净差异为空，不作为待交付功能。
+- D040：docs/spring-reading提交5160c0a经PR #8核对CI后合并为acf569a，main已同步；Pages成功，线上阅读折叠交互通过。收尾文档在docs/d040-delivery同批交付后切回main，最终SHA以Git为准，保留旧分支。
 - 正常 GCM 登录，凭据不输出或保存。网络按命令复用本机已有代理，不改系统设置；失败先查原因，不强推。
 
 提交后核对作者、中文消息、工作区；获准推送后用 ls-remote 与 PR 核对 SHA。读取成功不等于写权限，未运行不写成通过。既有登录与权限每次按实际状态核对，不把历史回执当作永久有效。
