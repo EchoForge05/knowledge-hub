@@ -19,7 +19,10 @@ export default defineConfig({
         { text: '使用指南', link: '/guide' }
       ] },
       { text: 'Java', items: [{ text: 'ConcurrentHashMap', link: '/java/concurrent-hash-map' }] },
-      { text: 'Spring', items: [{ text: '应用入口注解', link: '/spring/spring-boot-application' }] },
+      { text: 'Spring', items: [
+        { text: '应用入口注解', link: '/spring/spring-boot-application' },
+        { text: '单例 Bean 与线程安全', link: '/spring/singleton-bean-thread-safety' }
+      ] },
       { text: '数据库与 SQL', items: [{ text: 'SQL 查询基础', link: '/databases/select-basics' }] },
       { text: 'Git', items: [
         { text: '工作区与暂存区差异', link: '/git/diff-basics' },

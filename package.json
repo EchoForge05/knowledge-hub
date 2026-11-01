@@ -14,7 +14,8 @@
     "ai:draft": "node --env-file-if-exists=.env.local scripts/ai-draft.mjs",
     "test:ai": "node --test scripts/ai-draft.test.mjs",
     "issue:intake": "node scripts/issue-intake.mjs",
-    "test:issue": "node --test scripts/issue-intake.test.mjs"
+    "test:issue": "node --test scripts/issue-intake.test.mjs scripts/issue-export.test.mjs",
+    "issue:export": "node scripts/issue-export.mjs"
   },
   "devDependencies": { "vitepress": "1.6.4" }
 }

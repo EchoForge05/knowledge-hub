@@ -1,16 +1,27 @@
 # Issue 人工接收
 
-D037范围：公开表单 → 人工选择 → 本地离线校验/接收 → Codex人工整理。无需模型密钥，不监听Issue事件、不联网取数、不执行正文代码、不自动创建PR。表单是输入提示，不是隐私审计或作者授权校验。
+D037/D038范围：公开表单 → 人工选择与导出 → 本地离线校验/接收 → Codex人工整理。无需模型密钥，不监听Issue事件、不执行正文代码、不自动创建PR。接收命令完全离线；独立导出命令只有显式--fetch才只读访问GitHub。表单是输入提示，不是隐私审计或作者授权校验。
+
+版本：表单和离线接收已合并main（PR #5，9a0b160）；内置导出仅在本机feat/issue-export的57f88bc，尚未推送/建PR。只有main的使用者可用下方gh方式导出，或直接交资料给Codex。本文数字和文件名均为语法示例，使用前替换；不表示存在已通过验收的真实Issue样本。
 
 ## 1. 提交资料
 
-本批合并到默认分支后，在[仓库新建Issue页面](https://github.com/EchoForge05/knowledge-hub/issues/new/choose)选择“公开知识资料”。填写主题、正文、来源、版本/环境、疑点和公开确认；不清楚的版本填“待核实”，没有疑点填“无”，原创资料注明“原创笔记”。保留代码围栏，避免在围栏外加入额外三级标题。
+表单已通过[PR #5](https://github.com/EchoForge05/knowledge-hub/pull/5)进入默认分支。在[仓库新建Issue页面](https://github.com/EchoForge05/knowledge-hub/issues/new/choose)登录后选择“公开知识资料”。填写主题、正文、来源、版本/环境、疑点和公开确认；不清楚的版本填“待核实”，没有疑点填“无”，原创资料注明“原创笔记”。保留代码围栏，避免在围栏外加入额外三级标题。
 
-所有Issue公开，勿提交敏感原文。任何人提交资料都不会自动获得运行或发布权限；维护者决定是否处理。表单进入main前，可用下述JSON格式在本地试用，但不代表GitHub表单已上线。
+所有Issue公开，勿提交敏感原文。任何人提交资料都不会自动获得运行或发布权限；维护者决定是否处理。上次检查被GitHub登录页阻挡，表单实际展示与真实往返尚未验收，不将远程文件存在等同展示通过。
 
 ## 2. 人工核对并导出
 
-维护者先在GitHub核对来源、作者与公开范围。使用已登录的GitHub CLI读取明确选择的Issue（CLI登录与网络仅用于导出，不是本地接收命令的要求）：
+维护者先在GitHub核对来源、作者与公开范围。D038续开发在本地增加无需gh、无需登录或密钥的公开Issue导出（尚未推送）：
+
+```sh
+npm run issue:export -- --number 123
+npm run issue:export -- --number 123 --fetch
+```
+
+第一条只预览；第二条向既定仓库的GitHub API发送一次GET，校验开放Issue及知识表单后保存 `inbox/local/issue-编号-摘要.json`，不会接收进知识库。将123换成真实Issue编号，再把终端输出的JSON路径用于下节接收命令。拒绝PR、其他仓库、关闭状态、未确认公开或不合表单的输入；30秒超时、128KiB响应上限，不重试或重定向，不读.env或附带认证。重复内容不覆盖，修订另存；该命令不评论、创建或关闭Issue。
+
+遇到网络/限流错误时先检查网络或等待限流解除，不反复运行。需要本机代理时，由用户在当前终端显式配置 `HTTPS_PROXY` 与 `NODE_USE_ENV_PROXY=1`；不把代理地址写入项目配置。也可继续使用已登录的GitHub CLI读取明确选择的Issue（CLI登录与网络仅用于导出，不是本地接收命令的要求）：
 
 ```powershell
 New-Item -ItemType Directory -Force inbox/local | Out-Null
@@ -21,11 +32,11 @@ gh issue view 123 --repo EchoForge05/knowledge-hub --json number,url,state,autho
 
 ## 3. 预览与接收
 
-Node24/npm11，在仓库根目录运行：
+Node24/npm11，在仓库根目录运行。将下列路径替换为实际JSON路径：内置导出文件名含摘要，如 `issue-123-实际摘要.json`；gh示例则为 `issue-123.json`，两者不要混用。
 
 ```sh
-npm run issue:intake -- --input inbox/local/issue-123.json
-npm run issue:intake -- --input inbox/local/issue-123.json --accept
+npm run issue:intake -- --input "inbox/local/实际导出文件名.json"
+npm run issue:intake -- --input "inbox/local/实际导出文件名.json" --accept
 ```
 
 第一条仅校验预览，第二条才保存 `inbox/local/issues/issue-编号-摘要.md`。输入仅允许本仓库 `inbox/local/` 中的JSON普通文件，JSON最大128KiB、正文最大64KiB；检查必填字段、公开勾选、围栏和常见凭据模式，拒绝其他仓库和关闭的Issue。错误不输出资料原文；失败时根据字段、路径、编码、大小检查后再试。检测不能发现所有隐私或恶意内容。
@@ -46,6 +57,8 @@ npm run issue:intake -- --input inbox/local/issue-123.json --accept
 
 ## 验证边界与依据
 
-离线测试：`npm run test:issue`，无需密钥、网络或真实Issue。GitHub表单的线上显示和真实Issue往返待本批授权推送、合并后验收；本地通过不代表线上已可用。自动触发、模型PR、事件恢复和费用控制仍见[待办](../project/backlog.md)。
+离线测试：本地57f88bc运行 `npm run test:issue` 共14项通过，无需密钥、网络或真实Issue；main的PR #5版本仅包含9项接收测试且Linux CI通过。真实PR #5只读请求被正确拒绝，不代表成功Issue往返。新增5项导出测试的Linux CI仍待验（V07）；GitHub表单实际展示和真实Issue正向往返仍待验（V06），上轮检索没有既有Issue，需选定可公开样本。自动触发、模型PR、事件恢复和费用控制仍见[待办](../project/backlog.md)。
 
 2026-11-01核对：[GitHub Issue表单语法](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)、[字段验证语法](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema)、[gh issue view JSON字段](https://cli.github.com/manual/gh_issue_view)。
+
+公开导出的接口和PR判别依据：[GitHub Issues REST API](https://docs.github.com/en/rest/issues/issues#get-an-issue)。
