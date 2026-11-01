@@ -1,0 +1,152 @@
+[
+  {
+    "query": "restore_note_example.md",
+    "expected": "Git 恢复",
+    "results": [
+      "#Git 恢复：工作区与暂存区显式指定来源"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "组件扫描",
+    "expected": "Spring Boot",
+    "results": [
+      "#Spring Boot 应用入口注解三项能力"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "JVM",
+    "expected": "ConcurrentHashMap",
+    "results": [
+      "#阅读与搜索测试页搜索样本",
+      "#ConcurrentHashMap 的基本使用边界复合操作",
+      "#知识目录"
+    ],
+    "firstExpectedRank": 2
+  },
+  {
+    "query": "ConcurrentHashMap",
+    "expected": "ConcurrentHashMap",
+    "results": [
+      "#ConcurrentHashMap 的基本使用边界",
+      "#ConcurrentHashMap 的基本使用边界来源",
+      "#ConcurrentHashMap 的基本使用边界并发访问",
+      "#ConcurrentHashMap 的基本使用边界复合操作",
+      "#阅读与搜索测试页搜索样本",
+      "#知识目录"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "concurrenthashmap",
+    "expected": "ConcurrentHashMap",
+    "results": [
+      "#ConcurrentHashMap 的基本使用边界",
+      "#ConcurrentHashMap 的基本使用边界来源",
+      "#ConcurrentHashMap 的基本使用边界并发访问",
+      "#ConcurrentHashMap 的基本使用边界复合操作",
+      "#阅读与搜索测试页搜索样本",
+      "#知识目录"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "SpringBootApplication",
+    "expected": "Spring Boot",
+    "results": [
+      "#Spring Boot 应用入口注解来源",
+      "#Spring Boot 应用入口注解入口结构",
+      "#Spring Boot 应用入口注解三项能力"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "SELECT",
+    "expected": "SQL 查询",
+    "results": [
+      "#SQL 查询：选择、过滤与排序选择列和过滤行"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "knowledge_notes",
+    "expected": "SQL 查询",
+    "results": [
+      "#SQL 查询：选择、过滤与排序选择列和过滤行",
+      "#SQL 查询：选择、过滤与排序排序与去重"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "暂存区",
+    "expected": "Git 差异",
+    "results": [
+      "#Git 恢复：工作区与暂存区",
+      "#Git 差异检查：工作区与暂存区",
+      "#Git 恢复：工作区与暂存区恢复目标与默认来源",
+      "#Git 差异检查：工作区与暂存区三种比较",
+      "#Git 差异检查：工作区与暂存区相关知识",
+      "#Git 恢复：工作区与暂存区相关知识",
+      "#Git 恢复：工作区与暂存区覆盖风险与检查",
+      "#Git 恢复：工作区与暂存区显式指定来源",
+      "#Git 差异检查：工作区与暂存区限定范围",
+      "#Git 恢复：工作区与暂存区来源",
+      "#Git 差异检查：工作区与暂存区来源"
+    ],
+    "firstExpectedRank": 2
+  },
+  {
+    "query": "head",
+    "expected": "Linux 文本",
+    "results": [
+      "#Linux 文本查看：head",
+      "#Linux 文本查看：head查看文件开头",
+      "#Linux 文本查看：head来源",
+      "#Git 差异检查：工作区与暂存区三种比较",
+      "#Git 恢复：工作区与暂存区显式指定来源",
+      "#Git 恢复：工作区与暂存区恢复目标与默认来源",
+      "#知识目录",
+      "#Linux 文本查看：head行数与字节数"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "事务隔离级别",
+    "expected": "SQL 查询",
+    "results": [
+      "#阅读与搜索测试页搜索样本",
+      "#SQL 查询：选择、过滤与排序排序与去重"
+    ],
+    "firstExpectedRank": 2
+  },
+  {
+    "query": "取消暂存",
+    "expected": "Git 恢复",
+    "results": [
+      "#Git 差异检查：工作区与暂存区相关知识",
+      "#Git 恢复：工作区与暂存区恢复目标与默认来源",
+      "#知识目录"
+    ],
+    "firstExpectedRank": 2
+  },
+  {
+    "query": "restore",
+    "expected": "Git 恢复",
+    "results": [
+      "#Git 恢复：工作区与暂存区显式指定来源",
+      "#Git 恢复：工作区与暂存区恢复目标与默认来源",
+      "#Git 恢复：工作区与暂存区来源",
+      "#Git 恢复：工作区与暂存区"
+    ],
+    "firstExpectedRank": 1
+  },
+  {
+    "query": "restore_note_example",
+    "expected": "Git 恢复",
+    "results": [
+      "#Git 恢复：工作区与暂存区显式指定来源"
+    ],
+    "firstExpectedRank": 1
+  }
+]

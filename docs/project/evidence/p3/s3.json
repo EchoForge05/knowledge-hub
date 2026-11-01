@@ -1,0 +1,30 @@
+{
+  "stage": "s3",
+  "scope": "knowledge/ source files including .vitepress/config.ts; Git ignore rules exclude generated output",
+  "articleExists": true,
+  "files": {
+    "knowledge/.vitepress/config.ts": "e8ea86ceb5733027c7ba3e8d93d5491dd3d13fd0e2a492ad7555952fa8572bab",
+    "knowledge/README.md": "77b15a33323eb13e577a62e5809a9eb2a2f31cdc82d542551c3ee7eae5b52299",
+    "knowledge/ai-agent/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/assets/images/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/assets/images/reading-flow.svg": "e26f5501902dc3bf034e152df71f2f6549bc0d488e345e9beb4132f068e8c625",
+    "knowledge/banking/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/databases/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/databases/select-basics.md": "99dd12de683eb001c6c202e2a37c4b376e361a1b756dfdf81e14b69a8927f038",
+    "knowledge/examples/reading-check.md": "a885345a5413125a9b56711ca31cf5a86e9f78eca3a95ecb7f53846a81bc4081",
+    "knowledge/git/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/git/diff-basics.md": "06a74124749b1bf46829326e9d51040ce2bf7aba64de3326009210a4ac58a8d2",
+    "knowledge/git/restore-basics.md": "4479a0e18f2024b7cf1e6db39c955c43f248debfbe5c82b2d634e7071612d180",
+    "knowledge/guide.md": "7f08dc83902898a6ca18bbf50c05a8e7867d410ead38fb51676c1c2dd7f45abe",
+    "knowledge/index.md": "bebad7a9a3bc8abf80b31f40eab4dafc18b597daa5e9a8b4b3d6bd89e92250fe",
+    "knowledge/java/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/java/concurrent-hash-map.md": "8660ead68f7adb6b139046225594c8f3c8f660b840f2b4dc0b3b3424523ad3ea",
+    "knowledge/linux/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/linux/head-basics.md": "aec3c64403b96ba2655c66b6ff4f18cd601d62511cfd3b05a7e161e310946f29",
+    "knowledge/software-engineering/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/spring/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "knowledge/spring/spring-boot-application.md": "e720979e6c7014c2599673e739b86e8433bc0a68a0bf6638d118bcd64aaa2ef9",
+    "knowledge/topics.md": "c649db8de055ad137d2ccdb4beb3f718484b5d90dec5ecc3dcfce016719f0421"
+  },
+  "changedFromPrevious": []
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-01",
+  "node": "v24.22.1",
+  "branch": "feat/pages-ci",
+  "head": "14cc80b4d61540e90a782d28de19a33a8cf55b49",
+  "records": [
+    {
+      "revision": "dbf620f",
+      "sha": "dbf620f3556ff3adae71a0fdd99d285eac9543b4",
+      "lockSha256": "5fc640d00ea88ac6f37f4879b63430148520e284fb75f16eabda82467f6b23ce",
+      "dependencyMode": "Reused installed dependencies via isolated copy; matching lock verified, not a clean historical npm ci",
+      "checks": [
+        {
+          "command": "node scripts/check-docs.mjs",
+          "exitCode": 0,
+          "stdout": "通过：26 份 Markdown，70 处本地文件链接（不含锚点与外链）；产物链接与锚点另用 check:site 检查。\n",
+          "stderr": ""
+        },
+        {
+          "command": "node node_modules/vitepress/bin/vitepress.js build knowledge",
+          "exitCode": 0,
+          "stdout": "\n  vitepress v1.6.4\n\nbuild complete in 2.70s.\n",
+          "stderr": "- building client + server bundles...\n\u001b[32m✓\u001b[0m building client + server bundles...\n- rendering pages...\n\u001b[32m✓\u001b[0m rendering pages...\n"
+        },
+        {
+          "command": "node scripts/check-site.mjs",
+          "exitCode": 0,
+          "stdout": "通过：10 个 HTML，234 处本地资源/页面/锚点引用，base /knowledge-hub/\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "revision": "14cc80b",
+      "sha": "14cc80b4d61540e90a782d28de19a33a8cf55b49",
+      "lockSha256": "5fc640d00ea88ac6f37f4879b63430148520e284fb75f16eabda82467f6b23ce",
+      "dependencyMode": "Reused installed dependencies via isolated copy; matching lock verified, not a clean historical npm ci",
+      "checks": [
+        {
+          "command": "node scripts/check-docs.mjs",
+          "exitCode": 0,
+          "stdout": "通过：28 份 Markdown，106 处本地文件链接（不含锚点与外链）；产物链接与锚点另用 check:site 检查。\n",
+          "stderr": ""
+        },
+        {
+          "command": "node node_modules/vitepress/bin/vitepress.js build knowledge",
+          "exitCode": 0,
+          "stdout": "\n  vitepress v1.6.4\n\nbuild complete in 2.82s.\n",
+          "stderr": "- building client + server bundles...\n\u001b[32m✓\u001b[0m building client + server bundles...\n- rendering pages...\n\u001b[32m✓\u001b[0m rendering pages...\n"
+        },
+        {
+          "command": "node scripts/check-site.mjs",
+          "exitCode": 0,
+          "stdout": "通过：11 个 HTML，275 处本地资源/页面/锚点引用，base /knowledge-hub/\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "liveSourceManifestsEqual": true,
+  "liveFilesChecked": 22,
+  "limitations": [
+    "Local Windows snapshots only",
+    "No Git checkout, revert commit, push or online rollback",
+    "Not independent dependency reinstallation"
+  ]
+}

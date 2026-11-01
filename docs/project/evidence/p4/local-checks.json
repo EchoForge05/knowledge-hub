@@ -1,0 +1,17 @@
+{
+  "yamlParser": "yaml 2.8.1 (temporary ignored tool)",
+  "workflowSyntax": "parsed; no duplicate keys",
+  "policyAssertions": "passed; events, permissions, branch gates, dependency and commands",
+  "negativeFixture": {
+    "exit": 1,
+    "stderr": "D:\\Project\\Codex Project\\knowledge-hub\\.private\\p4-negative-fixture\\fixture.md: 链接不存在 target.txt"
+  },
+  "repairedFixture": {
+    "exit": 0,
+    "stdout": "通过：1 份 Markdown，1 处本地文件链接（不含锚点与外链）；产物链接与锚点另用 check:site 检查。"
+  },
+  "limitations": [
+    "Not actionlint or GitHub schema validation",
+    "Not a real Actions runner or Linux test"
+  ]
+}
