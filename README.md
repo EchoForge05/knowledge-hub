@@ -14,4 +14,4 @@
 
 本地需 Node 24/npm 11：`npm ci`、`npm run dev`；检查用 `npm run check`，构建后运行 `npm run check:site`。访问 `/knowledge-hub/`，本机运行时设置见[开发说明](docs/handbook/site-development.md)。
 
-仓库和网站公开，只提交可公开内容；密钥与敏感原文不得入库。日常修改通过短期分支和PR审核；[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)的文档与验收成果已按D036授权合并，本批模型辅助与文档交付记录见[当前进度](docs/project/status.md)。
+仓库和网站公开，只提交可公开内容；密钥与敏感原文不得入库。日常修改通过短期分支和PR审核；本批文档与模型辅助已按D036通过[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)、[PR #3](https://github.com/EchoForge05/knowledge-hub/pull/3)合并，交付记录见[当前进度](docs/project/status.md)。
