@@ -4,7 +4,7 @@
 
 | 功能/目录或命令 | 实际状态 | 归属 |
 | --- | --- | --- |
-| knowledge/文章、分类与全文搜索 | 7篇已上线；本地阅读修订L05待交付 | Hub核心功能 |
+| knowledge/文章、分类与全文搜索 | 7篇已上线；阅读修订L05已通过PR #10交付 | Hub核心功能 |
 | docs/使用、内容规范、项目状态与历史 | 现有维护入口 | Hub独立维护；不保留Agent当前版本计划 |
 | dev/build/preview/check/check:site与Pages | 现有静态构建检查发布 | Hub保留，不依赖Agent |
 | Codex人工知识整理 | 流程已验证 | Hub维护方式 |
@@ -15,7 +15,7 @@
 
 平级knowledge-agent为独立本地Git仓库，负责可选AI能力的规划；其README、AGENTS、docs/project/roadmap.md为新项目入口。它没有应用实现，规划迁移不代表现有代码已迁移。
 
-本轮只做文档与项目结构整理；Hub知识正文、导航配置、脚本、依赖及发布流程未变。L05、L06、V06、M01等未完成项继续见[待办](backlog.md)，原实现和验收见[完成索引](../history/2026-11-01/structure-pass/completed-plans.md)。
+本轮只做文档与项目结构整理；Hub知识正文、导航配置、脚本、依赖及发布流程未变。L05已交付；L06、V06、M01等未完成项继续见[待办](backlog.md)，原实现和验收见[完成索引](../history/2026-11-01/structure-pass/completed-plans.md)。
 
 
 D045位置更新：上述Hub现位于knowledge-workspace/knowledge-hub，Agent位于同父目录的knowledge-agent；两者仍平级独立，功能归属不变。
