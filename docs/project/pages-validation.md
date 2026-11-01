@@ -2,6 +2,8 @@
 
 日期：2026-11-01（Asia/Shanghai）。按 D031 合并并继续 P4；当前完成实际发布和 HTTP 验证，P4-03 的线上浏览器交互仍待验收，P4 整体未完成。
 
+**D032 续验更正：** 本轮已补齐公开交互：中文“组件扫描”、英文 ConcurrentHashMap、代码完整文件名 restore_note_example.md 均第 1 条命中；无结果提示、实际结果跳到“显式指定来源”、390×844 分类目录展开及导航到阅读测试页通过。手机根宽/内容宽均 375，代码和表格 overflow=auto 且内部横向滚动；图片加载成功、宽约 327。桌面根宽/内容宽均 1265，图片正常，浏览器 warn/error 日志为空。证据见[线上交互摘要](evidence/p4/public-browser/results.json)、[手机指标](evidence/p4/public-browser/mobile.json)及同目录截图。下方“未验收/阻塞”为此前发布批次的历史状态，本次只测 3 组代表查询，不冒称重跑全部 14 组；真实设备与生产故障/并发未动态验证。
+
 ## 实际交付
 
 - [PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1) 已按用户本次授权正常合并；head 为 3bb3e2e，合并提交为 ec1d977afda87250cd33f0fdcad9dda793b04d5e，未压缩或改写既有历史。

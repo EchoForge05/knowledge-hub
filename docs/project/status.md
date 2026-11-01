@@ -1,5 +1,7 @@
 # 项目状态与续接入口
 
+**D032 当前更正：** 公开搜索、无结果、小节跳转与手机视口已通过代表性验收，证据见 [线上摘要](evidence/p4/public-browser/results.json)。下方此前“待浏览器验收”为发布批次历史描述，接下来继续 P4-04 的隔离回退演练及文档精简。
+
 更新日期：2026-11-01（Asia/Shanghai）。当前 docs/pages-delivery，基于 origin/main=ec1d977。D031 已授权并完成 PR #1 合并及 P4 Pages 发布；P4-01/P4-02 和 P4-03-deploy 限定子项完成，P4 整体未完成。P5 等 AI 服务确认。
 
 ## 已完成与验证
