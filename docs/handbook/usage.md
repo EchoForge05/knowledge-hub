@@ -88,6 +88,7 @@ npm run preview
 | 情况 | 处理 |
 | --- | --- |
 | Node版本/语法报错 | 用 `node --version`、`npm --version` 核对版本，再按本机指南选择运行时 |
+| 本地地址显示 `ERR_CONNECTION_REFUSED` | 检查对应端口的 dev/preview 服务是否运行；5173为开发、4173为生产预览，端口以启动输出为准。服务停止或电脑重启后需重新启动；日常阅读可直接打开[公开知识站](https://echoforge05.github.io/knowledge-hub/) |
 | 页面空白或资源404 | 使用带 `/knowledge-hub/` 的完整路径，检查终端实际端口 |
 | 搜索不到笔记 | 本地暂存和Issue尚未进入知识正文；已入库内容尝试短词或完整标识符 |
 | Issue校验失败 | 按表单补全字段、公开勾选并重新导出；检查JSON是否UTF-8、仓库/编号/状态是否正确 |

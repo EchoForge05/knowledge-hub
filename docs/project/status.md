@@ -13,6 +13,8 @@
 
 [网站](https://echoforge05.github.io/knowledge-hub/) · [完成索引](completed-plans.md) · [历史库](../history/README.md)
 
+阅读精简（D040，2026-11-01）：Spring文章精简及默认折叠已通过构建、搜索跳转和手机布局检查，见[本地回执](evidence/knowledge/spring-reading-browser.json)。用户已确认后续按[开发规范](../handbook/development.md#知识文章的阅读精简)执行；docs/spring-reading本批提交/PR交付进行中，尚未发布，线上仍为既有版本。
+
 上一批按D036完成提交、推送和检查后合并：[PR #2](https://github.com/EchoForge05/knowledge-hub/pull/2)合并点9e87939，[PR #3](https://github.com/EchoForge05/knowledge-hub/pull/3)合并点86c1f50，包含模型功能c207677/aaa417e与文档整理7ddce23。当时已同步本地main，旧分支保留；交付证据见[完成记录](completed-plans.md)。
 
 D038按授权推送并合并[PR #5](https://github.com/EchoForge05/knowledge-hub/pull/5)，head=73292ea、合并点9a0b160；[CI](https://github.com/EchoForge05/knowledge-hub/actions/runs/41283712615)与[Pages](https://github.com/EchoForge05/knowledge-hub/actions/runs/41283825644)成功，本地main已同步。表单文件已核对进入远程main，浏览器需登录，真实表单展示/Issue往返仍未验收。
