@@ -5,13 +5,13 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { prepare, requestDraft, saveDraft } from './ai-draft.mjs'
+import { prepare, requestDraft, requestDraftDetailed, saveDraft } from './ai-draft.mjs'
 
 await mkdir(path.resolve('.private'), { recursive: true })
 const fixture = await mkdtemp(path.resolve('.private/ai-test-'))
 await mkdir(path.join(fixture, 'knowledge'))
 await writeFile(path.join(fixture, 'knowledge/input.md'), '# 示例\n\n仅限公开编程资料。')
-const settings = { KNOWLEDGE_AI_MODEL: 'test-model', KNOWLEDGE_AI_CHAT_URL: 'https://endpoint.greatrouter.com/chat/completions' }
+const settings = { KNOWLEDGE_AI_MODEL: 'test-model', KNOWLEDGE_AI_CHAT_URL: 'https://endpoint.greatrouter.com/v1/chat/completions' }
 const plan = await prepare(fixture, 'knowledge/input.md', settings)
 
 test('命令默认无密钥可预览，不发送且不生成草稿', async () => {
@@ -27,7 +27,9 @@ test('只读取指定输入，拒绝目录外文件和带认证/重定向风险�
   assert.match(plan.source, /公开编程/)
   await writeFile(path.join(fixture, 'outside.md'), 'outside')
   await assert.rejects(prepare(fixture, 'outside.md', settings))
-  for (const url of ['http://endpoint.greatrouter.com/chat/completions', 'https://other.invalid/', 'https://endpoint.greatrouter.com/?key=secret']) {
+  const domestic = await prepare(fixture, 'knowledge/input.md', { ...settings, KNOWLEDGE_AI_CHAT_URL: 'https://endpoint.wendalog.com/v1/chat/completions' })
+  assert.equal(domestic.endpoint, 'https://endpoint.wendalog.com/v1/chat/completions')
+  for (const url of ['http://endpoint.greatrouter.com/v1/chat/completions', 'https://other.invalid/', 'https://endpoint.greatrouter.com/?key=secret', 'https://endpoint.wendalog.com/other']) {
     await assert.rejects(prepare(fixture, 'knowledge/input.md', { ...settings, KNOWLEDGE_AI_CHAT_URL: url }))
   }
 })
@@ -64,6 +66,21 @@ test('服务错误/非JSON/截断均退出且不重试，不回显响应内密�
     await assert.rejects(requestDraft(plan, 'fake-test-key', async () => { calls++; return response }), e => !e.message.includes('secret-body'))
     assert.equal(calls, 1)
   }
+})
+
+test('usage只提取非负整数，缺失不补造，不回显未知模型字符串', async () => {
+  const result = await requestDraftDetailed(plan, 'fake-test-key', async () => new Response(JSON.stringify({
+    model: 'test-model', usage: { prompt_tokens: 12, completion_tokens: 8, total_tokens: 20,
+      completion_tokens_details: { reasoning_tokens: 3 }, private_field: 'not exported' },
+    choices: [{ finish_reason: 'stop', message: { content: '# 草稿' } }]
+  })))
+  assert.deepEqual(result.usage, { inputTokens: 12, outputTokens: 8, totalTokens: 20, reasoningTokens: 3 })
+  const absent = await requestDraftDetailed(plan, 'fake-test-key', async () => new Response(JSON.stringify({
+    model: 'Bearer fake-test-key', usage: { prompt_tokens: -1 },
+    choices: [{ finish_reason: 'stop', message: { content: '# 草稿' } }]
+  })))
+  assert.equal(absent.responseModel, null)
+  assert.deepEqual(absent.usage, { inputTokens: null, outputTokens: null, totalTokens: null, reasoningTokens: null })
 })
 
 test('输出只存私有草稿，两次保存不覆盖，也不改原资料', async () => {

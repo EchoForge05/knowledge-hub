@@ -2,7 +2,7 @@
 
 按主题阅读、搜索和维护个人知识。
 
-**知识站已上线，P2–P4 的 MVP 验收完成；GreatRouter 模型 API 作为可选辅助，等待模型与调用边界确认。**
+**知识站已上线，P2–P4 的 MVP 验收完成；GreatRouter/gpt-6-sol 可选草稿辅助已通过3份公开资料验收，主维护仍用Codex。**
 
 - [打开知识站](https://echoforge05.github.io/knowledge-hub/)
 - [当前进度](docs/project/status.md) · [后续计划](docs/project/roadmap.md)

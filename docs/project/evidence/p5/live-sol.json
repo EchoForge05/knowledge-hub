@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-01",
+  "decision": "D034",
+  "model": "gpt-6-sol",
+  "endpoint": "https://endpoint.wendalog.com/v1/chat/completions",
+  "authorization": {
+    "maxAttempts": 3,
+    "maxCompletionTokens": 4096,
+    "automaticRetries": false
+  },
+  "attempts": [
+    {
+      "index": 0,
+      "input": "knowledge/git/restore-basics.md",
+      "inputBytes": 1971,
+      "inputSha256": "4479a0e18f2024b7cf1e6db39c955c43f248debfbe5c82b2d634e7071612d180",
+      "startedAt": "2026-11-01T04:08:52.507Z",
+      "status": "completed",
+      "elapsedMs": 6485,
+      "responseModel": "gpt-6-sol",
+      "usage": {
+        "inputTokens": 661,
+        "outputTokens": 668,
+        "totalTokens": 1329,
+        "reasoningTokens": 76
+      },
+      "outputSha256": "b3ad01390e91df025e0db06cd3e4cdf612f4022edec73c785050991fa338ac23",
+      "outputBytes": 2124,
+      "estimatedUSD": 0.0072018,
+      "qualityReview": {
+        "manual": "passed against supplied public source; no independent recheck of all source technical facts",
+        "codeBlocksPreserved": true,
+        "sourceLinksPreserved": true,
+        "versionAndConditionsPreserved": true,
+        "noNewMaterialFactualErrorObserved": true
+      },
+      "finishedAt": "2026-11-01T04:08:58.997Z",
+      "savedDraftSha256": "ffc0d4863de1a46bd94f8b118e7920816a7cadb9cf56cf5611ea996779ee9e4f"
+    },
+    {
+      "index": 1,
+      "input": "knowledge/databases/select-basics.md",
+      "inputBytes": 1078,
+      "inputSha256": "99dd12de683eb001c6c202e2a37c4b376e361a1b756dfdf81e14b69a8927f038",
+      "startedAt": "2026-11-01T04:09:35.248Z",
+      "status": "completed",
+      "elapsedMs": 5205,
+      "responseModel": "gpt-6-sol",
+      "usage": {
+        "inputTokens": 408,
+        "outputTokens": 486,
+        "totalTokens": 894,
+        "reasoningTokens": 167
+      },
+      "outputSha256": "a657d5d1bcbc3cdcb4fc95a7ed22d27da8bc072ead385e65a2617dfb5d064a7e",
+      "outputBytes": 1188,
+      "estimatedUSD": 0.0051084,
+      "qualityReview": {
+        "manual": "passed against supplied public source; no independent recheck of all source technical facts",
+        "codeBlocksPreserved": true,
+        "sourceLinksPreserved": true,
+        "versionAndConditionsPreserved": true,
+        "noNewMaterialFactualErrorObserved": true
+      },
+      "finishedAt": "2026-11-01T04:09:40.458Z",
+      "savedDraftSha256": "1626d09a874b750cdd4d153757515f2a7247b99b8f89fffb574adb59a067e37d"
+    },
+    {
+      "index": 2,
+      "input": "knowledge/spring/spring-boot-application.md",
+      "inputBytes": 1129,
+      "inputSha256": "e720979e6c7014c2599673e739b86e8433bc0a68a0bf6638d118bcd64aaa2ef9",
+      "startedAt": "2026-11-01T04:09:59.298Z",
+      "status": "completed",
+      "elapsedMs": 4114,
+      "responseModel": "gpt-6-sol",
+      "usage": {
+        "inputTokens": 381,
+        "outputTokens": 365,
+        "totalTokens": 746,
+        "reasoningTokens": 66
+      },
+      "outputSha256": "2e991ee201a3859ef7ac51dcbe880d5bd8472bf43c7eb3e4e3131e41909a81cf",
+      "outputBytes": 1255,
+      "estimatedUSD": 0.0039708,
+      "qualityReview": {
+        "manual": "passed against supplied public source; no independent recheck of all source technical facts",
+        "codeBlocksPreserved": true,
+        "sourceLinksPreserved": true,
+        "versionAndConditionsPreserved": true,
+        "noNewMaterialFactualErrorObserved": true
+      },
+      "finishedAt": "2026-11-01T04:10:03.416Z",
+      "savedDraftSha256": "592b0a1b816ab59f21819414f5faa5db53ec282c5ae78b170c937be222868cf3"
+    }
+  ],
+  "limitations": [
+    "Pricing estimates use the user-provided rates, not a verified invoice.",
+    "Drafts remain local and require semantic review; no publication or knowledge edits."
+  ],
+  "summary": {
+    "requests": 3,
+    "successful": 3,
+    "inputTokens": 1450,
+    "outputTokens": 1519,
+    "totalTokens": 2969,
+    "estimatedUSD": 0.016281,
+    "ratesUSDPerMillion": {
+      "input": 1.8,
+      "output": 9
+    },
+    "billingSource": "user-provided discounted prices plus API usage, not verified invoice",
+    "originalInputsUnchanged": true,
+    "autoPublished": false
+  }
+}

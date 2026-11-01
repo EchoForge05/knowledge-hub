@@ -46,9 +46,10 @@ export async function prepare(root, input, env = {}) {
   const endpoint = env.KNOWLEDGE_AI_CHAT_URL || ''
   if (endpoint) {
     const url = new URL(endpoint)
-    if (url.protocol !== 'https:' || url.hostname !== 'endpoint.greatrouter.com' ||
+    if (url.protocol !== 'https:' || !['endpoint.greatrouter.com', 'endpoint.wendalog.com'].includes(url.hostname) ||
+        url.pathname !== '/v1/chat/completions' ||
         url.username || url.password || url.search || url.hash || url.port) {
-      throw new Error('接口仅允许 endpoint.greatrouter.com 的 HTTPS 完整路径，不允许认证参数。')
+      throw new Error('接口仅允许已确认的 GreatRouter 主机及 /v1/chat/completions HTTPS 路径，不允许认证参数。')
     }
   }
   const tokens = Number(env.KNOWLEDGE_AI_MAX_COMPLETION_TOKENS || 4096)
@@ -58,7 +59,7 @@ export async function prepare(root, input, env = {}) {
   return { root, file, source, model, endpoint, tokens, bytes: bytes.length }
 }
 
-export async function requestDraft(plan, key, fetchImpl = fetch) {
+export async function requestDraftDetailed(plan, key, fetchImpl = fetch) {
   if (!plan.model || !plan.endpoint || !key) throw new Error('发送前需要显式配置模型、完整接口 URL 与密钥。')
   let response
   try {
@@ -82,7 +83,22 @@ export async function requestDraft(plan, key, fetchImpl = fetch) {
   if (choice?.finish_reason !== 'stop' || typeof choice.message?.content !== 'string' || !choice.message.content.trim()) {
     throw new Error('模型未正常完成纯文本输出，可能被截断或过滤；未保存草稿。')
   }
-  return choice.message.content
+  const number = value => Number.isSafeInteger(value) && value >= 0 ? value : null
+  return {
+    content: choice.message.content,
+    responseModel: typeof data.model === 'string' && /^[A-Za-z0-9._:/-]{1,120}$/.test(data.model) &&
+      (data.model === plan.model || data.model.startsWith(plan.model + '-')) ? data.model : null,
+    usage: {
+      inputTokens: number(data.usage?.prompt_tokens),
+      outputTokens: number(data.usage?.completion_tokens),
+      totalTokens: number(data.usage?.total_tokens),
+      reasoningTokens: number(data.usage?.completion_tokens_details?.reasoning_tokens)
+    }
+  }
+}
+
+export async function requestDraft(plan, key, fetchImpl = fetch) {
+  return (await requestDraftDetailed(plan, key, fetchImpl)).content
 }
 
 export async function saveDraft(plan, content) {
@@ -117,9 +133,10 @@ async function main() {
       notice: '未发送资料；token 限制不等于金额预算。实际调用前核对模型、价格及允许外发内容。' }, null, 2))
     return
   }
-  const content = await requestDraft(plan, process.env.KNOWLEDGE_AI_API_KEY)
-  const file = await saveDraft(plan, content)
+  const result = await requestDraftDetailed(plan, process.env.KNOWLEDGE_AI_API_KEY)
+  const file = await saveDraft(plan, result.content)
   console.log(`草稿已保存：${path.relative(plan.root, file)}；需 Codex/用户核对后再纳入知识库。`)
+  console.log(JSON.stringify({ requestedModel: plan.model, responseModel: result.responseModel, usage: result.usage }))
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
