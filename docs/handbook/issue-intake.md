@@ -2,7 +2,7 @@
 
 D037/D038范围：公开表单 → 人工选择与导出 → 本地离线校验/接收 → Codex人工整理。无需模型密钥，不监听Issue事件、不执行正文代码、不自动创建PR。接收命令完全离线；独立导出命令只有显式--fetch才只读访问GitHub。表单是输入提示，不是隐私审计或作者授权校验。
 
-版本：表单和离线接收已合并main（PR #5，9a0b160）；内置导出仅在本机feat/issue-export的57f88bc，尚未推送/建PR。只有main的使用者可用下方gh方式导出，或直接交资料给Codex。本文数字和文件名均为语法示例，使用前替换；不表示存在已通过验收的真实Issue样本。
+版本：表单和离线接收已合并main（PR #5，9a0b160）；内置导出57f88bc已通过PR #6合并（92a8ded），main使用者可选内置命令、gh导出或直接交资料给Codex。本文数字和文件名均为语法示例，使用前替换；不表示存在已通过验收的真实Issue样本。
 
 ## 1. 提交资料
 
@@ -12,7 +12,7 @@ D037/D038范围：公开表单 → 人工选择与导出 → 本地离线校验/
 
 ## 2. 人工核对并导出
 
-维护者先在GitHub核对来源、作者与公开范围。D038续开发在本地增加无需gh、无需登录或密钥的公开Issue导出（尚未推送）：
+维护者先在GitHub核对来源、作者与公开范围。main已包含无需gh、无需登录或密钥的公开Issue导出：
 
 ```sh
 npm run issue:export -- --number 123
@@ -57,7 +57,7 @@ npm run issue:intake -- --input "inbox/local/实际导出文件名.json" --accep
 
 ## 验证边界与依据
 
-离线测试：本地57f88bc运行 `npm run test:issue` 共14项通过，无需密钥、网络或真实Issue；main的PR #5版本仅包含9项接收测试且Linux CI通过。真实PR #5只读请求被正确拒绝，不代表成功Issue往返。新增5项导出测试的Linux CI仍待验（V07）；GitHub表单实际展示和真实Issue正向往返仍待验（V06），上轮检索没有既有Issue，需选定可公开样本。自动触发、模型PR、事件恢复和费用控制仍见[待办](../project/backlog.md)。
+离线测试：`npm run test:issue` 共14项通过，无需密钥、网络或真实Issue；PR #6 Linux CI已验证全部14项，V07完成。真实PR #5只读请求被正确拒绝，不代表成功Issue往返。GitHub表单实际展示和真实Issue正向往返仍待验（V06），上轮检索没有既有Issue，需选定可公开样本。自动触发、模型PR、事件恢复和费用控制仍见[待办](../project/backlog.md)。
 
 2026-11-01核对：[GitHub Issue表单语法](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)、[字段验证语法](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema)、[gh issue view JSON字段](https://cli.github.com/manual/gh_issue_view)。
 

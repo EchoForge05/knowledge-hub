@@ -2,14 +2,14 @@
 
 ## 选择使用方式
 
-更新：2026-11-01，按本地提交57f88bc及已记录的PR #5交付结果核对。
+更新：2026-11-01，按PR #6合并点92a8ded及CI/Pages交付结果核对。
 
 | 需求 | 入口 | 当前可用范围 |
 | --- | --- | --- |
 | 阅读和搜索 | [公开知识站](https://echoforge05.github.io/knowledge-hub/) | 已上线 |
 | 新增或修订笔记 | 向本仓库Codex对话发送资料 | 已验证，日常维护推荐入口 |
 | 提交公开资料、人工接收 | GitHub知识表单、`issue:intake` | 已合并main；表单实际展示和真实Issue正向往返仍待验收 |
-| 无密钥导出公开Issue | `issue:export` | 仅本机feat/issue-export分支，提交57f88bc；尚未推送，远程main中没有此命令 |
+| 无密钥导出公开Issue | `issue:export` | 已通过PR #6合并main，14项Issue离线测试及Linux CI通过；真实Issue往返仍待验 |
 | 模型辅助生成草稿 | `ai:draft` | 已合并main，可选；发送需本机配置与调用授权 |
 
 网站用于阅读，新增资料需要维护者整理审核；Issue提交、导出、接收都不会自动生成知识文章或发布。完整未完成清单见[待办登记](../project/backlog.md)。
@@ -39,7 +39,7 @@
 
 在[仓库新建Issue页面](https://github.com/EchoForge05/knowledge-hub/issues/new/choose)登录后选择“公开知识资料”，填写主题、正文、公开来源、环境/版本和疑点，并确认已移除敏感信息。Issue会公开；维护者决定是否处理。
 
-维护者核对原始Issue后导出JSON，再离线校验与接收，最后交给Codex检索和整理。完整步骤与main上可用的GitHub CLI导出方式见[Issue人工接收说明](issue-intake.md)。当前本地分支也可用以下无密钥导出：
+维护者核对原始Issue后导出JSON，再离线校验与接收，最后交给Codex检索和整理。完整步骤与可选GitHub CLI导出方式见[Issue人工接收说明](issue-intake.md)。更新至main后可用以下无密钥导出：
 
 ```sh
 npm run issue:export -- --number 123
@@ -81,7 +81,7 @@ npm run preview
 
 通常直接用Codex维护。若要使用已实现的手动模型辅助，按[可选模型草稿](optional-ai.md)本机配置密钥；默认预览不发送，`--send` 才会外发指定资料并可能计费。草稿需复核，不能直接发布。既有3次Agent验收额度已用尽，追加Agent请求需新授权。
 
-开发通过后在短期分支提交，按当次授权推送并创建PR；用户审核合并后，既有Pages工作流检查和发布。远程地址、发布检查和回退见[发布与回退](github-delivery.md)。本地导出功能57f88bc尚未交付到main，使用时先确认当前版本。
+开发通过后在短期分支提交，按当次授权推送并创建PR；用户审核合并后，既有Pages工作流检查和发布。远程地址、发布检查和回退见[发布与回退](github-delivery.md)。导出功能57f88bc已随PR #6交付，使用时先更新当前版本。
 
 ## 常见问题
 
@@ -91,7 +91,7 @@ npm run preview
 | 页面空白或资源404 | 使用带 `/knowledge-hub/` 的完整路径，检查终端实际端口 |
 | 搜索不到笔记 | 本地暂存和Issue尚未进入知识正文；已入库内容尝试短词或完整标识符 |
 | Issue校验失败 | 按表单补全字段、公开勾选并重新导出；检查JSON是否UTF-8、仓库/编号/状态是否正确 |
-| `Missing script: issue:export` | 远程main尚无导出命令；可继续用Codex直接整理，或按详细说明用gh导出后离线接收 |
+| `Missing script: issue:export` | 本地可能仍为PR #6前版本；更新至最新main，或继续用Codex直接整理/gh导出后离线接收 |
 | JSON文件不存在 | 内置导出文件名含摘要，复制终端实际路径；不要直接照抄文档中的示例文件名 |
 | 导出失败或限流 | 核对Issue是否开放、是否误用PR编号、表单是否完整；检查网络/代理或等待限流解除，不自动重试 |
 | 同一Issue重复接收 | 同一内容保留原文件；修订内容产生另一稿，人工对照来源与摘要避免重复处理 |
