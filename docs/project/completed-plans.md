@@ -110,3 +110,15 @@
 正常 GCM 浏览器登录成功；官方 API 核对 EchoForge05/ID44670012 后创建 public 的 knowledge-hub（auto_init=false），连接器复核仓库 ID1441409907 和写权限。origin HTTPS 与仓库局部 noreply 身份正确；常见密钥模式检查无命中，私有/依赖/产物排除。首次正常 push main 与 feat/pages-ci 成功，ls-remote 读回 1a6cb5466734df86e12b99c330ee6d3dc571b7d2 和 14cc80b4d61540e90a782d28de19a33a8cf55b49；没有强推或改写历史。
 
 [公开仓库](https://github.com/EchoForge05/knowledge-hub)、[草稿 PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1)，复验与边界见[完整记录](full-validation.md)。直连曾超时，使用本机已有代理按命令生效；凭据只在内存用于 GitHub，不落盘/输出。真实成功/失败 CI、Pages 和实际线上回退分别转回 P4-02–P4-04，未将 P4 整阶段归档。
+
+## P4-02：真实 CI 成功、失败与修复
+
+完成/归档日期：2026-11-01。原目标：复用文档/链接/构建脚本的最小权限 Actions，一个真实 PR 成功运行，并在工作分支制造可控坏链接验证失败、随后恢复复验，不合并故障改动。
+
+- [PR #1 成功运行](https://github.com/EchoForge05/knowledge-hub/actions/runs/41264722214)：42bdcd6，pull_request，Ubuntu Documents and site 的安装、check、build、check:site 全部成功。
+- [坏链接失败运行](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265093401)：隔离 codex/ci-validation 分支 c353df9，push。仅新增有说明的测试 Markdown，目标文件故意不存在；日志确认为该链接错误，check exit 1，build/check:site skipped。
+- [恢复成功运行](https://github.com/EchoForge05/knowledge-hub/actions/runs/41265169454)：6e06b24 移除夹具后，check/build/check:site 全部成功。git diff 42bdcd6 6e06b24 为空，两端文件树相同。正式 feat/pages-ci 和 main 没有引入夹具。
+
+步骤原始摘要见 [remote-ci.json](evidence/p4/remote-ci.json)。连接器仅查 PR 事件，分支 push 运行通过官方 API 只读查询后，再用连接器读取 jobs/logs；凭据不保存或输出。本地 Git 锁和受限网络首次失败后使用审批执行正常 Git 操作，没有强推或改写历史。验证分支保留用于追溯，不新建重复 PR、不合并。
+
+限制：故障/修复为 push 事件，非 PR 故障事件；未验证 main 构建失败不发布、Pages 并发、公开访问或线上回退，继续由 P4-03/P4-04 承接。P4 整阶段未完成，依赖风险与 P5 边界不变。

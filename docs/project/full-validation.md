@@ -31,3 +31,7 @@
 [公开仓库](https://github.com/EchoForge05/knowledge-hub)与[草稿 PR #1](https://github.com/EchoForge05/knowledge-hub/pull/1)已存在。本轮将搜索修复、工作流、原队列证据和关联文档合为一次中文提交后正常推送 feat/pages-ci；最终 SHA、push 回执和 CI 状态从 Git/PR 实际记录读取，不在提交前预写成功。
 
 P4-01 已验收归档；P4-02 真实成功/失败 CI、P4-03 用户审核合并后的 Pages 发布、P4-04 实际公开回退仍未完成，P4 整体未归档。公开仓库可读不代表知识站已部署。P5 等用户确认 AI 服务后开工。
+
+## 提交后与续开发更正（2026-11-01）
+
+上述交付前状态保留。实际 42bdcd6 已正常 push，远程 SHA 一致；真实 PR CI 成功，后续隔离分支坏链接失败/修复成功均已验证，P4-02 已归档。事件与逐步骤证据见 [remote-ci.json](evidence/p4/remote-ci.json) 和 [P4-02 归档](completed-plans.md#p4-02真实-ci-成功失败与修复)。未修改生产知识、搜索配置或依赖，本次不重跑浏览器；Pages、用户合并及实际公开回退仍未完成。
