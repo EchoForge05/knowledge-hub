@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-01",
+  "mode": "isolated local clone, no push or public rollback",
+  "original_sha": "fd7957d8885ddd615a8fee6b79fa942a533b9741",
+  "tested_commit": "14cc80b",
+  "restored_tree_equals": "70c8365",
+  "isolated_revert_commit": "f44ab9e54ee451ce37bdd7e3f72ee16febee699b",
+  "checks": {
+    "documents": "通过：26 份 Markdown，72 处本地文件链接（不含锚点与外链）；产物链接与锚点另用 check:site 检查。",
+    "build": "vitepress v1.6.4\n\nbuild complete in 2.42s.",
+    "site": "通过：10 个 HTML，234 处本地资源/页面/锚点引用，base /knowledge-hub/"
+  },
+  "official_worktree_unchanged": true,
+  "limitations": [
+    "Dependencies copied only after exact lockfile comparison, no independent npm ci.",
+    "No public site revert, production failure or deployment concurrency experiment."
+  ]
+}
