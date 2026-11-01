@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "authorization": "D037",
+  "scope": "P5-03-manual: offline intake and human processing only",
+  "branch": "feat/issue-intake",
+  "baseCommit": "7444fa2",
+  "runtime": "Node 24.22.1 / npm 11.19.1 / Windows",
+  "checks": {
+    "issueTests": { "passed": 9, "failed": 0, "command": "npm run test:issue" },
+    "existingAiTests": { "passed": 7, "failed": 0, "command": "npm run test:ai", "realRequests": 0 },
+    "build": { "passed": true, "seconds": 2.65 },
+    "site": { "passed": true, "html": 11, "localReferences": 275 },
+    "docs": { "passed": true, "markdown": 60, "localFileLinks": 324 }
+  },
+  "covered": ["default CLI preview creates no intake file", "explicit CLI accept and nonzero failure exit", "fixed repository and issue number/state", "required fields and public acknowledgement", "code fences preserved", "credential pattern and size rejection", "UTF-8/BOM and JSON validation", "duplicate and concurrent intake does not overwrite", "revised input produces separate draft", "output directory junction escape rejected"],
+  "environmentNote": "First sandbox run could not create a Windows junction (EPERM); full offline tests were rerun with permitted filesystem access and passed.",
+  "notVerified": ["GitHub hosted form rendering", "real Issue export/import roundtrip", "Linux CI execution", "automatic Issue event handling", "semantic deduplication automation"],
+  "externalWrites": false,
+  "modelCalls": 0,
+  "limitations": ["Local JSON metadata does not authenticate an author or source.", "Credential patterns are not a full privacy audit.", "Existing CI gains offline tests; no Issue-triggered workflow is added.", "Push, PR and merge are pending separate authorization."]
+}

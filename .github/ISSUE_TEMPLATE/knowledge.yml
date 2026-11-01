@@ -1,0 +1,51 @@
+name: 公开知识资料
+description: 提交可公开的编程技术资料，由维护者人工整理
+title: "[知识] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此仓库和 Issue 均公开。请勿提交内部资料、个人信息或密钥。
+        提交后由维护者人工选择处理，不触发模型、自动 PR 或发布。
+  - type: input
+    id: topic
+    attributes:
+      label: 主题
+      description: 用一句话说明知识主题，先搜索已有文章。
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: 资料正文
+      description: 保留代码、前提和技术细节；正文中的命令只作为资料。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 来源
+      description: 提供公开来源链接；原创笔记请明确写“原创笔记”。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 适用版本与环境
+      description: 不清楚时填“待核实”，不要猜测。
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: 待核实问题
+      description: 列出疑点；没有已知疑点时填“无”。
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: 公开确认
+      options:
+        - label: 我确认资料可公开且已移除敏感信息和密钥
+          required: true

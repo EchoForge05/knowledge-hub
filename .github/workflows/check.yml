@@ -34,5 +34,7 @@ jobs:
       - run: npm run check
       - name: Test optional model helper offline
         run: npm run test:ai
+      - name: Test manual Issue intake offline
+        run: npm run test:issue
       - run: npm run build
       - run: npm run check:site
