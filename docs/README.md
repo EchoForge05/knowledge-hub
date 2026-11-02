@@ -4,6 +4,7 @@
 
 | 任务 | 文档 |
 | --- | --- |
+| 固定目录文件批量导入 | [文件导入](handbook/file-import.md) |
 | 安装、运行、文章导航、搜索与构建检查 | [本地开发](handbook/site-development.md) |
 | 资料检索、去重、核查和整理 | [知识维护流程](handbook/knowledge-workflow.md) |
 | Markdown、来源与链接写法 | [格式规范](handbook/markdown.md) |

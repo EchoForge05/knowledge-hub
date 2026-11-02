@@ -1,6 +1,6 @@
 # 知识整理流程
 
-本文件规定人工与 Agent 共用的工作方法。P3 已实际走通新建、增补、完全重复、近义重复、矛盾与不确定性处理；这是会话内维护流程，没有自动化入口。阶段验证结果见[维护试点记录](../history/2026-11-01/structure-pass/knowledge-pilot-validation.md)。
+本文件规定人工与 Agent 共用的工作方法。P3 已实际走通新建、增补、完全重复、近义重复、矛盾与不确定性处理；D049新增[固定目录文件导入](file-import.md)，由用户在会话中输入“导入知识”触发，不自动监听或调用模型 API。阶段验证结果见[维护试点记录](../history/2026-11-01/structure-pass/knowledge-pilot-validation.md)。
 
 ## 用户如何提交
 

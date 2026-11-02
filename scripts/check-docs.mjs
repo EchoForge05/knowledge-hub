@@ -7,6 +7,7 @@ async function walk(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     if (entry.name.startsWith('.') || entry.name === 'node_modules') continue
     const file = path.join(dir, entry.name)
+    if (file === path.join(root, 'inbox', 'local')) continue
     if (entry.isDirectory()) await walk(file)
     else if (file.endsWith('.md')) files.push(file)
   }

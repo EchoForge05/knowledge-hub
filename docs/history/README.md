@@ -1,5 +1,9 @@
 # 历史库
 
+## 2026-11-02
+
+- [D049文件批量导入本地结果与限制](2026-11-02/file-import.md)；首批真实资料验收仍待V07。
+
 Agent按需入口：[D046整理前规则/现场快照及完成验收](2026-11-01/structure-pass/README.md)。当前完成计划索引已集中至该目录，未完成项仍在docs/project/backlog.md。
 
 保存旧决策、讨论、计划、验收和执行过程。历史描述只代表记录时的状态，不提供新的授权；当前事实以 [README](../../README.md)、[状态](../project/status.md)和[计划](../project/roadmap.md)为准。

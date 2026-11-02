@@ -35,6 +35,10 @@
 
 较长资料保存为 `inbox/local/笔记.md`，然后告诉 Codex 路径。这是被 Git 忽略的本地暂存区，不会自动备份或发布，也不提供加密。只输入可公开或充分脱敏的材料。维护时按[知识整理流程](knowledge-workflow.md)检索、核查、更新原主题；通过检查后按授权提交，PR由用户审核。
 
+## 从文件批量导入
+
+将 UTF-8 Markdown/TXT 放入 `inbox/local/pending/`，可一次放多个文件或多主题长文，然后在本项目 Codex 输入“导入知识”。Agent 按主题检索、去重、整理和验证，原文保留，本地哈希回执识别已处理内容；未完成项保留待处理。详见[文件导入说明](file-import.md)。Word/PDF 暂需先转文本，不自动监听或发布。
+
 ## 通过 Issue 提交公开资料
 
 在[仓库新建Issue页面](https://github.com/EchoForge05/knowledge-hub/issues/new/choose)登录后选择“公开知识资料”，填写主题、正文、公开来源、环境/版本和疑点，并确认已移除敏感信息。Issue会公开；维护者决定是否处理。

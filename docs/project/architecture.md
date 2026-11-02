@@ -12,6 +12,8 @@
 
 | 路径 | 职责与何时使用 |
 | --- | --- |
+| scripts/file-intake.mjs、file-intake.test.mjs | 离线扫描、输入及目标文章哈希回执核对与测试；正文整理由当前 Codex 会话完成 |
+| docs/handbook/file-import.md、inbox/import-example.txt | 文件导入操作协议与输入示例 |
 | README.md | 用户总入口：功能、使用、架构和待办路由 |
 | AGENTS.md | Agent恢复流程、规则、授权及安全边界 |
 | knowledge/ | 对外知识正文；按java、spring、databases、linux、git等主题分类 |
