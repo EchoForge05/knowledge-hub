@@ -4,9 +4,9 @@
 
 | 分类 | 收录方向 | 状态 |
 | --- | --- | --- |
-| Java | 语言、JVM、并发 | [ConcurrentHashMap](java/concurrent-hash-map.md) |
+| Java | 语言、JVM、并发 | [ConcurrentHashMap](java/concurrent-hash-map.md)、[Java 类初始化、对象构造与方法重载](java/initialization-and-overloading.md)、[进程、线程与 Java 并发](java/processes-and-threads.md) |
 | Spring | Spring 及其生态 | [应用入口注解](spring/spring-boot-application.md)、[单例 Bean 与线程安全](spring/singleton-bean-thread-safety.md) |
-| 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](databases/select-basics.md) |
+| 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](databases/select-basics.md)、[InnoDB 的 redo、undo 与 MVCC](databases/innodb-logs-and-mvcc.md)、[MySQL 深分页与联合索引优化](databases/mysql-pagination-and-indexes.md)、[MySQL InnoDB 与 Oracle：索引、事务和分页](databases/mysql-oracle-comparison.md) |
 | Linux | 系统使用与运维 | [head 文本查看](linux/head-basics.md) |
 | Git | 版本管理与协作 | [差异检查](git/diff-basics.md)、[恢复文件与取消暂存](git/restore-basics.md) |
 | AI Agent | 工具与实践 | 待收录 |
