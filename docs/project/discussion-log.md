@@ -46,3 +46,5 @@ D048交付结果：PR #10的head=2b68796868361c5c13a2da2cb86d2b5f2ade8503，PR/�
 收尾检查：73份Markdown/434处本地文件链接通过；VitePress构建通过（4.78秒），12个HTML/305处本地资源、页面、锚点引用通过；git diff --check通过。文档重组未改变产品行为，未新增浏览器验收或重复模型/Issue测试；复用D042既有浏览器证据。分支仍docs/site-reading，HEAD仍59d10c4，已有和本轮成果均未提交。下一步仍为审阅L05、按条件处理V06及确认L06方案，不自动开工新功能；不提交、推送、部署或调用模型。
 
 此前讨论见[整理前快照](../history/2026-11-01/structure-pass/before-discussion-log.md)，历史记录不代表当前授权。
+
+2026-11-03 D052结果：PR #12核对head=6baa96b及CI成功后合并为d40abea，Pages构建与部署任务均成功，新增文章HTTP 200。本地main已同步；[交付证据](../history/2026-11-03/delivery.md)。收尾文档同批经PR交付，V07继续待确认。
