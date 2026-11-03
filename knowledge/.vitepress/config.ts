@@ -18,12 +18,12 @@ export default defineConfig({
         { text: '知识目录', link: '/topics' },
         { text: '使用指南', link: '/guide' }
       ] },
-      { text: 'Java', items: [{ text: 'ConcurrentHashMap', link: '/java/concurrent-hash-map' }] },
+      { text: 'Java', items: [{ text: 'ConcurrentHashMap', link: '/java/concurrent-hash-map' }, { text: 'Java 类初始化、对象构造与方法重载', link: '/java/initialization-and-overloading' }, { text: '进程、线程与 Java 并发', link: '/java/processes-and-threads' }] },
       { text: 'Spring', items: [
         { text: '应用入口注解', link: '/spring/spring-boot-application' },
         { text: '单例 Bean 与线程安全', link: '/spring/singleton-bean-thread-safety' }
       ] },
-      { text: '数据库与 SQL', items: [{ text: 'SQL 查询基础', link: '/databases/select-basics' }] },
+      { text: '数据库与 SQL', items: [{ text: 'SQL 查询基础', link: '/databases/select-basics' }, { text: 'InnoDB 的 redo、undo 与 MVCC', link: '/databases/innodb-logs-and-mvcc' }, { text: 'MySQL 深分页与联合索引优化', link: '/databases/mysql-pagination-and-indexes' }, { text: 'MySQL InnoDB 与 Oracle：索引、事务和分页', link: '/databases/mysql-oracle-comparison' }] },
       { text: 'Git', items: [
         { text: '工作区与暂存区差异', link: '/git/diff-basics' },
         { text: '恢复工作区与暂存区', link: '/git/restore-basics' }
