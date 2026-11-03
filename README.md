@@ -21,7 +21,7 @@
 
 | 功能 | 当前行为与边界 |
 | --- | --- |
-| 文件批量导入 | 将 Markdown/TXT 放入 `inbox/local/pending/`，在 Codex 输入“导入知识”；按主题去重整理，本地哈希回执记录结果，见[文件导入](docs/handbook/file-import.md) |
+| 文件批量导入 | 将 Markdown/TXT 放入 `inbox/local/pending/`，在 Codex 输入“导入知识”；按主题去重整理，验证并复核成功回执后自动删除原文件，失败或部分完成保留，见[文件导入](docs/handbook/file-import.md) |
 | 分类阅读 | 12篇技术文章，覆盖 Java、Spring、SQL、Linux、Git；支持代码高亮、表格、图片、内链与手机布局 |
 | 全文搜索 | 站内本地搜索，Ctrl / Command + K 打开；中文逐字匹配，ASCII 标识符整词匹配，不保证任意子串或短语连续性 |
 | 知识维护 | 将资料交给 Codex，搜索已有主题后新建、增补、去重或处理矛盾，保留原理、示例、版本、风险与来源 |
