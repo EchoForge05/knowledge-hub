@@ -2,7 +2,7 @@
 
 更新：2026-11-07。Agent 恢复用，用户从根 README 进入。
 
-第二批知识包括 5 篇新文章和 ConcurrentHashMap 实现补充，本批导入与发布状态见[本批记录](../history/2026-11-07/knowledge-import.md)。
+第二批知识已通过 PR #14 发布，5 篇新文章和 ConcurrentHashMap 的更新均已在线核验。待处理目录为空，验证及部署证据见[本批记录](../history/2026-11-07/knowledge-import.md)。
 
 D052：本批已通过[PR #12](https://github.com/EchoForge05/knowledge-hub/pull/12)合并，合并点 `d40abea`；CI与Pages构建/部署任务成功，线上新增文章HTTP 200。详见[交付记录](../history/2026-11-03/delivery.md)。本地main已同步，V07仍待用户阅读确认。
 
