@@ -30,7 +30,7 @@ npm run preview
 
 1. 按[知识维护流程](knowledge-workflow.md)先搜索现有主题，确认来源、版本和公开边界。
 2. 在 `knowledge/` 对应分类维护 Markdown，使用相对内链。图片放 `assets/images/`；不要把过程文档链接进站点正文。
-3. 更新 `knowledge/topics.md` 以及 `knowledge/.vitepress/config.ts` 中的小规模手工侧栏；空分类只显示说明，不添加无效页面链接。
+3. 更新 `knowledge/topics.md` 以及 `knowledge/.vitepress/config.ts` 中的小规模手工侧栏。目录使用顿号分隔链接，侧栏文章项各占一行，便于下架时定位；空分类只显示说明。
 4. 执行文档检查与构建。修改搜索内容时按[本地验收记录](../history/2026-11-01/structure-pass/site-validation.md)复测相关查询和结果跳转。
 5. 同步项目状态和相关说明；已验收任务归档。新增开发通过必要验证后，可按 D023 将成果及配套文档提交一次，提交说明用中文；推送与部署仍遵守原授权边界。
 

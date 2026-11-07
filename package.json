@@ -17,6 +17,7 @@
     "test:issue": "node --test scripts/issue-intake.test.mjs scripts/issue-export.test.mjs",
     "issue:export": "node scripts/issue-export.mjs",
     "knowledge:scan": "node scripts/file-intake.mjs",
+    "knowledge:remove": "node scripts/remove-article.mjs",
     "test:intake": "node --test scripts/file-intake.test.mjs"
   },
   "devDependencies": { "vitepress": "1.6.4" }

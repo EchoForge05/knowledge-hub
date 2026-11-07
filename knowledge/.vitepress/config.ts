@@ -37,16 +37,20 @@ export default defineConfig({
         { text: 'MySQL InnoDB 与 Oracle：索引、事务和分页', link: '/databases/mysql-oracle-comparison' },
         { text: 'Redis 分布式锁', link: '/databases/redis-distributed-lock' }
       ] },
-      { text: 'AI Agent', items: [{ text: 'Agent 的 Prompt 与 Context', link: '/agent/prompt-and-context' }] },
+      { text: 'AI Agent', items: [
+        { text: 'Agent 的 Prompt 与 Context', link: '/agent/prompt-and-context' }
+      ] },
       { text: 'Git', items: [
         { text: '工作区与暂存区差异', link: '/git/diff-basics' },
         { text: '恢复工作区与暂存区', link: '/git/restore-basics' }
       ] },
-      { text: 'Linux', items: [{ text: 'head 文本查看', link: '/linux/head-basics' }] },
+      { text: 'Linux', items: [
+        { text: 'head 文本查看', link: '/linux/head-basics' }
+      ] },
       { text: '站点验证', collapsed: true, items: [
         { text: '阅读与搜索测试页', link: '/examples/reading-check' }
       ] }
-    ],
+    ].filter(group => group.items.length),
     outline: { label: '本页目录', level: [2, 3] },
     docFooter: { prev: '上一篇', next: '下一篇' },
     sidebarMenuLabel: '目录',
