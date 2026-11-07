@@ -4,12 +4,12 @@
 
 | 分类 | 收录方向 | 状态 |
 | --- | --- | --- |
-| Java | 语言、JVM、并发 | [ConcurrentHashMap](java/concurrent-hash-map.md)、[Java 类初始化、对象构造与方法重载](java/initialization-and-overloading.md)、[进程、线程与 Java 并发](java/processes-and-threads.md) |
-| Spring | Spring 及其生态 | [应用入口注解](spring/spring-boot-application.md)、[单例 Bean 与线程安全](spring/singleton-bean-thread-safety.md) |
-| 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](databases/select-basics.md)、[InnoDB 的 redo、undo 与 MVCC](databases/innodb-logs-and-mvcc.md)、[MySQL 深分页与联合索引优化](databases/mysql-pagination-and-indexes.md)、[MySQL InnoDB 与 Oracle：索引、事务和分页](databases/mysql-oracle-comparison.md) |
+| Java | 语言、JVM、并发 | [ConcurrentHashMap](java/concurrent-hash-map.md)、[HashMap 的扩容与树化](java/hash-map-internals.md)、[Java 并发计数、可重入锁与死锁](java/concurrency-and-locks.md)、[Java 类初始化、对象构造与方法重载](java/initialization-and-overloading.md)、[进程、线程与 Java 并发](java/processes-and-threads.md) |
+| Spring | Spring 及其生态 | [应用入口注解](spring/spring-boot-application.md)、[单例 Bean 与线程安全](spring/singleton-bean-thread-safety.md)、[Spring JDBC 与 InnoDB 转账事务](spring/jdbc-transactions-and-transfers.md) |
+| 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](databases/select-basics.md)、[InnoDB 的 redo、undo 与 MVCC](databases/innodb-logs-and-mvcc.md)、[MySQL 深分页与联合索引优化](databases/mysql-pagination-and-indexes.md)、[MySQL InnoDB 与 Oracle：索引、事务和分页](databases/mysql-oracle-comparison.md)、[Redis 分布式锁](databases/redis-distributed-lock.md) |
 | Linux | 系统使用与运维 | [head 文本查看](linux/head-basics.md) |
 | Git | 版本管理与协作 | [差异检查](git/diff-basics.md)、[恢复文件与取消暂存](git/restore-basics.md) |
-| AI Agent | 工具与实践 | 待收录 |
+| AI Agent | 工具与实践 | [Agent 的 Prompt 与 Context](agent/prompt-and-context.md) |
 | 软件工程 | 设计、开发与测试 | 待收录 |
 | 银行业务 | 可公开的通用知识 | 待收录 |
 

@@ -8,7 +8,7 @@
 
 进程通常拥有独立地址空间，也可通过显式共享内存等机制通信；线程共享进程资源，各自维护调用栈与执行状态。共享数据方便协作，也带来竞态与可见性问题。上述“CPU 调度单位”是传统平台线程模型的概括，不表示所有 Java 线程都与操作系统线程一一对应。JVM 内线程的种类和数量取决于实现与配置。
 
-相关知识：[Spring 单例与线程安全](../spring/singleton-bean-thread-safety.md)、[ConcurrentHashMap](concurrent-hash-map.md)。
+相关知识包括 [Spring 单例与线程安全](../spring/singleton-bean-thread-safety.md)、[ConcurrentHashMap](concurrent-hash-map.md) 和 [Java 并发计数、可重入锁与死锁](concurrency-and-locks.md)。
 
 ## 来源与适用范围
 
