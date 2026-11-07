@@ -14,4 +14,8 @@
 
 本地 VitePress 构建及产物检查通过，覆盖 22 个 HTML 与 832 处本地引用。生产预览中，11 组搜索均在第 1 位返回预期页面，点击后页面与锚点匹配。iPhone 13 模拟视口下，从目录进入 5 篇新文章和 ConcurrentHashMap，页面均无整体横向溢出。
 
-发布经既有 PR 检查和 Pages 流程，用户阅读验收仍见 [V07](../../project/backlog.md#v07文件导入首批真实使用验证)。
+3 份导入回执已在本地落盘。逐一复核回执、原文件和目标文章的 SHA-256 后删除对应原文件，再扫描确认待处理目录为空。
+
+[PR #14](https://github.com/EchoForge05/knowledge-hub/pull/14) 的头提交为 `dbf624337cc59043da3de24669f68e6a670803a0`，[Knowledge checks](https://github.com/EchoForge05/knowledge-hub/actions/runs/42369177241) 通过后合并为 `8a2cd4ce9b63b4be9de75d2748b2c14c73a56a41`。对应 [Pages 工作流](https://github.com/EchoForge05/knowledge-hub/actions/runs/42369238134) 的构建与部署任务均成功。线上目录和 6 篇新增或更新文章均返回 HTTP 200，并命中本批正文标记。
+
+本地 main 已快进到文章发布合并点，收尾记录同批交付。下一步是按阅读反馈维护知识或在有新资料时继续导入，用户阅读验收仍见 [V07](../../project/backlog.md#v07文件导入首批真实使用验证)。
