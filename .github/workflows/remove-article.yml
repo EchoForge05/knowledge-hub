@@ -1,0 +1,48 @@
+name: Prepare article removal
+
+on:
+  workflow_dispatch:
+    inputs:
+      article:
+        description: '文章路径，例如 git/diff-basics.md'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.22.1'
+          package-manager-cache: false
+      - run: npm install --global npm@11.19.1 --ignore-scripts
+      - run: npm ci --ignore-scripts
+      - name: Prepare the removal and validate the site
+        env:
+          ARTICLE: ${{ inputs.article }}
+        run: |
+          node scripts/remove-article.mjs "$ARTICLE" --apply
+          npm run check
+          npm run build
+          npm run check:site
+          git diff --check
+      - name: Push a review branch and link to the PR form
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="docs/remove-article-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -am 'docs: 下架知识文章'
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' \
+            push origin "HEAD:refs/heads/$branch"
+          echo "[审核下架差异并创建 PR]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$branch?expand=1)" >> "$GITHUB_STEP_SUMMARY"
