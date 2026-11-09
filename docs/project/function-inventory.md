@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | 固定目录文件批量导入 | D049会话触发，Markdown/TXT扫描和本地回执；不启动独立服务 | Hub维护入口 |
 | 文章下架 | D053 已发布，GitHub 维护流程可生成审核分支 | Hub维护入口 |
+| Codex 文章维护请求 | D054 已通过本地验证，待发布 | Hub维护入口 |
 | knowledge/文章、分类与全文搜索 | 7篇已上线；阅读修订L05已通过PR #10交付 | Hub核心功能 |
 | docs/使用、内容规范、项目状态与历史 | 现有维护入口 | Hub独立维护；不保留Agent当前版本计划 |
 | dev/build/preview/check/check:site与Pages | 现有静态构建检查发布 | Hub保留，不依赖Agent |
