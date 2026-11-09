@@ -21,6 +21,7 @@
 | knowledge/ | 对外知识正文；按java、spring、databases、linux、git等主题分类 |
 | knowledge/index.md、topics.md、guide.md | 站点首页、分类目录、站内阅读指南 |
 | knowledge/.vitepress/config.ts | 标题、base、导航、侧栏和全文搜索分词配置；新增文章时核对目录与侧栏 |
+| knowledge/.vitepress/theme/RecentArticles.vue、recent-articles.data.ts | 首页最近更新列表。站点构建按文章最后一次 Git 提交时间倒序排列，本地未提交稿使用文件修改时间。日期按北京时间显示 |
 | knowledge/.vitepress/theme/、scripts/remove-article.mjs | 文章页 Codex 请求与 GitHub 下架入口、已跟踪正文和导航的本地删除工具 |
 | .github/workflows/remove-article.yml | 维护者手动触发，验证后推送待审核的下架分支 |
 | knowledge/.vitepress/dist/、cache/ | 生成的站点与缓存，不手工编辑、不提交 |

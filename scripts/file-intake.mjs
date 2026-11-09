@@ -16,6 +16,7 @@ export async function scan(root = process.cwd()) {
       const absolute = path.join(dir, entry.name)
       const file = path.relative(pending, absolute).split(path.sep).join('/')
       if (entry.isSymbolicLink()) { files.push({ file, status: 'blocked-link' }); continue }
+      if (file === 'imported' && entry.isDirectory()) continue
       if (entry.isDirectory()) { await walk(absolute); continue }
       if (!entry.isFile() || !supported.has(path.extname(entry.name).toLowerCase())) {
         files.push({ file, status: 'unsupported' }); continue

@@ -67,7 +67,7 @@ npm run build:offline
 
 ## 从文件批量导入
 
-将 UTF-8 Markdown/TXT 放入 `inbox/local/pending/`，可一次放多个文件或多主题长文，然后在本项目 Codex 输入“导入知识”。Agent 按主题检索、去重、整理和验证，成功回执落盘并复核后自动删除对应原文件；失败或部分完成的文件保留待处理。需要原始资料时请事先备份。详见[文件导入说明](file-import.md)。Word/PDF 暂需先转文本，不自动监听或发布。
+将 UTF-8 Markdown/TXT 放入 `inbox/local/pending/`，可一次放多个文件或多主题长文，然后在本项目 Codex 输入“导入知识”。Agent 按主题检索、去重、整理和验证，成功回执落盘并复核后，源文件会按编号和主题改名，移入 `inbox/local/pending/imported/`。归档保留原内容，并从后续待处理扫描中排除。详见[文件导入说明](file-import.md)。Word/PDF 暂需先转文本，不自动监听或发布。
 
 ## 交给 Codex 删除或修改文章
 

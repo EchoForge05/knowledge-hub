@@ -21,8 +21,9 @@
 
 | 功能 | 当前行为与边界 |
 | --- | --- |
-| 文件批量导入 | 将 Markdown/TXT 放入 `inbox/local/pending/`，在 Codex 输入“导入知识”；按主题去重整理，验证并复核成功回执后自动删除原文件，失败或部分完成保留，见[文件导入](docs/handbook/file-import.md) |
-| 分类阅读 | 覆盖 Java、Spring、数据库、Linux、Git 和 AI Agent，支持代码高亮、表格、图片、内链与手机布局 |
+| 文件批量导入 | 将 Markdown/TXT 放入 `inbox/local/pending/`，在 Codex 输入“导入知识”；按主题去重整理，验证后记录哈希回执，已完成的源文件编号并归档到 `inbox/local/pending/imported/`，见[文件导入](docs/handbook/file-import.md) |
+| 分类阅读 | 覆盖 Java、Spring、数据库、Linux、Git、AI Agent 和银行业务，支持代码高亮、表格、图片、内链与手机布局 |
+| 最近更新 | 主页按正式文章最后更新时间倒序展示标题、日期和阅读链接 |
 | 文章下架 | 维护者可从文章页发起 GitHub 流程，自动准备下架变更，审核合并并发布后从公开站点移除，见[操作说明](docs/handbook/usage.md#下架文章) |
 | 交给 Codex 删除或修改 | 每篇文章自动填写标题、路径和网址；删除可直接复制请求，修改只需填写要求，再发到本项目对话。见[操作说明](docs/handbook/usage.md#交给-codex-删除或修改文章) |
 | 全文搜索 | 站内本地搜索，Ctrl / Command + K 打开；中文逐字匹配，ASCII 标识符整词匹配，不保证任意子串或短语连续性 |
