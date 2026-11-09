@@ -6,8 +6,9 @@
 
 | 需求 | 入口 | 当前可用范围 |
 | --- | --- | --- |
-| 阅读和搜索 | [公开知识站](https://echoforge05.github.io/knowledge-hub/) | 已上线 |
-| 断网阅读和搜索 | 从站点下载或本地生成 HTML | 双击即可打开，支持全文搜索和内链 |
+| 在线阅读和搜索 | [在线阅读](#在线阅读) | 查看已发布内容，无需安装 |
+| 断网阅读和搜索 | [离线阅读](#离线阅读) | 下载发布版，或生成包含本地修改的 HTML |
+| 查看本地未提交的修改 | [查看本地未提交的修改](#查看本地未提交的修改) | 对比 Git 差异，或在浏览器预览当前文件 |
 | 新增或修订笔记 | 向本仓库Codex对话发送资料 | 已验证，日常维护推荐入口 |
 | 提交公开资料、人工接收 | GitHub知识表单、`issue:intake` | 已合并main；表单实际展示和真实Issue正向往返仍待验收 |
 | 无密钥导出公开Issue | `issue:export` | 已交付；真实Issue往返仍待验 |
@@ -15,7 +16,7 @@
 
 网站用于阅读，新增资料需要维护者整理审核；Issue提交、导出、接收都不会自动生成知识文章或发布。完整未完成清单见[待办登记](../project/backlog.md)。
 
-## 阅读与查找
+## 在线阅读
 
 打开[知识站](https://echoforge05.github.io/knowledge-hub/)，通过“知识目录”选分类。点击顶部搜索或按 Ctrl / Command + K，输入“暂存区”“ConcurrentHashMap”等关键词；点击结果跳到文章或段落。无结果时缩短词语，代码标识符尽量输入完整名称。手机通过“目录”展开导航，宽表格和代码块可横向滑动。
 
@@ -23,9 +24,17 @@
 
 ## 离线阅读
 
-已发布的知识可从[网站使用指南](https://echoforge05.github.io/knowledge-hub/guide.html#离线阅读)下载。保存后双击 HTML 即可阅读，网站更新后可重新下载。
+### 下载已发布版本
 
-要生成包含尚未发布的本地修改的副本，请在仓库根目录使用 Node 24 和 npm 11。首次准备运行 `npm ci` 安装锁定依赖，随后执行：
+1. 联网时打开[网站使用指南](https://echoforge05.github.io/knowledge-hub/guide.html#离线阅读)，点击「下载离线知识库 HTML」，保存 `Knowledge Hub.html`。
+2. 在下载目录双击该文件，用浏览器打开。断网后仍可浏览知识目录、全文搜索和查看内嵌图片。文章中的外部来源链接需要联网。
+3. 想更新到新发布的内容时，重新下载并打开新文件。
+
+### 生成包含本地修改的版本
+
+**由 Codex 修改时**，每批改完会生成新版 `dist/offline/Knowledge Hub.html` 并给出链接。每次打开同一个文件即可。浏览器已经打开旧版时，刷新页面。
+
+先保存本地文章。在仓库根目录使用 Node 24.22.1 或更高的 24.x 和 npm 11。首次准备时运行 `npm ci` 安装依赖，依赖已装好可直接生成：
 
 ```sh
 npm run build:offline
@@ -34,6 +43,12 @@ npm run build:offline
 双击 `dist/offline/Knowledge Hub.html`，或将这一个文件复制到其他目录再用浏览器打开。打开时只需要支持 JavaScript 的浏览器，可以关闭 Codex、终端和站点服务。通过知识目录选择文章，或按 Ctrl / Command + K 搜索标题、正文和代码。回车打开首条结果，也可点击其他结果；“本页目录”跳到对应小节。外部来源链接需要联网。
 
 知识更新后重新运行生成命令。成功后重新加载文件，核对页脚的正式文章数量、内容版本和生成时间；若将文件复制到其他目录，需替换那里的副本。生成失败时，原输出仍可继续阅读。当前已在 Windows Chrome 验证桌面及窄视口。
+
+### 自己编辑时保存后自动更新
+
+依赖准备好后，在仓库根目录运行一次 `npm run watch:offline`。它会先生成一份 HTML，之后保存 `knowledge/` 里的文章、目录或图片时会重建同一个文件。保持终端运行即可；编辑结束后按 Ctrl+C。关掉终端后，仍可双击 HTML 阅读最后一次成功生成的版本。命令提示构建失败时，修正后再保存即可重试。
+
+本机终端若默认使用 Node 14，先按[本机运行环境](site-development.md#运行环境)切换版本。
 
 ## 把笔记交给 Codex
 
@@ -91,16 +106,36 @@ npm run issue:intake -- --input "inbox/local/实际导出文件名.json" --accep
 
 `实际导出文件名.json`需替换为上一步输出的完整文件名（内置导出包含编号和摘要）。`--accept`才保存待处理Markdown到 `inbox/local/issues/`；把该Markdown路径交给Codex，说明按维护流程处理、保留来源与待核实项。只导出或接收还没有更新知识库。JSON和待处理稿均被Git忽略，不能当作跨机器备份。
 
-## 本地运行
+## 查看本地未提交的修改
 
-先准备 Node 24.22.1 或更高的24.x、npm 11，在仓库根目录运行：
+以下操作都在含 `package.json` 的 `knowledge-hub` 根目录运行。先保存文件。公开知识站显示的是已发布版本，本地预览读取你当前工作区里的文件。
+
+### 看改了哪些文件和行
 
 ```sh
-npm ci
+git status --short
+git diff HEAD
+```
+
+`git status --short` 列出改动文件，包括标记为 `??` 的未跟踪文件。`git diff HEAD` 对比当前提交与工作区，包含已暂存和未暂存的改动。未跟踪的新文件直接用编辑器打开看全文。只看某篇时，例如：
+
+```sh
+git diff HEAD -- knowledge/java/concurrent-hash-map.md
+```
+
+也可在 Codex 的改动面板逐个打开文件查看差异。
+
+### 看浏览器里的页面效果
+
+先准备 Node 24.22.1 或更高的 24.x、npm 11。首次运行时执行 `npm ci` 安装依赖，已安装可跳过。系统默认 Node 版本过旧时，见[本机运行环境](site-development.md#运行环境)。
+
+```sh
 npm run dev
 ```
 
-按终端输出访问 `http://127.0.0.1:5173/knowledge-hub/`（端口以实际输出为准）。本机默认Node旧版本的处理见[运行环境](site-development.md#运行环境)。停止服务使用 Ctrl+C。
+保持终端运行，在浏览器打开终端输出的地址，默认是 [http://127.0.0.1:5173/knowledge-hub/](http://127.0.0.1:5173/knowledge-hub/)。从知识目录打开修改的文章。比如要看 ConcurrentHashMap，可直接打开 [ConcurrentHashMap 本地预览](http://127.0.0.1:5173/knowledge-hub/java/concurrent-hash-map.html)，端口以终端为准。继续编辑并保存后，页面通常会自动刷新，也可以手动刷新。看完在终端按 Ctrl+C 停止服务。想在停掉服务后继续查看，可[生成离线副本](#离线阅读)。
+
+## 本地构建与生产预览
 
 编辑文章后运行：
 

@@ -1,6 +1,10 @@
 # 使用指南
 
-## 浏览与搜索
+## 在线阅读
+
+在公开知识站可以浏览和搜索已发布的文章。
+
+### 浏览与搜索
 
 从[知识目录](topics.md)选择主题。电脑上使用顶部搜索按钮或快捷键 Ctrl / Command + K；手机上点击搜索图标，点击“目录”展开侧栏。
 
@@ -12,7 +16,19 @@
 
 ## 离线阅读
 
-<a href="https://echoforge05.github.io/knowledge-hub/offline/Knowledge%20Hub.html" download>下载离线知识库 HTML</a>，保存后用浏览器打开即可离线查找和阅读全部文章。网站更新后可重新下载，页脚会显示内容版本和生成时间。文章里的外部来源链接需要联网。
+1. 联网时点击<a href="https://echoforge05.github.io/knowledge-hub/offline/Knowledge%20Hub.html" download>下载离线知识库 HTML</a>，保存 `Knowledge Hub.html`。
+2. 在下载目录双击 HTML，用浏览器打开。断网后仍可从知识目录选文章、全文搜索和查看内嵌图片。文章里的外部来源链接需要联网。
+3. 网站发布新内容后，重新下载并打开新文件。页脚显示内容版本和生成时间。
+
+## 查看本地未提交的修改
+
+如果你有本地仓库，先保存修改，再在 `knowledge-hub` 根目录打开终端。
+
+- **看文字差异**：运行 `git status --short` 查看文件列表，再用 `git diff HEAD` 对比已跟踪文件。标记为 `??` 的新文件直接用编辑器打开。
+- **看页面效果**：安装依赖后运行 `npm run dev`，打开终端给出的本地地址，从知识目录进入文章。
+- **断网查看本地改动**：Codex 每批改完会更新 `dist/offline/Knowledge Hub.html`，双击打开即可。自己编辑时，安装依赖后运行 `npm run watch:offline` 可在保存后更新。已打开的 HTML 刷新后即可查看新版。
+
+首次安装需要 Node 24.22.1 或更高的 24.x、npm 11，在仓库根目录运行 `npm ci`。详细步骤和故障处理见[仓库使用说明](https://github.com/EchoForge05/knowledge-hub/blob/main/docs/handbook/usage.md)。
 
 ## 增补知识
 

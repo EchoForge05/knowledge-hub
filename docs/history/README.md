@@ -1,5 +1,14 @@
 # 历史库
 
+## 2026-11-09
+
+- [离线副本自动刷新验证](2026-11-09/offline-refresh.md)
+
+- [在线、离线与本地预览指南验证](2026-11-09/usage-guide.md)
+
+- [ConcurrentHashMap 文章重写与本地验证](2026-11-09/concurrent-hash-map-rewrite.md)
+- [D056 知识整理规则](2026-11-09/knowledge-writing-rule.md)
+
 ## 2026-11-07
 
 - [第二批文件导入与发布记录](2026-11-07/knowledge-import.md)
