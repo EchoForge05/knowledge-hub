@@ -2,11 +2,9 @@
 
 更新：2026-11-09。Agent 恢复用，用户从根 README 进入。
 
-ConcurrentHashMap 文章的面试问答版已在本地通过检查，当前待用户查看差异。见[重写与验证记录](../history/2026-11-09/concurrent-hash-map-rewrite.md)。
+ConcurrentHashMap 面试问答版、使用指南和离线刷新流程已随 [PR #22](https://github.com/EchoForge05/knowledge-hub/pull/22) 合并。
 
-在线阅读、离线副本与未提交修改的查看步骤已补入本地[使用说明](../handbook/usage.md)和站点指南。
-
-D057 已在本地加入 Codex 改稿收尾刷新规则和手动编辑监听命令，当前离线 HTML 已生成。见[本地验证](../history/2026-11-09/offline-refresh.md)。
+本批报销 Agent 和银行联机与批处理文章已导入，预览、搜索及离线验证通过，待处理目录已清空。见[本批导入记录](../history/2026-11-09/reimbursement-and-banking-import.md)。
 
 第二批知识已通过 PR #14 发布，5 篇新文章和 ConcurrentHashMap 的更新均已在线核验。待处理目录为空，验证及部署证据见[本批记录](../history/2026-11-07/knowledge-import.md)。
 

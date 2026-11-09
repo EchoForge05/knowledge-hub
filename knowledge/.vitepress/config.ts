@@ -39,7 +39,11 @@ export default defineConfig({
         { text: 'Redis 分布式锁', link: '/databases/redis-distributed-lock' }
       ] },
       { text: 'AI Agent', items: [
-        { text: 'Agent 的 Prompt 与 Context', link: '/agent/prompt-and-context' }
+        { text: 'Agent 的 Prompt 与 Context', link: '/agent/prompt-and-context' },
+        { text: '用 Java 与 Spring AI 设计智能报销 Agent', link: '/agent/invoice-reimbursement-agent' }
+      ] },
+      { text: '银行业务', items: [
+        { text: '银行联机与批处理的数据一致性', link: '/banking/online-and-batch-consistency' }
       ] },
       { text: 'Git', items: [
         { text: '工作区与暂存区差异', link: '/git/diff-basics' },
