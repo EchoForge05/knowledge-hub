@@ -28,6 +28,8 @@ Prompt（提示词）说明任务、规则和输出要求。Context（上下文�
 
 Prompt Engineering 关注指令、示例和输出约束的表达。Context Engineering 关注数据如何取得、筛选、压缩、组织和更新。学习时可以先尝试系统与用户消息和模板，再逐步加入窗口预算、会话记忆、RAG、工具定义及结果回填。
 
+想看 Prompt、工具和检索怎样用于一个完整的流程，可以继续阅读[用 Java 与 Spring AI 设计智能报销 Agent](invoice-reimbursement-agent.md)。
+
 ## 来源与适用范围
 
 按通用 Agent 设计和 Spring AI 参考文档校订，核查日期 2026-11-07。账户流程为示意，未调用模型或账户接口。

@@ -9,9 +9,9 @@
 | 数据库与 SQL | 原理、查询与实践 | [SQL 查询基础](databases/select-basics.md)、[InnoDB 的 redo、undo 与 MVCC](databases/innodb-logs-and-mvcc.md)、[MySQL 深分页与联合索引优化](databases/mysql-pagination-and-indexes.md)、[MySQL InnoDB 与 Oracle：索引、事务和分页](databases/mysql-oracle-comparison.md)、[Redis 分布式锁](databases/redis-distributed-lock.md) |
 | Linux | 系统使用与运维 | [head 文本查看](linux/head-basics.md) |
 | Git | 版本管理与协作 | [差异检查](git/diff-basics.md)、[恢复文件与取消暂存](git/restore-basics.md) |
-| AI Agent | 工具与实践 | [Agent 的 Prompt 与 Context](agent/prompt-and-context.md) |
+| AI Agent | 工具与实践 | [Agent 的 Prompt 与 Context](agent/prompt-and-context.md)、[用 Java 与 Spring AI 设计智能报销 Agent](agent/invoice-reimbursement-agent.md) |
 | 软件工程 | 设计、开发与测试 | 待收录 |
-| 银行业务 | 可公开的通用知识 | 待收录 |
+| 银行业务 | 可公开的通用知识 | [银行联机与批处理的数据一致性](banking/online-and-batch-consistency.md) |
 
 <details>
 <summary>站点验证</summary>

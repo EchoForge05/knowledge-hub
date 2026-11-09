@@ -2,17 +2,15 @@
 
 更新：2026-11-09。Agent 恢复用，用户从根 README 进入。
 
-ConcurrentHashMap 文章的面试问答版已在本地通过检查，当前待用户查看差异。见[重写与验证记录](../history/2026-11-09/concurrent-hash-map-rewrite.md)。
+ConcurrentHashMap 面试问答版、使用指南和离线刷新流程已随 [PR #22](https://github.com/EchoForge05/knowledge-hub/pull/22) 合并。
 
-在线阅读、离线副本与未提交修改的查看步骤已补入本地[使用说明](../handbook/usage.md)和站点指南。
-
-D057 已在本地加入 Codex 改稿收尾刷新规则和手动编辑监听命令，当前离线 HTML 已生成。见[本地验证](../history/2026-11-09/offline-refresh.md)。
+本批报销 Agent 和银行联机与批处理文章已导入，预览、搜索及离线验证通过。银行专题已按原论述顺序调整，面试复盘独立成节。重新放入的银行笔记 `1.txt` 已核对为 `complete`，归档名为 `001-banking-online-and-batch-consistency.txt`。见[本批导入记录](../history/2026-11-09/reimbursement-and-banking-import.md)。
 
 第二批知识已通过 PR #14 发布，5 篇新文章和 ConcurrentHashMap 的更新均已在线核验。待处理目录为空，验证及部署证据见[本批记录](../history/2026-11-07/knowledge-import.md)。
 
 D052：本批已通过[PR #12](https://github.com/EchoForge05/knowledge-hub/pull/12)合并，合并点 `d40abea`；CI与Pages构建/部署任务成功，线上新增文章HTTP 200。详见[交付记录](../history/2026-11-03/delivery.md)。本地main已同步，V07仍待用户阅读确认。
 
-D051：导入会话改为完整验证、成功回执落盘并复核哈希后自动删除对应 pending 原文件；失败或部分完成保留。用户追加要求本次也执行，已复核首次导入的22组问答、6篇文章与哈希并删除 `1.txt`，回执保留，pending 扫描为空，见[记录](../history/2026-11-02/import-cleanup.md)。
+D059：导入协议在 `pending/imported/` 内编号归档已核验的源文件。主页最近更新列表已在本地实现。此前按 D051 完成的清理保留在[历史记录](../history/2026-11-02/import-cleanup.md)中。
 
 | 内容 | 当前状态 |
 | --- | --- |
