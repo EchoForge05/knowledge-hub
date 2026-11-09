@@ -34,8 +34,7 @@ async function openEditor() {
 
 async function copyRequest(action, instructions = '') {
   const article = path.value
-  const details = instructions.trim()
-  if (action === '修改' && !details) return
+  if (action === '修改' && !instructions.trim()) return
   const request = [
     `请在本地${action}这篇 Knowledge Hub 文章。`,
     `文章：${page.value.title}`,
@@ -45,7 +44,7 @@ async function copyRequest(action, instructions = '') {
     '',
     action === '删除'
       ? '请下架这篇文章，检查并同步知识目录、侧栏和相关链接，完成验证后给我看变更。'
-      : `请按以下要求修改，检查相关链接并验证后给我看变更。\n\n${details}`
+      : `请按以下要求修改，检查相关链接并验证后给我看变更。\n\n${instructions}`
   ].join('\n')
 
   manualRequest.value = ''
