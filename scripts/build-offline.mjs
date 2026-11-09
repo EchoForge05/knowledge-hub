@@ -43,7 +43,12 @@ async function embedImage(url) {
     if (!file.startsWith(sourceRoot + path.sep) || !mime) {
       throw new Error(`无法内嵌图片 ${relative}`)
     }
-    images.set(relative, `data:${mime};base64,${(await readFile(file)).toString('base64')}`)
+    let bytes = await readFile(file)
+    // Normalize Git's CRLF checkout without changing the SVG's declared character encoding.
+    if (mime === 'image/svg+xml') {
+      bytes = Buffer.from(bytes.toString('latin1').replaceAll('\r\n', '\n'), 'latin1')
+    }
+    images.set(relative, `data:${mime};base64,${bytes.toString('base64')}`)
   }
   return images.get(relative) + url.hash
 }
