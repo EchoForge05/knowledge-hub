@@ -28,6 +28,7 @@
 | docs/project/architecture.md、requirements.md | 当前架构/文件说明与产品范围/验收要求 |
 | docs/project/roadmap.md、backlog.md | 当前顺序与全部未完成明细；backlog保留状态及进入条件 |
 | scripts/build-offline.mjs、scripts/offline-reader/ | 生成单文件离线阅读包的脚本和阅读界面 |
+| scripts/watch-offline.mjs | 可选的本地文件监听，保存知识内容后调用同一生成器 |
 | docs/project/function-inventory.md | Hub与独立Agent的既有功能归属 |
 | docs/project/status.md、decisions.md、discussion-log.md | Agent内部现状、有效决策与最近执行续接 |
 | docs/project/evidence/ | 历史验收JSON、截图和样本，仅按需核查 |

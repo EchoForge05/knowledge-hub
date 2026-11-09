@@ -2,6 +2,12 @@
 
 更新：2026-11-09。Agent 恢复用，用户从根 README 进入。
 
+ConcurrentHashMap 文章的面试问答版已在本地通过检查，当前待用户查看差异。见[重写与验证记录](../history/2026-11-09/concurrent-hash-map-rewrite.md)。
+
+在线阅读、离线副本与未提交修改的查看步骤已补入本地[使用说明](../handbook/usage.md)和站点指南。
+
+D057 已在本地加入 Codex 改稿收尾刷新规则和手动编辑监听命令，当前离线 HTML 已生成。见[本地验证](../history/2026-11-09/offline-refresh.md)。
+
 第二批知识已通过 PR #14 发布，5 篇新文章和 ConcurrentHashMap 的更新均已在线核验。待处理目录为空，验证及部署证据见[本批记录](../history/2026-11-07/knowledge-import.md)。
 
 D052：本批已通过[PR #12](https://github.com/EchoForge05/knowledge-hub/pull/12)合并，合并点 `d40abea`；CI与Pages构建/部署任务成功，线上新增文章HTTP 200。详见[交付记录](../history/2026-11-03/delivery.md)。本地main已同步，V07仍待用户阅读确认。
@@ -14,7 +20,7 @@ D051：导入会话改为完整验证、成功回执落盘并复核哈希后自�
 | 静态知识站 P2–P4 | 导航、全文搜索、富文本、CI 与 Pages 已验收 |
 | 文章下架 D053 | 已上线；17 篇文章入口和 GitHub 审核分支生成已核验，见[验收记录](../history/2026-11-07/article-removal.md#远程交付与验收) |
 | Codex 文章维护 D054 | 已上线，17 篇文章入口已核验，见[验收记录](../history/2026-11-09/codex-article-actions.md) |
-| Codex知识维护 | 新建、增补、去重、矛盾处理流程已验证 |
+| Codex知识维护 | 新建、增补、去重、矛盾处理流程已验证。D056 已纳入[知识整理流程](../handbook/knowledge-workflow.md#文章组织与表达) |
 | 可选手动草稿 | 已合并；7项离线测试与3次公开资料调用验收，额度已用尽 |
 | Issue表单、导出与离线接收 | 已交付；14项离线测试及CI通过，真实正向往返 V06 尚未验收 |
 | 本地阅读修订 L05 | D042纠正后的完整知识解释及29项浏览器回归已通过；已按D048经PR #10合并并发布 |

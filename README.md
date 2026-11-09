@@ -8,7 +8,7 @@
 
 | 你想了解 | 阅读入口 |
 | --- | --- |
-| 如何阅读、搜索、提交笔记、本地运行与排查问题 | [使用说明](docs/handbook/usage.md) |
+| 如何在线和离线阅读、提交笔记、查看本地未提交修改 | [使用说明](docs/handbook/usage.md) |
 | 技术架构、数据流、目录职责、主要文件作用 | [架构与文件说明](docs/project/architecture.md) |
 | 接下来做什么、按什么顺序推进 | [开发计划](docs/project/roadmap.md) |
 | 哪些功能未完成、未验收或待交付 | [待办清单](docs/project/backlog.md) |
@@ -36,23 +36,10 @@
 
 ## 快速使用
 
-阅读直接打开知识站。整理资料时，在本项目 Codex 对话中提供可公开内容、来源、版本和疑点，要求先检索已有文章；长资料可放入本地忽略目录 inbox/local/。仓库和网站公开，敏感信息与密钥不得入库，本地忽略目录不提供加密或备份。
+- **在线阅读**：打开[知识站](https://echoforge05.github.io/knowledge-hub/)，从知识目录选文章，或用顶部搜索。
+- **断网阅读**：联网时到[网站使用指南](https://echoforge05.github.io/knowledge-hub/guide.html#离线阅读)下载 HTML，保存后双击打开。Codex 改完内容会更新本地的 `dist/offline/Knowledge Hub.html`。自己编辑时，可[开启保存后自动更新](docs/handbook/usage.md#自己编辑时保存后自动更新)。
+- **查看还没提交的修改**：在仓库根目录运行 `git status --short` 看文件列表，运行 `git diff HEAD` 看 Git 已跟踪文件的改动。想看网页效果，运行 `npm run dev` 后打开终端给出的本地地址。首次安装、新文件及具体操作见[查看本地未提交的修改](docs/handbook/usage.md#查看本地未提交的修改)。
 
-本地开发准备 Node 24.22.1 或更高的24.x、npm 11，在 knowledge-hub 根目录执行：
-
-```sh
-npm ci
-npm run dev
-```
-
-打开终端显示的 /knowledge-hub/ 地址，默认 http://127.0.0.1:5173/knowledge-hub/ 。本机缓存运行时的选择见[本地开发说明](docs/handbook/site-development.md)。日常离线阅读可运行 `npm run build:offline` 生成文件，再双击打开 `dist/offline/Knowledge Hub.html`。
-
-修改后的基本检查：
-
-```sh
-npm run check
-npm run build
-npm run check:site
-```
+整理资料时，在本项目 Codex 对话中提供可公开内容、来源、版本和疑点，要求先检索已有文章。长资料可放入本地忽略目录 `inbox/local/`。仓库和网站公开，敏感信息与密钥不得入库，本地忽略目录不提供加密或备份。
 
 Issue 接收、可选草稿及更多操作见[使用说明](docs/handbook/usage.md)。

@@ -9,6 +9,7 @@
     "dev": "vitepress dev knowledge --host 127.0.0.1",
     "build": "vitepress build knowledge",
     "build:offline": "node scripts/build-offline.mjs",
+    "watch:offline": "node scripts/watch-offline.mjs",
     "preview": "vitepress preview knowledge --host 127.0.0.1",
     "check": "node scripts/check-docs.mjs",
     "check:site": "node scripts/check-site.mjs",
