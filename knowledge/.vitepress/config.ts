@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { tokenize } from './search-tokenizer.mjs'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -71,11 +72,7 @@ export default defineConfig({
         },
         miniSearch: {
           options: {
-            // ASCII 标识符整词保留，其他 Unicode 字母/数字逐字；标点作为边界。
-            // 避免 Node 与浏览器 Intl.Segmenter 词典差异导致同一查询无法命中。
-            tokenize(text) {
-              return text.match(/[A-Za-z0-9_]+|[\p{L}\p{N}]/gu) ?? []
-            }
+            tokenize
           },
           searchOptions: { prefix: true, fuzzy: false, combineWith: 'AND' }
         }

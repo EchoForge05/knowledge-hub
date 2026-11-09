@@ -26,12 +26,13 @@
 | 文章下架 | 维护者可从文章页发起 GitHub 流程，自动准备下架变更，审核合并并发布后从公开站点移除，见[操作说明](docs/handbook/usage.md#下架文章) |
 | 交给 Codex 删除或修改 | 每篇文章自动填写标题、路径和网址；删除可直接复制请求，修改只需填写要求，再发到本项目对话。见[操作说明](docs/handbook/usage.md#交给-codex-删除或修改文章) |
 | 全文搜索 | 站内本地搜索，Ctrl / Command + K 打开；中文逐字匹配，ASCII 标识符整词匹配，不保证任意子串或短语连续性 |
+| 完整离线阅读 | 从站点使用指南下载 HTML，或在本地生成。双击打开知识目录，断网时仍可查找全文、看图和跳转。见[离线阅读用法](docs/handbook/usage.md#离线阅读) |
 | 知识维护 | 将资料交给 Codex，搜索已有主题后新建、增补、去重或处理矛盾，保留原理、示例、版本、风险与来源 |
 | Issue 人工接收 | 公开资料表单、无密钥导出、离线校验与显式接收；不会自动生成文章或发布。真实 Issue 正向往返仍待验收 |
 | 可选模型草稿 | 本机显式预览与调用，人工核查后入库；独立于日常阅读和维护，新增调用须另行授权 |
 | 检查与发布 | 文档检查、离线测试、站点构建、产物检查；经审核合并 main 后由既有流程发布 |
 
-本站及本批文章阅读修订已上线。完整离线阅读包尚未实现，具体限制与未完成项以[待办清单](docs/project/backlog.md)为准。独立 Agent 的开发计划由同父目录的 knowledge-agent 项目维护。
+网站阅读入口已上线，离线阅读包可在本地生成。其余未完成项见[待办清单](docs/project/backlog.md)。独立 Agent 的开发计划由同父目录的 knowledge-agent 项目维护。
 
 ## 快速使用
 
@@ -44,7 +45,7 @@ npm ci
 npm run dev
 ```
 
-打开终端显示的 /knowledge-hub/ 地址，默认 http://127.0.0.1:5173/knowledge-hub/ 。本机缓存运行时的选择见[本地开发说明](docs/handbook/site-development.md)。这需要本地服务，尚不等于双击即可离线阅读的 L06。
+打开终端显示的 /knowledge-hub/ 地址，默认 http://127.0.0.1:5173/knowledge-hub/ 。本机缓存运行时的选择见[本地开发说明](docs/handbook/site-development.md)。日常离线阅读可运行 `npm run build:offline` 生成文件，再双击打开 `dist/offline/Knowledge Hub.html`。
 
 修改后的基本检查：
 

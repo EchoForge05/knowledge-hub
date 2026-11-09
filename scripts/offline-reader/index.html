@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-{{scriptHash}}'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <title>Knowledge Hub · 离线阅读</title>
+  <style>{{css}}</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#topics.html">Knowledge Hub</a>
+    <span>离线阅读</span>
+  </header>
+  <div class="layout">
+    <aside>
+      <nav aria-label="知识库">
+        <a href="#topics.html">知识目录</a>
+        <a href="#guide.html">使用指南</a>
+      </nav>
+      <label for="search">搜索知识</label>
+      <input type="search" id="search" placeholder="中文、术语或代码标识符" autocomplete="off">
+      <p id="search-status" role="status" hidden></p>
+      <ol id="results" hidden></ol>
+      <nav id="outline" aria-label="本页目录" hidden>
+        <strong>本页目录</strong>
+        <ul></ul>
+      </nav>
+    </aside>
+    <main id="reading">
+      {{articles}}
+      <footer>
+        {{articleCount}} 篇正式文章 · 内容版本 <code>{{version}}</code><br>
+        生成于 {{generated}}（北京时间） · 来源外链需联网
+      </footer>
+    </main>
+  </div>
+  <script>{{script}}</script>
+</body>
+</html>
