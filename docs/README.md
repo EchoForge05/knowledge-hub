@@ -6,6 +6,7 @@
 | --- | --- |
 | 固定目录文件批量导入 | [文件导入](handbook/file-import.md) |
 | 安装、运行、文章导航、搜索与构建检查 | [本地开发](handbook/site-development.md) |
+| 生成或更新离线阅读副本 | [离线阅读](handbook/usage.md#离线阅读) |
 | 资料检索、去重、核查和整理 | [知识维护流程](handbook/knowledge-workflow.md) |
 | Markdown、来源与链接写法 | [格式规范](handbook/markdown.md) |
 | Issue 导出、离线预览与接收 | [Issue 操作](handbook/issue-intake.md) |

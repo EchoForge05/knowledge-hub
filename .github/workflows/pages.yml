@@ -33,6 +33,11 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm run check:site
+      - name: Package offline reading download
+        run: |
+          npm run build:offline
+          mkdir -p knowledge/.vitepress/dist/offline
+          cp 'dist/offline/Knowledge Hub.html' knowledge/.vitepress/dist/offline/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: knowledge/.vitepress/dist

@@ -38,3 +38,4 @@ jobs:
         run: npm run test:issue
       - run: npm run build
       - run: npm run check:site
+      - run: npm run build:offline

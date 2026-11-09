@@ -4,6 +4,8 @@
 
 读者 → GitHub Pages静态页面 → 浏览器本地搜索索引。页面和索引由Markdown构建，不需要数据库或AI后端。
 
+本地阅读由同一份 Markdown 生成单个 HTML，内嵌正文、图片和样式。浏览器打开文件时从正文建立段落搜索索引，通过片段链接切换文章。Pages 构建也生成该文件，由站点使用指南提供下载。
+
 维护者/Codex → 修改知识与导航 → 本地检查 → PR/CI审核 → 合并main → Pages发布。Issue工具只导出和接收资料；可选草稿命令只生成本地待审核内容，均不直接发布。
 
 ## 目录与主要文件
@@ -25,7 +27,7 @@
 | docs/README.md、docs/handbook/ | 开发维护导航和操作手册；usage是完整使用教程 |
 | docs/project/architecture.md、requirements.md | 当前架构/文件说明与产品范围/验收要求 |
 | docs/project/roadmap.md、backlog.md | 当前顺序与全部未完成明细；backlog保留状态及进入条件 |
-| docs/project/local-reading-design.md | L06离线阅读提案，尚未实现 |
+| scripts/build-offline.mjs、scripts/offline-reader/ | 生成单文件离线阅读包的脚本和阅读界面 |
 | docs/project/function-inventory.md | Hub与独立Agent的既有功能归属 |
 | docs/project/status.md、decisions.md、discussion-log.md | Agent内部现状、有效决策与最近执行续接 |
 | docs/project/evidence/ | 历史验收JSON、截图和样本，仅按需核查 |
@@ -55,6 +57,7 @@
 | 网站 | VitePress 1.6.4、默认主题、TypeScript 配置 |
 | 运行时 | Node 24.22.1 / npm 11.19.1 |
 | 搜索 | 内置 MiniSearch；ASCII 标识符整词、其他 Unicode 字母/数字逐字、标点分隔 |
+| 离线阅读 | 与网站复用搜索分词；独立段落排序、单文件打包及相对片段跳转 |
 | 检查 | 文档/链接 → 构建 → 页面/资源/锚点 |
 | 发布 | main 成功构建后上传并部署；部署环境仅 main，HTTPS |
 

@@ -26,6 +26,8 @@ npm run preview
 
 开发服务默认端口 5173，生产预览默认端口 4173；以实际启动输出为准。访问路径是 `/knowledge-hub/`。构建产物位于 `knowledge/.vitepress/dist/`，不提交产物和缓存。`npm ci` 使用锁文件重装依赖；`npm install` 仅用于有意更新依赖与锁文件的场景。
 
+`npm run build:offline` 使用同一份 Markdown 和 VitePress 渲染器生成 `dist/offline/Knowledge Hub.html`，与网站构建命令分别运行。文章图片应放在知识目录内，以便内嵌。生成器检查内部页面和锚点，成功后才替换旧文件。修改离线读者或知识渲染时，用浏览器离线模式通过 `file:` 打开生成文件，复验搜索、跳转与内容。操作见[离线阅读](usage.md#离线阅读)。
+
 ## 新增或更新文章
 
 1. 按[知识维护流程](knowledge-workflow.md)先搜索现有主题，确认来源、版本和公开边界。

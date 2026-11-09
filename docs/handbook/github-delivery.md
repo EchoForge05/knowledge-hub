@@ -6,8 +6,10 @@
 
 1. 在短期分支修改，按影响检查文档、构建与页面引用；内容变化复验相关搜索。
 2. 按授权提交并推送，查看 PR 的 Knowledge checks；用户审核合并。
-3. main 自动运行 Publish knowledge site。安装、文档、构建、产物检查成功后上传；deploy 依赖 build，单独持有 Pages/OIDC 写权限。
+3. main 自动运行 Publish knowledge site。安装、文档、构建、产物检查和离线 HTML 打包成功后上传；deploy 依赖 build，单独持有 Pages/OIDC 写权限。
 4. 部署前核对当前 main SHA，完成后访问首页及变动页面。旧提交重跑会被 SHA 检查拒绝；需要重发时手动运行仅选 main。
+
+离线 HTML 与网站由同一提交生成。发布后检查使用指南的下载入口，从站点下载 HTML，再用浏览器以 `file:` 打开验证内容版本、搜索与跳转。
 
 Pages 来源为 GitHub Actions，github-pages 环境仅 main/branch 可部署，HTTPS 已启用。不使用 pull_request_target，不把部署写权限交给 PR。部署并发取消旧运行；真实并发效果未动态演练。
 
